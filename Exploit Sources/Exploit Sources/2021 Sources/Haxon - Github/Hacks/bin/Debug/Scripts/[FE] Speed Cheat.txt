@@ -1,0 +1,11 @@
+--[[
+     Speed Cheat
+     By: OpenGamerTips
+
+     Works for most games, most big games patch this.
+]]--
+
+local speed = 70
+
+game:GetService("Players").LocalPlayer.Character.Humanoid.WalkSpeed = speed
+game:GetService("Players").LocalPlayer.Character.Humanoid.JumpPower = (speed * 1.5)

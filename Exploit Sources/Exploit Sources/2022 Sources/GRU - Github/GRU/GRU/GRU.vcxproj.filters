@@ -1,0 +1,137 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;c++;cppm;ixx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;h++;hm;inl;inc;ipp;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Source Files\roblox">
+      <UniqueIdentifier>{52fc5489-5dd2-43e0-beed-ded4fd8e37f9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\roblox\addresses">
+      <UniqueIdentifier>{6693fe3e-2c1b-429e-9b60-c8d4adbedf9c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\libraries">
+      <UniqueIdentifier>{cd155063-2b6d-4ea3-a92a-47b5343d8790}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\libraries\sockpp">
+      <UniqueIdentifier>{8ce83f08-5ed1-40f7-bc65-2e4f37016ff3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\libraries\json">
+      <UniqueIdentifier>{b7bac746-fa05-4e4c-a868-f30d0680a774}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="dllmain.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="roblox\roblox.cpp">
+      <Filter>Source Files\roblox</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="roblox\roblox.hpp">
+      <Filter>Source Files\roblox</Filter>
+    </ClInclude>
+    <ClInclude Include="roblox\addresses\addresses.hpp">
+      <Filter>Source Files\roblox\addresses</Filter>
+    </ClInclude>
+    <ClInclude Include="libraries\sockpp\inet6_address.h">
+      <Filter>Source Files\libraries\sockpp</Filter>
+    </ClInclude>
+    <ClInclude Include="libraries\sockpp\platform.h">
+      <Filter>Source Files\libraries\sockpp</Filter>
+    </ClInclude>
+    <ClInclude Include="libraries\sockpp\sock_address.h">
+      <Filter>Source Files\libraries\sockpp</Filter>
+    </ClInclude>
+    <ClInclude Include="libraries\sockpp\socket.h">
+      <Filter>Source Files\libraries\sockpp</Filter>
+    </ClInclude>
+    <ClInclude Include="libraries\sockpp\stream_socket.h">
+      <Filter>Source Files\libraries\sockpp</Filter>
+    </ClInclude>
+    <ClInclude Include="libraries\sockpp\tcp_acceptor.h">
+      <Filter>Source Files\libraries\sockpp</Filter>
+    </ClInclude>
+    <ClInclude Include="libraries\sockpp\tcp_connector.h">
+      <Filter>Source Files\libraries\sockpp</Filter>
+    </ClInclude>
+    <ClInclude Include="libraries\sockpp\tcp_socket.h">
+      <Filter>Source Files\libraries\sockpp</Filter>
+    </ClInclude>
+    <ClInclude Include="libraries\sockpp\tcp6_acceptor.h">
+      <Filter>Source Files\libraries\sockpp</Filter>
+    </ClInclude>
+    <ClInclude Include="libraries\sockpp\tcp6_connector.h">
+      <Filter>Source Files\libraries\sockpp</Filter>
+    </ClInclude>
+    <ClInclude Include="libraries\sockpp\tcp6_socket.h">
+      <Filter>Source Files\libraries\sockpp</Filter>
+    </ClInclude>
+    <ClInclude Include="libraries\sockpp\udp_socket.h">
+      <Filter>Source Files\libraries\sockpp</Filter>
+    </ClInclude>
+    <ClInclude Include="libraries\sockpp\udp6_socket.h">
+      <Filter>Source Files\libraries\sockpp</Filter>
+    </ClInclude>
+    <ClInclude Include="libraries\sockpp\unix_acceptor.h">
+      <Filter>Source Files\libraries\sockpp</Filter>
+    </ClInclude>
+    <ClInclude Include="libraries\sockpp\unix_address.h">
+      <Filter>Source Files\libraries\sockpp</Filter>
+    </ClInclude>
+    <ClInclude Include="libraries\sockpp\unix_connector.h">
+      <Filter>Source Files\libraries\sockpp</Filter>
+    </ClInclude>
+    <ClInclude Include="libraries\sockpp\unix_dgram_socket.h">
+      <Filter>Source Files\libraries\sockpp</Filter>
+    </ClInclude>
+    <ClInclude Include="libraries\sockpp\unix_stream_socket.h">
+      <Filter>Source Files\libraries\sockpp</Filter>
+    </ClInclude>
+    <ClInclude Include="libraries\sockpp\version.h">
+      <Filter>Source Files\libraries\sockpp</Filter>
+    </ClInclude>
+    <ClInclude Include="libraries\sockpp\acceptor.h">
+      <Filter>Source Files\libraries\sockpp</Filter>
+    </ClInclude>
+    <ClInclude Include="libraries\sockpp\can_address.h">
+      <Filter>Source Files\libraries\sockpp</Filter>
+    </ClInclude>
+    <ClInclude Include="libraries\sockpp\can_frame.h">
+      <Filter>Source Files\libraries\sockpp</Filter>
+    </ClInclude>
+    <ClInclude Include="libraries\sockpp\can_socket.h">
+      <Filter>Source Files\libraries\sockpp</Filter>
+    </ClInclude>
+    <ClInclude Include="libraries\sockpp\connector.h">
+      <Filter>Source Files\libraries\sockpp</Filter>
+    </ClInclude>
+    <ClInclude Include="libraries\sockpp\datagram_socket.h">
+      <Filter>Source Files\libraries\sockpp</Filter>
+    </ClInclude>
+    <ClInclude Include="libraries\sockpp\exception.h">
+      <Filter>Source Files\libraries\sockpp</Filter>
+    </ClInclude>
+    <ClInclude Include="libraries\sockpp\inet_address.h">
+      <Filter>Source Files\libraries\sockpp</Filter>
+    </ClInclude>
+    <ClInclude Include="libraries\json\json.hpp">
+      <Filter>Source Files\libraries\json</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Library Include="libraries\sockpp\sockpp-static.lib">
+      <Filter>Source Files\libraries\sockpp</Filter>
+    </Library>
+  </ItemGroup>
+</Project>

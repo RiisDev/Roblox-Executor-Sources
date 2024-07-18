@@ -1,0 +1,6 @@
+﻿  Core.cpp
+C:\Users\yorda\Desktop\Zx3Proto\Zx3Proto\RBX.hpp(109,50): warning C4552: '-': result of expression not used
+C:\Users\yorda\Desktop\Zx3Proto\Zx3Proto\LuauInstConvert.h(224,33): warning C4018: '<': signed/unsigned mismatch
+C:\Users\yorda\Desktop\Zx3Proto\Zx3Proto\Convert.h(65,22): warning C4018: '<': signed/unsigned mismatch
+lua.obj : error LNK2005: _main already defined in lua.obj
+C:\Users\yorda\Desktop\Zx3Proto\Release\Zx3Proto.dll : fatal error LNK1169: one or more multiply defined symbols found

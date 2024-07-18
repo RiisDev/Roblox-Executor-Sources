@@ -1,0 +1,313 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="hyperion\compiler\CodeGen\codegen.cpp" />
+    <ClCompile Include="hyperion\compiler\IR\AST\ast.cpp" />
+    <ClCompile Include="hyperion\compiler\Lexer\lexer.cpp" />
+    <ClCompile Include="hyperion\compiler\Parser\parser.cpp" />
+    <ClCompile Include="hyperion\compiler\Serializer\serializer.cpp" />
+    <ClCompile Include="hyperion\entry_point.cpp" />
+    <ClCompile Include="hyperion\imgui\imgui.cpp" />
+    <ClCompile Include="hyperion\imgui\imgui_demo.cpp" />
+    <ClCompile Include="hyperion\imgui\imgui_draw.cpp" />
+    <ClCompile Include="hyperion\imgui\imgui_impl_dx11.cpp" />
+    <ClCompile Include="hyperion\imgui\imgui_impl_win32.cpp" />
+    <ClCompile Include="hyperion\imgui\imgui_tables.cpp" />
+    <ClCompile Include="hyperion\imgui\imgui_widgets.cpp" />
+    <ClCompile Include="hyperion\imgui\texteditor.cpp" />
+    <ClCompile Include="hyperion\lua\lapi.c" />
+    <ClCompile Include="hyperion\lua\lauxlib.c" />
+    <ClCompile Include="hyperion\lua\lbaselib.c" />
+    <ClCompile Include="hyperion\lua\lcode.c" />
+    <ClCompile Include="hyperion\lua\ldblib.c" />
+    <ClCompile Include="hyperion\lua\ldebug.c" />
+    <ClCompile Include="hyperion\lua\ldo.c" />
+    <ClCompile Include="hyperion\lua\ldump.c" />
+    <ClCompile Include="hyperion\lua\lfunc.c" />
+    <ClCompile Include="hyperion\lua\lgc.c" />
+    <ClCompile Include="hyperion\lua\linit.c" />
+    <ClCompile Include="hyperion\lua\liolib.c" />
+    <ClCompile Include="hyperion\lua\llex.c" />
+    <ClCompile Include="hyperion\lua\lmathlib.c" />
+    <ClCompile Include="hyperion\lua\lmem.c" />
+    <ClCompile Include="hyperion\lua\loadlib.c" />
+    <ClCompile Include="hyperion\lua\lobject.c" />
+    <ClCompile Include="hyperion\lua\lopcodes.c" />
+    <ClCompile Include="hyperion\lua\loslib.c" />
+    <ClCompile Include="hyperion\lua\lparser.c" />
+    <ClCompile Include="hyperion\lua\lstate.c" />
+    <ClCompile Include="hyperion\lua\lstring.c" />
+    <ClCompile Include="hyperion\lua\lstrlib.c" />
+    <ClCompile Include="hyperion\lua\ltable.c" />
+    <ClCompile Include="hyperion\lua\ltablib.c" />
+    <ClCompile Include="hyperion\lua\ltm.c" />
+    <ClCompile Include="hyperion\lua\lundump.c" />
+    <ClCompile Include="hyperion\lua\lvm.c" />
+    <ClCompile Include="hyperion\lua\lzio.c" />
+    <ClCompile Include="hyperion\lua\print.c" />
+    <ClCompile Include="hyperion\main\main.cpp" />
+    <ClCompile Include="hyperion\renderer\renderer.cpp" />
+    <ClCompile Include="hyperion\roblox\bypasses\callcheck\callcheck.cpp" />
+    <ClCompile Include="hyperion\roblox\bypasses\exceptionfilter\exceptionfilter.cpp" />
+    <ClCompile Include="hyperion\roblox\bypasses\istainted\istainted.cpp" />
+    <ClCompile Include="hyperion\roblox\bypasses\returncheck\returncheck.cpp" />
+    <ClCompile Include="hyperion\roblox\datamodel\datamodel.cpp" />
+    <ClCompile Include="hyperion\roblox\environment\environment.cpp" />
+    <ClCompile Include="hyperion\roblox\execution\execution.cpp" />
+    <ClCompile Include="hyperion\roblox\globals\globals.cpp" />
+    <ClCompile Include="hyperion\roblox\lualibs\drawlib.cpp" />
+    <ClCompile Include="hyperion\roblox\lualibs\objectmapper.cpp" />
+    <ClCompile Include="hyperion\roblox\taskscheduler\taskscheduler.cpp" />
+    <ClCompile Include="hyperion\roblox\vmthook\vmthook.cpp" />
+    <ClCompile Include="hyperion\transpiler\instruction_conversion\instruction_conversion.cpp" />
+    <ClCompile Include="hyperion\transpiler\serializer\bytecode_serializer.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="hyperion\compiler\CodeGen\Chunk\chunk.hpp" />
+    <ClInclude Include="hyperion\compiler\CodeGen\codegen.hpp" />
+    <ClInclude Include="hyperion\compiler\IR\AST\ast.hpp" />
+    <ClInclude Include="hyperion\compiler\Lexer\Lexeme\lexeme.hpp" />
+    <ClInclude Include="hyperion\compiler\Lexer\lexer.hpp" />
+    <ClInclude Include="hyperion\compiler\Parser\parser.hpp" />
+    <ClInclude Include="hyperion\compiler\Serializer\serializer.hpp" />
+    <ClInclude Include="hyperion\compiler\Serializer\Writer\writer.hpp" />
+    <ClInclude Include="hyperion\curl\curl.h" />
+    <ClInclude Include="hyperion\curl\curlver.h" />
+    <ClInclude Include="hyperion\curl\easy.h" />
+    <ClInclude Include="hyperion\curl\mprintf.h" />
+    <ClInclude Include="hyperion\curl\multi.h" />
+    <ClInclude Include="hyperion\curl\stdcheaders.h" />
+    <ClInclude Include="hyperion\curl\system.h" />
+    <ClInclude Include="hyperion\curl\typecheck-gcc.h" />
+    <ClInclude Include="hyperion\curl\urlapi.h" />
+    <ClInclude Include="hyperion\imgui\imconfig.h" />
+    <ClInclude Include="hyperion\imgui\imgui.h" />
+    <ClInclude Include="hyperion\imgui\imgui_impl_dx11.h" />
+    <ClInclude Include="hyperion\imgui\imgui_impl_win32.h" />
+    <ClInclude Include="hyperion\imgui\imgui_internal.h" />
+    <ClInclude Include="hyperion\imgui\imstb_rectpack.h" />
+    <ClInclude Include="hyperion\imgui\imstb_textedit.h" />
+    <ClInclude Include="hyperion\imgui\imstb_truetype.h" />
+    <ClInclude Include="hyperion\imgui\texteditor.hpp" />
+    <ClInclude Include="hyperion\lua\lapi.h" />
+    <ClInclude Include="hyperion\lua\lauxlib.h" />
+    <ClInclude Include="hyperion\lua\lcode.h" />
+    <ClInclude Include="hyperion\lua\ldebug.h" />
+    <ClInclude Include="hyperion\lua\ldo.h" />
+    <ClInclude Include="hyperion\lua\lfunc.h" />
+    <ClInclude Include="hyperion\lua\lgc.h" />
+    <ClInclude Include="hyperion\lua\llex.h" />
+    <ClInclude Include="hyperion\lua\llimits.h" />
+    <ClInclude Include="hyperion\lua\lmem.h" />
+    <ClInclude Include="hyperion\lua\lobject.h" />
+    <ClInclude Include="hyperion\lua\lopcodes.h" />
+    <ClInclude Include="hyperion\lua\lparser.h" />
+    <ClInclude Include="hyperion\lua\lstate.h" />
+    <ClInclude Include="hyperion\lua\lstring.h" />
+    <ClInclude Include="hyperion\lua\ltable.h" />
+    <ClInclude Include="hyperion\lua\ltm.h" />
+    <ClInclude Include="hyperion\lua\lua.h" />
+    <ClInclude Include="hyperion\lua\luaconf.h" />
+    <ClInclude Include="hyperion\lua\lualib.h" />
+    <ClInclude Include="hyperion\lua\lundump.h" />
+    <ClInclude Include="hyperion\lua\lvm.h" />
+    <ClInclude Include="hyperion\lua\lzio.h" />
+    <ClInclude Include="hyperion\main\main.hpp" />
+    <ClInclude Include="hyperion\renderer\renderer.hpp" />
+    <ClInclude Include="hyperion\roblox\bypasses\callcheck\callcheck.hpp" />
+    <ClInclude Include="hyperion\roblox\bypasses\console\console.hpp" />
+    <ClInclude Include="hyperion\roblox\bypasses\exceptionfilter\expectionfilter.hpp" />
+    <ClInclude Include="hyperion\roblox\bypasses\istainted\istainted.hpp" />
+    <ClInclude Include="hyperion\roblox\bypasses\returncheck\returncheck.hpp" />
+    <ClInclude Include="hyperion\roblox\datamodel\datamodel.hpp" />
+    <ClInclude Include="hyperion\roblox\environment\environment.hpp" />
+    <ClInclude Include="hyperion\roblox\execution\execution.hpp" />
+    <ClInclude Include="hyperion\roblox\globals\globals.hpp" />
+    <ClInclude Include="hyperion\roblox\lualibs\drawlib.hpp" />
+    <ClInclude Include="hyperion\roblox\lualibs\objectmapper.hpp" />
+    <ClInclude Include="hyperion\roblox\offsets\offsets.hpp" />
+    <ClInclude Include="hyperion\roblox\state\state.hpp" />
+    <ClInclude Include="hyperion\roblox\taskscheduler\taskscheduler.hpp" />
+    <ClInclude Include="hyperion\roblox\vmthook\vmthook.hpp" />
+    <ClInclude Include="hyperion\transpiler\instruction_conversion\instruction_conversion.hpp" />
+    <ClInclude Include="hyperion\transpiler\serializer\bytecode_serializer.hpp" />
+    <ClInclude Include="hyperion\transpiler\writer\writer.hpp" />
+    <ClInclude Include="hyperion\utils\Error\error.hpp" />
+    <ClInclude Include="hyperion\utils\request.hpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="hyperion\lua\Makefile" />
+  </ItemGroup>
+  <ItemGroup>
+    <Library Include="hyperion\curl\libcurl_a.lib" />
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>16.0</VCProjectVersion>
+    <Keyword>Win32Proj</Keyword>
+    <ProjectGuid>{f3e91a84-e1c5-4f25-b64a-0e8c64c2a962}</ProjectGuid>
+    <RootNamespace>Client</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+    <IncludePath>$(VC_IncludePath);$(WindowsSDK_IncludePath);</IncludePath>
+    <SourcePath>$(VC_SourcePath);</SourcePath>
+    <OutDir>.\Release\Bin</OutDir>
+    <LibraryPath>C:\Users\iivil\Documents\GitHub\Hyperion-Client\hyperion\curl;C:\Users\User\Desktop\Discord-Bot-master\src\Hyperion-Client\hyperion\curl;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+    <IncludePath>$(IncludePath)</IncludePath>
+    <SourcePath>$(SourcePath)</SourcePath>
+    <OutDir>.\Release\Bin</OutDir>
+    <LibraryPath>C:\Users\iivil\Documents\GitHub\Hyperion-Client\hyperion\curl;C:\Users\User\Desktop\Discord-Bot-master\src\Hyperion-Client\hyperion\curl;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <LinkIncremental>true</LinkIncremental>
+    <IncludePath>$(VC_IncludePath);$(WindowsSDK_IncludePath);</IncludePath>
+    <SourcePath>$(VC_SourcePath);</SourcePath>
+    <OutDir>.\Release\Bin</OutDir>
+    <LibraryPath>C:\Users\iivil\Documents\GitHub\Hyperion-Client\hyperion\curl;$(VC_LibraryPath_x64);$(WindowsSDK_LibraryPath_x64)</LibraryPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <LinkIncremental>false</LinkIncremental>
+    <IncludePath>$(VC_IncludePath);$(WindowsSDK_IncludePath);</IncludePath>
+    <SourcePath>$(VC_SourcePath);</SourcePath>
+    <OutDir>.\Release\Bin</OutDir>
+    <LibraryPath>C:\Users\iivil\Documents\GitHub\Hyperion-Client\hyperion\curl;$(VC_LibraryPath_x64);$(WindowsSDK_LibraryPath_x64)</LibraryPath>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>_CRT_SECURE_NO_WARNINGS</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <LanguageStandard>stdcpplatest</LanguageStandard>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableUAC>false</EnableUAC>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>_CRT_SECURE_NO_WARNINGS</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <LanguageStandard>stdcpplatest</LanguageStandard>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableUAC>false</EnableUAC>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>_CRT_SECURE_NO_WARNINGS</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <LanguageStandard>stdcpplatest</LanguageStandard>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableUAC>false</EnableUAC>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>_CRT_SECURE_NO_WARNINGS</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <LanguageStandard>stdcpplatest</LanguageStandard>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableUAC>false</EnableUAC>
+    </Link>
+  </ItemDefinitionGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

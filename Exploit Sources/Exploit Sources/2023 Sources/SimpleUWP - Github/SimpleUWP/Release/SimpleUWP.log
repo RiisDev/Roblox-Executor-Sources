@@ -1,0 +1,42 @@
+﻿  dllmain.cpp
+LINK : warning LNK4098: defaultlib 'LIBCMT' conflicts with use of other libs; use /NODEFAULTLIB:library
+  Generating code
+  Previous IPDB not found, fall back to full compilation.
+C:\Users\79099\Desktop\Visual Studio Shit\SimpleUWP\SimpleUWP\execution.h(38): warning C4715: 'TheMagiec::getMagicRobloxThingy': not all control paths return a value
+  All 5077 functions were compiled because no usable IPDB/IOBJ from previous compilation was found.
+  Finished generating code
+Luau.lib(Compiler.obj) : warning LNK4099: PDB '' was not found with 'Luau.lib(Compiler.obj)' or at ''; linking object as if no debug info
+Luau.lib(Parser.obj) : warning LNK4099: PDB '' was not found with 'Luau.lib(Parser.obj)' or at ''; linking object as if no debug info
+Luau.lib(StringUtils.obj) : warning LNK4099: PDB '' was not found with 'Luau.lib(StringUtils.obj)' or at ''; linking object as if no debug info
+Luau.lib(BytecodeBuilder.obj) : warning LNK4099: PDB '' was not found with 'Luau.lib(BytecodeBuilder.obj)' or at ''; linking object as if no debug info
+Luau.lib(Location.obj) : warning LNK4099: PDB '' was not found with 'Luau.lib(Location.obj)' or at ''; linking object as if no debug info
+Luau.lib(Ast.obj) : warning LNK4099: PDB '' was not found with 'Luau.lib(Ast.obj)' or at ''; linking object as if no debug info
+Luau.lib(Builtins.obj) : warning LNK4099: PDB '' was not found with 'Luau.lib(Builtins.obj)' or at ''; linking object as if no debug info
+Luau.lib(CostModel.obj) : warning LNK4099: PDB '' was not found with 'Luau.lib(CostModel.obj)' or at ''; linking object as if no debug info
+Luau.lib(ValueTracking.obj) : warning LNK4099: PDB '' was not found with 'Luau.lib(ValueTracking.obj)' or at ''; linking object as if no debug info
+Luau.lib(TableShape.obj) : warning LNK4099: PDB '' was not found with 'Luau.lib(TableShape.obj)' or at ''; linking object as if no debug info
+Luau.lib(ConstantFolding.obj) : warning LNK4099: PDB '' was not found with 'Luau.lib(ConstantFolding.obj)' or at ''; linking object as if no debug info
+Luau.lib(Lexer.obj) : warning LNK4099: PDB '' was not found with 'Luau.lib(Lexer.obj)' or at ''; linking object as if no debug info
+Luau.lib(BuiltinFolding.obj) : warning LNK4099: PDB '' was not found with 'Luau.lib(BuiltinFolding.obj)' or at ''; linking object as if no debug info
+Luau.lib(Confusables.obj) : warning LNK4099: PDB '' was not found with 'Luau.lib(Confusables.obj)' or at ''; linking object as if no debug info
+Zstd.lib(zstd_compress.obj) : warning LNK4099: PDB '' was not found with 'Zstd.lib(zstd_compress.obj)' or at ''; linking object as if no debug info
+Zstd.lib(xxhash.obj) : warning LNK4099: PDB '' was not found with 'Zstd.lib(xxhash.obj)' or at ''; linking object as if no debug info
+Zstd.lib(zstd_double_fast.obj) : warning LNK4099: PDB '' was not found with 'Zstd.lib(zstd_double_fast.obj)' or at ''; linking object as if no debug info
+Zstd.lib(zstd_lazy.obj) : warning LNK4099: PDB '' was not found with 'Zstd.lib(zstd_lazy.obj)' or at ''; linking object as if no debug info
+Zstd.lib(zstd_opt.obj) : warning LNK4099: PDB '' was not found with 'Zstd.lib(zstd_opt.obj)' or at ''; linking object as if no debug info
+Zstd.lib(zstdmt_compress.obj) : warning LNK4099: PDB '' was not found with 'Zstd.lib(zstdmt_compress.obj)' or at ''; linking object as if no debug info
+Zstd.lib(huf_compress.obj) : warning LNK4099: PDB '' was not found with 'Zstd.lib(huf_compress.obj)' or at ''; linking object as if no debug info
+Zstd.lib(zstd_ldm.obj) : warning LNK4099: PDB '' was not found with 'Zstd.lib(zstd_ldm.obj)' or at ''; linking object as if no debug info
+Zstd.lib(fse_compress.obj) : warning LNK4099: PDB '' was not found with 'Zstd.lib(fse_compress.obj)' or at ''; linking object as if no debug info
+Zstd.lib(hist.obj) : warning LNK4099: PDB '' was not found with 'Zstd.lib(hist.obj)' or at ''; linking object as if no debug info
+Zstd.lib(zstd_fast.obj) : warning LNK4099: PDB '' was not found with 'Zstd.lib(zstd_fast.obj)' or at ''; linking object as if no debug info
+Zstd.lib(zstd_compress_sequences.obj) : warning LNK4099: PDB '' was not found with 'Zstd.lib(zstd_compress_sequences.obj)' or at ''; linking object as if no debug info
+Zstd.lib(entropy_common.obj) : warning LNK4099: PDB '' was not found with 'Zstd.lib(entropy_common.obj)' or at ''; linking object as if no debug info
+Zstd.lib(zstd_compress_literals.obj) : warning LNK4099: PDB '' was not found with 'Zstd.lib(zstd_compress_literals.obj)' or at ''; linking object as if no debug info
+Zstd.lib(zstd_common.obj) : warning LNK4099: PDB '' was not found with 'Zstd.lib(zstd_common.obj)' or at ''; linking object as if no debug info
+Zstd.lib(zstd_compress_superblock.obj) : warning LNK4099: PDB '' was not found with 'Zstd.lib(zstd_compress_superblock.obj)' or at ''; linking object as if no debug info
+Zstd.lib(pool.obj) : warning LNK4099: PDB '' was not found with 'Zstd.lib(pool.obj)' or at ''; linking object as if no debug info
+Zstd.lib(fse_decompress.obj) : warning LNK4099: PDB '' was not found with 'Zstd.lib(fse_decompress.obj)' or at ''; linking object as if no debug info
+Zstd.lib(error_private.obj) : warning LNK4099: PDB '' was not found with 'Zstd.lib(error_private.obj)' or at ''; linking object as if no debug info
+Zstd.lib(threading.obj) : warning LNK4099: PDB '' was not found with 'Zstd.lib(threading.obj)' or at ''; linking object as if no debug info
+  SimpleUWP.vcxproj -> C:\Users\79099\Desktop\Visual Studio Shit\SimpleUWP\Release\SimpleUWP.dll

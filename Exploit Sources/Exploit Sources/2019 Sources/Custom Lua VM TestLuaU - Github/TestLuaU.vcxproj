@@ -1,0 +1,260 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>16.0</VCProjectVersion>
+    <ProjectGuid>{8C6BE0D6-D792-4629-8EBE-E8039717D45A}</ProjectGuid>
+    <RootNamespace>TestLuaU</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup />
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <SDLCheck>true</SDLCheck>
+      <ConformanceMode>true</ConformanceMode>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <SDLCheck>true</SDLCheck>
+      <ConformanceMode>true</ConformanceMode>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <ConformanceMode>true</ConformanceMode>
+      <PreprocessorDefinitions>_CRT_SECURE_NO_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <ConformanceMode>true</ConformanceMode>
+      <PreprocessorDefinitions>_CRT_SECURE_NO_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\..\..\Desktop\lua-5.1.4\lua-5.1.4\src\lapi.h" />
+    <ClInclude Include="..\..\..\..\Desktop\lua-5.1.4\lua-5.1.4\src\lauxlib.h" />
+    <ClInclude Include="..\..\..\..\Desktop\lua-5.1.4\lua-5.1.4\src\lcode.h" />
+    <ClInclude Include="..\..\..\..\Desktop\lua-5.1.4\lua-5.1.4\src\ldebug.h" />
+    <ClInclude Include="..\..\..\..\Desktop\lua-5.1.4\lua-5.1.4\src\ldo.h" />
+    <ClInclude Include="..\..\..\..\Desktop\lua-5.1.4\lua-5.1.4\src\lfunc.h" />
+    <ClInclude Include="..\..\..\..\Desktop\lua-5.1.4\lua-5.1.4\src\lgc.h" />
+    <ClInclude Include="..\..\..\..\Desktop\lua-5.1.4\lua-5.1.4\src\llex.h" />
+    <ClInclude Include="..\..\..\..\Desktop\lua-5.1.4\lua-5.1.4\src\llimits.h" />
+    <ClInclude Include="..\..\..\..\Desktop\lua-5.1.4\lua-5.1.4\src\lmem.h" />
+    <ClInclude Include="..\..\..\..\Desktop\lua-5.1.4\lua-5.1.4\src\lobject.h" />
+    <ClInclude Include="..\..\..\..\Desktop\lua-5.1.4\lua-5.1.4\src\lopcodes.h" />
+    <ClInclude Include="..\..\..\..\Desktop\lua-5.1.4\lua-5.1.4\src\lparser.h" />
+    <ClInclude Include="..\..\..\..\Desktop\lua-5.1.4\lua-5.1.4\src\lstate.h" />
+    <ClInclude Include="..\..\..\..\Desktop\lua-5.1.4\lua-5.1.4\src\lstring.h" />
+    <ClInclude Include="..\..\..\..\Desktop\lua-5.1.4\lua-5.1.4\src\ltable.h" />
+    <ClInclude Include="..\..\..\..\Desktop\lua-5.1.4\lua-5.1.4\src\ltm.h" />
+    <ClInclude Include="..\..\..\..\Desktop\lua-5.1.4\lua-5.1.4\src\lua.h" />
+    <ClInclude Include="..\..\..\..\Desktop\lua-5.1.4\lua-5.1.4\src\luaconf.h" />
+    <ClInclude Include="..\..\..\..\Desktop\lua-5.1.4\lua-5.1.4\src\lualib.h" />
+    <ClInclude Include="..\..\..\..\Desktop\lua-5.1.4\lua-5.1.4\src\lundump.h" />
+    <ClInclude Include="..\..\..\..\Desktop\lua-5.1.4\lua-5.1.4\src\lvm.h" />
+    <ClInclude Include="..\..\..\..\Desktop\lua-5.1.4\lua-5.1.4\src\lzio.h" />
+    <ClInclude Include="CallCheck.h" />
+    <ClInclude Include="clvm.h" />
+    <ClInclude Include="core.h" />
+    <ClInclude Include="InternalUI.h" />
+    <ClInclude Include="memory.h" />
+    <ClInclude Include="retcheck.h" />
+    <ClInclude Include="rlua.h" />
+    <ClInclude Include="scriptcontext.h" />
+    <ClInclude Include="TestFolder\FW1FontWrapper\CFW1ColorRGBA.h" />
+    <ClInclude Include="TestFolder\FW1FontWrapper\CFW1DWriteRenderTarget.h" />
+    <ClInclude Include="TestFolder\FW1FontWrapper\CFW1Factory.h" />
+    <ClInclude Include="TestFolder\FW1FontWrapper\CFW1FontWrapper.h" />
+    <ClInclude Include="TestFolder\FW1FontWrapper\CFW1GlyphAtlas.h" />
+    <ClInclude Include="TestFolder\FW1FontWrapper\CFW1GlyphProvider.h" />
+    <ClInclude Include="TestFolder\FW1FontWrapper\CFW1GlyphRenderStates.h" />
+    <ClInclude Include="TestFolder\FW1FontWrapper\CFW1GlyphSheet.h" />
+    <ClInclude Include="TestFolder\FW1FontWrapper\CFW1GlyphVertexDrawer.h" />
+    <ClInclude Include="TestFolder\FW1FontWrapper\CFW1Object.h" />
+    <ClInclude Include="TestFolder\FW1FontWrapper\CFW1StateSaver.h" />
+    <ClInclude Include="TestFolder\FW1FontWrapper\CFW1TextGeometry.h" />
+    <ClInclude Include="TestFolder\FW1FontWrapper\CFW1TextRenderer.h" />
+    <ClInclude Include="TestFolder\FW1FontWrapper\FW1CompileSettings.h" />
+    <ClInclude Include="TestFolder\FW1FontWrapper\FW1FontWrapper.h" />
+    <ClInclude Include="TestFolder\FW1FontWrapper\FW1Precompiled.h" />
+    <ClInclude Include="TestFolder\ImGUI\imconfig.h" />
+    <ClInclude Include="TestFolder\ImGUI\imgui.h" />
+    <ClInclude Include="TestFolder\ImGUI\imgui_impl_dx11.h" />
+    <ClInclude Include="TestFolder\ImGUI\imgui_internal.h" />
+    <ClInclude Include="TestFolder\ImGUI\stb_rect_pack.h" />
+    <ClInclude Include="TestFolder\ImGUI\stb_textedit.h" />
+    <ClInclude Include="TestFolder\ImGUI\stb_truetype.h" />
+    <ClInclude Include="TestFolder\MinHook\MinHook.h" />
+    <ClInclude Include="TestFolder\TextEditor.h" />
+    <ClInclude Include="Xor_String.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\..\..\Desktop\lua-5.1.4\lua-5.1.4\src\lapi.c" />
+    <ClCompile Include="..\..\..\..\Desktop\lua-5.1.4\lua-5.1.4\src\lauxlib.c" />
+    <ClCompile Include="..\..\..\..\Desktop\lua-5.1.4\lua-5.1.4\src\lbaselib.c" />
+    <ClCompile Include="..\..\..\..\Desktop\lua-5.1.4\lua-5.1.4\src\lcode.c" />
+    <ClCompile Include="..\..\..\..\Desktop\lua-5.1.4\lua-5.1.4\src\ldblib.c" />
+    <ClCompile Include="..\..\..\..\Desktop\lua-5.1.4\lua-5.1.4\src\ldebug.c" />
+    <ClCompile Include="..\..\..\..\Desktop\lua-5.1.4\lua-5.1.4\src\ldo.c" />
+    <ClCompile Include="..\..\..\..\Desktop\lua-5.1.4\lua-5.1.4\src\ldump.c" />
+    <ClCompile Include="..\..\..\..\Desktop\lua-5.1.4\lua-5.1.4\src\lfunc.c" />
+    <ClCompile Include="..\..\..\..\Desktop\lua-5.1.4\lua-5.1.4\src\lgc.c" />
+    <ClCompile Include="..\..\..\..\Desktop\lua-5.1.4\lua-5.1.4\src\linit.c" />
+    <ClCompile Include="..\..\..\..\Desktop\lua-5.1.4\lua-5.1.4\src\liolib.c" />
+    <ClCompile Include="..\..\..\..\Desktop\lua-5.1.4\lua-5.1.4\src\llex.c" />
+    <ClCompile Include="..\..\..\..\Desktop\lua-5.1.4\lua-5.1.4\src\lmathlib.c" />
+    <ClCompile Include="..\..\..\..\Desktop\lua-5.1.4\lua-5.1.4\src\lmem.c" />
+    <ClCompile Include="..\..\..\..\Desktop\lua-5.1.4\lua-5.1.4\src\loadlib.c" />
+    <ClCompile Include="..\..\..\..\Desktop\lua-5.1.4\lua-5.1.4\src\lobject.c" />
+    <ClCompile Include="..\..\..\..\Desktop\lua-5.1.4\lua-5.1.4\src\lopcodes.c" />
+    <ClCompile Include="..\..\..\..\Desktop\lua-5.1.4\lua-5.1.4\src\loslib.c" />
+    <ClCompile Include="..\..\..\..\Desktop\lua-5.1.4\lua-5.1.4\src\lparser.c" />
+    <ClCompile Include="..\..\..\..\Desktop\lua-5.1.4\lua-5.1.4\src\lstate.c" />
+    <ClCompile Include="..\..\..\..\Desktop\lua-5.1.4\lua-5.1.4\src\lstring.c" />
+    <ClCompile Include="..\..\..\..\Desktop\lua-5.1.4\lua-5.1.4\src\lstrlib.c" />
+    <ClCompile Include="..\..\..\..\Desktop\lua-5.1.4\lua-5.1.4\src\ltable.c" />
+    <ClCompile Include="..\..\..\..\Desktop\lua-5.1.4\lua-5.1.4\src\ltablib.c" />
+    <ClCompile Include="..\..\..\..\Desktop\lua-5.1.4\lua-5.1.4\src\ltm.c" />
+    <ClCompile Include="..\..\..\..\Desktop\lua-5.1.4\lua-5.1.4\src\lua.c" />
+    <ClCompile Include="..\..\..\..\Desktop\lua-5.1.4\lua-5.1.4\src\luac.c" />
+    <ClCompile Include="..\..\..\..\Desktop\lua-5.1.4\lua-5.1.4\src\lundump.c" />
+    <ClCompile Include="..\..\..\..\Desktop\lua-5.1.4\lua-5.1.4\src\lvm.c" />
+    <ClCompile Include="..\..\..\..\Desktop\lua-5.1.4\lua-5.1.4\src\lzio.c" />
+    <ClCompile Include="..\..\..\..\Desktop\lua-5.1.4\lua-5.1.4\src\print.c" />
+    <ClCompile Include="dllmain.cpp" />
+    <ClCompile Include="TestFolder\FW1FontWrapper\CFW1ColorRGBA.cpp" />
+    <ClCompile Include="TestFolder\FW1FontWrapper\CFW1ColorRGBAInterface.cpp" />
+    <ClCompile Include="TestFolder\FW1FontWrapper\CFW1DWriteRenderTarget.cpp" />
+    <ClCompile Include="TestFolder\FW1FontWrapper\CFW1DWriteRenderTargetInterface.cpp" />
+    <ClCompile Include="TestFolder\FW1FontWrapper\CFW1Factory.cpp" />
+    <ClCompile Include="TestFolder\FW1FontWrapper\CFW1FactoryInterface.cpp" />
+    <ClCompile Include="TestFolder\FW1FontWrapper\CFW1FontWrapper.cpp" />
+    <ClCompile Include="TestFolder\FW1FontWrapper\CFW1FontWrapperInterface.cpp" />
+    <ClCompile Include="TestFolder\FW1FontWrapper\CFW1GlyphAtlas.cpp" />
+    <ClCompile Include="TestFolder\FW1FontWrapper\CFW1GlyphAtlasInterface.cpp" />
+    <ClCompile Include="TestFolder\FW1FontWrapper\CFW1GlyphProvider.cpp" />
+    <ClCompile Include="TestFolder\FW1FontWrapper\CFW1GlyphProviderInterface.cpp" />
+    <ClCompile Include="TestFolder\FW1FontWrapper\CFW1GlyphRenderStates.cpp" />
+    <ClCompile Include="TestFolder\FW1FontWrapper\CFW1GlyphRenderStatesInterface.cpp" />
+    <ClCompile Include="TestFolder\FW1FontWrapper\CFW1GlyphSheet.cpp" />
+    <ClCompile Include="TestFolder\FW1FontWrapper\CFW1GlyphSheetInterface.cpp" />
+    <ClCompile Include="TestFolder\FW1FontWrapper\CFW1GlyphVertexDrawer.cpp" />
+    <ClCompile Include="TestFolder\FW1FontWrapper\CFW1GlyphVertexDrawerInterface.cpp" />
+    <ClCompile Include="TestFolder\FW1FontWrapper\CFW1StateSaver.cpp" />
+    <ClCompile Include="TestFolder\FW1FontWrapper\CFW1TextGeometry.cpp" />
+    <ClCompile Include="TestFolder\FW1FontWrapper\CFW1TextGeometryInterface.cpp" />
+    <ClCompile Include="TestFolder\FW1FontWrapper\CFW1TextRenderer.cpp" />
+    <ClCompile Include="TestFolder\FW1FontWrapper\CFW1TextRendererInterface.cpp" />
+    <ClCompile Include="TestFolder\FW1FontWrapper\FW1FontWrapper.cpp" />
+    <ClCompile Include="TestFolder\FW1FontWrapper\FW1Precompiled.cpp" />
+    <ClCompile Include="TestFolder\ImGUI\imgui.cpp" />
+    <ClCompile Include="TestFolder\ImGUI\imgui_demo.cpp" />
+    <ClCompile Include="TestFolder\ImGUI\imgui_draw.cpp" />
+    <ClCompile Include="TestFolder\ImGUI\imgui_impl_dx11.cpp" />
+    <ClCompile Include="TestFolder\TextEditor.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\..\..\..\Desktop\lua-5.1.4\lua-5.1.4\src\Makefile" />
+  </ItemGroup>
+  <ItemGroup>
+    <Library Include="TestFolder\MinHook\libMinHook.x86.lib" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

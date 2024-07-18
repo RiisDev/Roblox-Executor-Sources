@@ -1,0 +1,224 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;hm;inl;inc;ipp;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Header Files\Classes">
+      <UniqueIdentifier>{1df4030e-05be-4c6f-aba9-1ecb86160046}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\RobloxLua">
+      <UniqueIdentifier>{600167be-1038-42ef-85c7-4872fb751006}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Checks">
+      <UniqueIdentifier>{f7d828d3-67b1-4ecf-a5c3-38745f78614f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Resource Files\Lua">
+      <UniqueIdentifier>{c29b8e57-e60f-4520-a253-e66b74d93be9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Scanners">
+      <UniqueIdentifier>{70a83212-94c7-4723-a5bd-e436869ba73d}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="RBX.hpp">
+      <Filter>Header Files\Classes</Filter>
+    </ClInclude>
+    <ClInclude Include="RBXLua.hpp">
+      <Filter>Header Files\RobloxLua</Filter>
+    </ClInclude>
+    <ClInclude Include="Retcheck.hpp">
+      <Filter>Header Files\Checks</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Desktop\lua-5.1.4\lua-5.1.4\src\lauxlib.h">
+      <Filter>Resource Files\Lua</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Desktop\lua-5.1.4\lua-5.1.4\src\lcode.h">
+      <Filter>Resource Files\Lua</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Desktop\lua-5.1.4\lua-5.1.4\src\ldebug.h">
+      <Filter>Resource Files\Lua</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Desktop\lua-5.1.4\lua-5.1.4\src\ldo.h">
+      <Filter>Resource Files\Lua</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Desktop\lua-5.1.4\lua-5.1.4\src\lfunc.h">
+      <Filter>Resource Files\Lua</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Desktop\lua-5.1.4\lua-5.1.4\src\lgc.h">
+      <Filter>Resource Files\Lua</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Desktop\lua-5.1.4\lua-5.1.4\src\llex.h">
+      <Filter>Resource Files\Lua</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Desktop\lua-5.1.4\lua-5.1.4\src\llimits.h">
+      <Filter>Resource Files\Lua</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Desktop\lua-5.1.4\lua-5.1.4\src\lmem.h">
+      <Filter>Resource Files\Lua</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Desktop\lua-5.1.4\lua-5.1.4\src\lobject.h">
+      <Filter>Resource Files\Lua</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Desktop\lua-5.1.4\lua-5.1.4\src\lopcodes.h">
+      <Filter>Resource Files\Lua</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Desktop\lua-5.1.4\lua-5.1.4\src\lparser.h">
+      <Filter>Resource Files\Lua</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Desktop\lua-5.1.4\lua-5.1.4\src\lstate.h">
+      <Filter>Resource Files\Lua</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Desktop\lua-5.1.4\lua-5.1.4\src\lstring.h">
+      <Filter>Resource Files\Lua</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Desktop\lua-5.1.4\lua-5.1.4\src\ltable.h">
+      <Filter>Resource Files\Lua</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Desktop\lua-5.1.4\lua-5.1.4\src\ltm.h">
+      <Filter>Resource Files\Lua</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Desktop\lua-5.1.4\lua-5.1.4\src\lua.h">
+      <Filter>Resource Files\Lua</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Desktop\lua-5.1.4\lua-5.1.4\src\luaconf.h">
+      <Filter>Resource Files\Lua</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Desktop\lua-5.1.4\lua-5.1.4\src\lualib.h">
+      <Filter>Resource Files\Lua</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Desktop\lua-5.1.4\lua-5.1.4\src\lundump.h">
+      <Filter>Resource Files\Lua</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Desktop\lua-5.1.4\lua-5.1.4\src\lvm.h">
+      <Filter>Resource Files\Lua</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Desktop\lua-5.1.4\lua-5.1.4\src\lzio.h">
+      <Filter>Resource Files\Lua</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Desktop\lua-5.1.4\lua-5.1.4\src\lapi.h">
+      <Filter>Resource Files\Lua</Filter>
+    </ClInclude>
+    <ClInclude Include="Memory.hpp">
+      <Filter>Header Files\Scanners</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="RBX.cpp">
+      <Filter>Header Files\Classes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Desktop\lua-5.1.4\lua-5.1.4\src\lauxlib.c">
+      <Filter>Resource Files\Lua</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Desktop\lua-5.1.4\lua-5.1.4\src\lbaselib.c">
+      <Filter>Resource Files\Lua</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Desktop\lua-5.1.4\lua-5.1.4\src\lcode.c">
+      <Filter>Resource Files\Lua</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Desktop\lua-5.1.4\lua-5.1.4\src\ldblib.c">
+      <Filter>Resource Files\Lua</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Desktop\lua-5.1.4\lua-5.1.4\src\ldebug.c">
+      <Filter>Resource Files\Lua</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Desktop\lua-5.1.4\lua-5.1.4\src\ldo.c">
+      <Filter>Resource Files\Lua</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Desktop\lua-5.1.4\lua-5.1.4\src\ldump.c">
+      <Filter>Resource Files\Lua</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Desktop\lua-5.1.4\lua-5.1.4\src\lfunc.c">
+      <Filter>Resource Files\Lua</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Desktop\lua-5.1.4\lua-5.1.4\src\lgc.c">
+      <Filter>Resource Files\Lua</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Desktop\lua-5.1.4\lua-5.1.4\src\linit.c">
+      <Filter>Resource Files\Lua</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Desktop\lua-5.1.4\lua-5.1.4\src\liolib.c">
+      <Filter>Resource Files\Lua</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Desktop\lua-5.1.4\lua-5.1.4\src\llex.c">
+      <Filter>Resource Files\Lua</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Desktop\lua-5.1.4\lua-5.1.4\src\lmathlib.c">
+      <Filter>Resource Files\Lua</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Desktop\lua-5.1.4\lua-5.1.4\src\lmem.c">
+      <Filter>Resource Files\Lua</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Desktop\lua-5.1.4\lua-5.1.4\src\loadlib.c">
+      <Filter>Resource Files\Lua</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Desktop\lua-5.1.4\lua-5.1.4\src\lobject.c">
+      <Filter>Resource Files\Lua</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Desktop\lua-5.1.4\lua-5.1.4\src\lopcodes.c">
+      <Filter>Resource Files\Lua</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Desktop\lua-5.1.4\lua-5.1.4\src\loslib.c">
+      <Filter>Resource Files\Lua</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Desktop\lua-5.1.4\lua-5.1.4\src\lparser.c">
+      <Filter>Resource Files\Lua</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Desktop\lua-5.1.4\lua-5.1.4\src\lstate.c">
+      <Filter>Resource Files\Lua</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Desktop\lua-5.1.4\lua-5.1.4\src\lstring.c">
+      <Filter>Resource Files\Lua</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Desktop\lua-5.1.4\lua-5.1.4\src\lstrlib.c">
+      <Filter>Resource Files\Lua</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Desktop\lua-5.1.4\lua-5.1.4\src\ltable.c">
+      <Filter>Resource Files\Lua</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Desktop\lua-5.1.4\lua-5.1.4\src\ltablib.c">
+      <Filter>Resource Files\Lua</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Desktop\lua-5.1.4\lua-5.1.4\src\ltm.c">
+      <Filter>Resource Files\Lua</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Desktop\lua-5.1.4\lua-5.1.4\src\lua.c">
+      <Filter>Resource Files\Lua</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Desktop\lua-5.1.4\lua-5.1.4\src\luac.c">
+      <Filter>Resource Files\Lua</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Desktop\lua-5.1.4\lua-5.1.4\src\lundump.c">
+      <Filter>Resource Files\Lua</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Desktop\lua-5.1.4\lua-5.1.4\src\lvm.c">
+      <Filter>Resource Files\Lua</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Desktop\lua-5.1.4\lua-5.1.4\src\lzio.c">
+      <Filter>Resource Files\Lua</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Desktop\lua-5.1.4\lua-5.1.4\src\print.c">
+      <Filter>Resource Files\Lua</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Desktop\lua-5.1.4\lua-5.1.4\src\lapi.c">
+      <Filter>Resource Files\Lua</Filter>
+    </ClCompile>
+    <ClCompile Include="Core.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\..\..\..\Desktop\lua-5.1.4\lua-5.1.4\src\Makefile">
+      <Filter>Resource Files\Lua</Filter>
+    </None>
+  </ItemGroup>
+</Project>

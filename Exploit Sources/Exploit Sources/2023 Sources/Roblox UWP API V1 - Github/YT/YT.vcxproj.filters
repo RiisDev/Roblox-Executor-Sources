@@ -1,0 +1,299 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Исходные файлы">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;c++;cppm;ixx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Файлы заголовков">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;h++;hm;inl;inc;ipp;xsd</Extensions>
+    </Filter>
+    <Filter Include="Файлы ресурсов">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Файлы ресурсов\MinHook">
+      <UniqueIdentifier>{2ae4ab05-9ce8-437b-ba7f-565abb9c2246}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Файлы ресурсов\Compiler">
+      <UniqueIdentifier>{a9937cd1-dbb8-49cd-a699-f9942ca45177}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Файлы ресурсов\Compressor">
+      <UniqueIdentifier>{fcff56ca-068c-4837-a8ec-03b3a32743d6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Файлы ресурсов\Compressor\include">
+      <UniqueIdentifier>{7e656842-6884-4f3e-b9ec-172c952fee85}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Файлы ресурсов\Compressor\library">
+      <UniqueIdentifier>{ce24ed5e-1a5c-4d8a-81c9-4dce5101653b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Файлы ресурсов\Compiler\include">
+      <UniqueIdentifier>{16afd522-e42a-4185-8b0f-5704607d1d6d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Файлы ресурсов\Compiler\library">
+      <UniqueIdentifier>{202d1c5b-b9fc-4938-bff8-cc762fd067a4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Файлы ресурсов\MinHook\library">
+      <UniqueIdentifier>{58a08e3c-76ab-4042-b565-8a47a4b884fa}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Файлы ресурсов\MinHook\include">
+      <UniqueIdentifier>{df8284e7-06e1-4c94-bb6c-05ae0e161ca5}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="LuaState.hpp">
+      <Filter>Файлы заголовков</Filter>
+    </ClInclude>
+    <ClInclude Include="Compressor\include\xxhash.h">
+      <Filter>Файлы ресурсов\Compressor\include</Filter>
+    </ClInclude>
+    <ClInclude Include="Compressor\include\zstd.h">
+      <Filter>Файлы ресурсов\Compressor\include</Filter>
+    </ClInclude>
+    <ClInclude Include="Compiler\include\Ast.h">
+      <Filter>Файлы ресурсов\Compiler\include</Filter>
+    </ClInclude>
+    <ClInclude Include="Compiler\include\Bytecode.h">
+      <Filter>Файлы ресурсов\Compiler\include</Filter>
+    </ClInclude>
+    <ClInclude Include="Compiler\include\BytecodeBuilder.h">
+      <Filter>Файлы ресурсов\Compiler\include</Filter>
+    </ClInclude>
+    <ClInclude Include="Compiler\include\Compiler.h">
+      <Filter>Файлы ресурсов\Compiler\include</Filter>
+    </ClInclude>
+    <ClInclude Include="Compiler\include\Confusables.h">
+      <Filter>Файлы ресурсов\Compiler\include</Filter>
+    </ClInclude>
+    <ClInclude Include="Compiler\include\DenseHash.h">
+      <Filter>Файлы ресурсов\Compiler\include</Filter>
+    </ClInclude>
+    <ClInclude Include="Compiler\include\ExperimentalFlags.h">
+      <Filter>Файлы ресурсов\Compiler\include</Filter>
+    </ClInclude>
+    <ClInclude Include="Compiler\include\Lexer.h">
+      <Filter>Файлы ресурсов\Compiler\include</Filter>
+    </ClInclude>
+    <ClInclude Include="Compiler\include\Location.h">
+      <Filter>Файлы ресурсов\Compiler\include</Filter>
+    </ClInclude>
+    <ClInclude Include="Compiler\include\luacode.h">
+      <Filter>Файлы ресурсов\Compiler\include</Filter>
+    </ClInclude>
+    <ClInclude Include="Compiler\include\ParseOptions.h">
+      <Filter>Файлы ресурсов\Compiler\include</Filter>
+    </ClInclude>
+    <ClInclude Include="Compiler\include\Parser.h">
+      <Filter>Файлы ресурсов\Compiler\include</Filter>
+    </ClInclude>
+    <ClInclude Include="Compiler\include\ParseResult.h">
+      <Filter>Файлы ресурсов\Compiler\include</Filter>
+    </ClInclude>
+    <ClInclude Include="Compiler\include\StringUtils.h">
+      <Filter>Файлы ресурсов\Compiler\include</Filter>
+    </ClInclude>
+    <ClInclude Include="Compiler\include\TimeTrace.h">
+      <Filter>Файлы ресурсов\Compiler\include</Filter>
+    </ClInclude>
+    <ClInclude Include="MinHook\include\MinHook.h">
+      <Filter>Файлы ресурсов\MinHook\include</Filter>
+    </ClInclude>
+    <ClInclude Include="Lua.hpp">
+      <Filter>Файлы заголовков</Filter>
+    </ClInclude>
+    <ClInclude Include="API.hpp">
+      <Filter>Файлы заголовков</Filter>
+    </ClInclude>
+    <ClInclude Include="Callcheck.hpp">
+      <Filter>Файлы заголовков</Filter>
+    </ClInclude>
+    <ClInclude Include="Luau-Core\include\lua.h">
+      <Filter>Файлы заголовков</Filter>
+    </ClInclude>
+    <ClInclude Include="Luau-Core\include\luaconf.h">
+      <Filter>Файлы заголовков</Filter>
+    </ClInclude>
+    <ClInclude Include="Luau-Core\include\lualib.h">
+      <Filter>Файлы заголовков</Filter>
+    </ClInclude>
+    <ClInclude Include="Luau-Core\source\Bytecode.h">
+      <Filter>Файлы заголовков</Filter>
+    </ClInclude>
+    <ClInclude Include="Luau-Core\source\lapi.h">
+      <Filter>Файлы заголовков</Filter>
+    </ClInclude>
+    <ClInclude Include="Luau-Core\source\lbytecode.h">
+      <Filter>Файлы заголовков</Filter>
+    </ClInclude>
+    <ClInclude Include="Luau-Core\source\lcommon.h">
+      <Filter>Файлы заголовков</Filter>
+    </ClInclude>
+    <ClInclude Include="Luau-Core\source\ldebug.h">
+      <Filter>Файлы заголовков</Filter>
+    </ClInclude>
+    <ClInclude Include="Luau-Core\source\ldo.h">
+      <Filter>Файлы заголовков</Filter>
+    </ClInclude>
+    <ClInclude Include="Luau-Core\source\lfunc.h">
+      <Filter>Файлы заголовков</Filter>
+    </ClInclude>
+    <ClInclude Include="Luau-Core\source\lgc.h">
+      <Filter>Файлы заголовков</Filter>
+    </ClInclude>
+    <ClInclude Include="Luau-Core\source\lmem.h">
+      <Filter>Файлы заголовков</Filter>
+    </ClInclude>
+    <ClInclude Include="Luau-Core\source\lnumutils.h">
+      <Filter>Файлы заголовков</Filter>
+    </ClInclude>
+    <ClInclude Include="Luau-Core\source\lobject.h">
+      <Filter>Файлы заголовков</Filter>
+    </ClInclude>
+    <ClInclude Include="Luau-Core\source\lstate.h">
+      <Filter>Файлы заголовков</Filter>
+    </ClInclude>
+    <ClInclude Include="Luau-Core\source\lstring.h">
+      <Filter>Файлы заголовков</Filter>
+    </ClInclude>
+    <ClInclude Include="Luau-Core\source\ltable.h">
+      <Filter>Файлы заголовков</Filter>
+    </ClInclude>
+    <ClInclude Include="Luau-Core\source\ltm.h">
+      <Filter>Файлы заголовков</Filter>
+    </ClInclude>
+    <ClInclude Include="Luau-Core\source\ludata.h">
+      <Filter>Файлы заголовков</Filter>
+    </ClInclude>
+    <ClInclude Include="Luau-Core\source\lvm.h">
+      <Filter>Файлы заголовков</Filter>
+    </ClInclude>
+    <ClInclude Include="Execution.hpp">
+      <Filter>Файлы заголовков</Filter>
+    </ClInclude>
+    <ClInclude Include="Addresses.hpp">
+      <Filter>Файлы заголовков</Filter>
+    </ClInclude>
+    <ClInclude Include="Luau-Core\source\Common.h">
+      <Filter>Файлы заголовков</Filter>
+    </ClInclude>
+    <ClInclude Include="Luau-Core\source\lbuiltins.h">
+      <Filter>Файлы заголовков</Filter>
+    </ClInclude>
+    <ClInclude Include="Compiler\include\Common.h">
+      <Filter>Файлы ресурсов\Compiler\include</Filter>
+    </ClInclude>
+    <ClInclude Include="Teleport-Handler1.h">
+      <Filter>Файлы заголовков</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Library Include="MinHook\library\libMinHook.x86.lib">
+      <Filter>Файлы ресурсов\MinHook\library</Filter>
+    </Library>
+    <Library Include="Compressor\library\libzstd_static.lib">
+      <Filter>Файлы ресурсов\Compressor\library</Filter>
+    </Library>
+    <Library Include="Compiler\library\luau.lib">
+      <Filter>Файлы ресурсов\Compiler\library</Filter>
+    </Library>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Main.cpp">
+      <Filter>Исходные файлы</Filter>
+    </ClCompile>
+    <ClCompile Include="Luau-Core\source\lapi.cpp">
+      <Filter>Исходные файлы</Filter>
+    </ClCompile>
+    <ClCompile Include="Luau-Core\source\laux.cpp">
+      <Filter>Исходные файлы</Filter>
+    </ClCompile>
+    <ClCompile Include="Luau-Core\source\lbaselib.cpp">
+      <Filter>Исходные файлы</Filter>
+    </ClCompile>
+    <ClCompile Include="Luau-Core\source\lbitlib.cpp">
+      <Filter>Исходные файлы</Filter>
+    </ClCompile>
+    <ClCompile Include="Luau-Core\source\lbuiltins.cpp">
+      <Filter>Исходные файлы</Filter>
+    </ClCompile>
+    <ClCompile Include="Luau-Core\source\lcorolib.cpp">
+      <Filter>Исходные файлы</Filter>
+    </ClCompile>
+    <ClCompile Include="Luau-Core\source\ldblib.cpp">
+      <Filter>Исходные файлы</Filter>
+    </ClCompile>
+    <ClCompile Include="Luau-Core\source\ldebug.cpp">
+      <Filter>Исходные файлы</Filter>
+    </ClCompile>
+    <ClCompile Include="Luau-Core\source\ldo.cpp">
+      <Filter>Исходные файлы</Filter>
+    </ClCompile>
+    <ClCompile Include="Luau-Core\source\lfunc.cpp">
+      <Filter>Исходные файлы</Filter>
+    </ClCompile>
+    <ClCompile Include="Luau-Core\source\lgc.cpp">
+      <Filter>Исходные файлы</Filter>
+    </ClCompile>
+    <ClCompile Include="Luau-Core\source\lgcdebug.cpp">
+      <Filter>Исходные файлы</Filter>
+    </ClCompile>
+    <ClCompile Include="Luau-Core\source\linit.cpp">
+      <Filter>Исходные файлы</Filter>
+    </ClCompile>
+    <ClCompile Include="Luau-Core\source\lmathlib.cpp">
+      <Filter>Исходные файлы</Filter>
+    </ClCompile>
+    <ClCompile Include="Luau-Core\source\lmem.cpp">
+      <Filter>Исходные файлы</Filter>
+    </ClCompile>
+    <ClCompile Include="Luau-Core\source\lnumprint.cpp">
+      <Filter>Исходные файлы</Filter>
+    </ClCompile>
+    <ClCompile Include="Luau-Core\source\lobject.cpp">
+      <Filter>Исходные файлы</Filter>
+    </ClCompile>
+    <ClCompile Include="Luau-Core\source\loslib.cpp">
+      <Filter>Исходные файлы</Filter>
+    </ClCompile>
+    <ClCompile Include="Luau-Core\source\lperf.cpp">
+      <Filter>Исходные файлы</Filter>
+    </ClCompile>
+    <ClCompile Include="Luau-Core\source\lstate.cpp">
+      <Filter>Исходные файлы</Filter>
+    </ClCompile>
+    <ClCompile Include="Luau-Core\source\lstring.cpp">
+      <Filter>Исходные файлы</Filter>
+    </ClCompile>
+    <ClCompile Include="Luau-Core\source\lstrlib.cpp">
+      <Filter>Исходные файлы</Filter>
+    </ClCompile>
+    <ClCompile Include="Luau-Core\source\ltable.cpp">
+      <Filter>Исходные файлы</Filter>
+    </ClCompile>
+    <ClCompile Include="Luau-Core\source\ltablib.cpp">
+      <Filter>Исходные файлы</Filter>
+    </ClCompile>
+    <ClCompile Include="Luau-Core\source\ltm.cpp">
+      <Filter>Исходные файлы</Filter>
+    </ClCompile>
+    <ClCompile Include="Luau-Core\source\ludata.cpp">
+      <Filter>Исходные файлы</Filter>
+    </ClCompile>
+    <ClCompile Include="Luau-Core\source\lutf8lib.cpp">
+      <Filter>Исходные файлы</Filter>
+    </ClCompile>
+    <ClCompile Include="Luau-Core\source\lvmexecute.cpp">
+      <Filter>Исходные файлы</Filter>
+    </ClCompile>
+    <ClCompile Include="Luau-Core\source\lvmload.cpp">
+      <Filter>Исходные файлы</Filter>
+    </ClCompile>
+    <ClCompile Include="Luau-Core\source\lvmutils.cpp">
+      <Filter>Исходные файлы</Filter>
+    </ClCompile>
+    <ClCompile Include="SF_dumper.cpp">
+      <Filter>Исходные файлы</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>

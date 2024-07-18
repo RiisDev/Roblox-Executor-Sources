@@ -1,0 +1,192 @@
+﻿C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\MSBuild\Microsoft\VC\v160\Microsoft.CppBuild.targets(1016,5): warning MSB8027: Two or more files with the name of imgui.cpp will produce outputs to the same location. This can lead to an incorrect build result.  The files involved are ImGUIDrawing\imgui.cpp, ImGui\imgui.cpp.
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\MSBuild\Microsoft\VC\v160\Microsoft.CppBuild.targets(1016,5): warning MSB8027: Two or more files with the name of imgui_demo.cpp will produce outputs to the same location. This can lead to an incorrect build result.  The files involved are ImGUIDrawing\imgui_demo.cpp, ImGui\imgui_demo.cpp.
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\MSBuild\Microsoft\VC\v160\Microsoft.CppBuild.targets(1016,5): warning MSB8027: Two or more files with the name of imgui_draw.cpp will produce outputs to the same location. This can lead to an incorrect build result.  The files involved are ImGUIDrawing\imgui_draw.cpp, ImGui\imgui_draw.cpp.
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\MSBuild\Microsoft\VC\v160\Microsoft.CppBuild.targets(1016,5): warning MSB8027: Two or more files with the name of imgui_impl_dx11.cpp will produce outputs to the same location. This can lead to an incorrect build result.  The files involved are ImGUIDrawing\imgui_impl_dx11.cpp, ImGui\imgui_impl_dx11.cpp.
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\MSBuild\Microsoft\VC\v160\Microsoft.CppBuild.targets(1016,5): warning MSB8027: Two or more files with the name of imgui_impl_dx9.cpp will produce outputs to the same location. This can lead to an incorrect build result.  The files involved are ImGUIDrawing\imgui_impl_dx9.cpp, ImGui\imgui_impl_dx9.cpp.
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\MSBuild\Microsoft\VC\v160\Microsoft.CppBuild.targets(1016,5): warning MSB8027: Two or more files with the name of imgui_impl_win32.cpp will produce outputs to the same location. This can lead to an incorrect build result.  The files involved are ImGUIDrawing\imgui_impl_win32.cpp, ImGui\imgui_impl_win32.cpp.
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\MSBuild\Microsoft\VC\v160\Microsoft.CppBuild.targets(1016,5): warning MSB8027: Two or more files with the name of imgui_widgets.cpp will produce outputs to the same location. This can lead to an incorrect build result.  The files involved are ImGUIDrawing\imgui_widgets.cpp, ImGui\imgui_widgets.cpp.
+  DrawingAPI.cpp
+F:\Panda Developer Folder\SkieHacker\2021 ( Source )\Panda LuaJIT (Co) Wrapper\LuaJIT-2.0.5\src\luaconf.h(24,1): warning C4005: 'LUA_PATH_DEFAULT': macro redefinition
+F:\Panda Developer Folder\SkieHacker\2021 ( Source )\Panda LuaJIT (Co) Wrapper\Lua\luaconf.h(92): message : see previous definition of 'LUA_PATH_DEFAULT'
+F:\Panda Developer Folder\SkieHacker\2021 ( Source )\Panda LuaJIT (Co) Wrapper\LuaJIT-2.0.5\src\luaconf.h(115,1): warning C4005: 'LUAL_BUFFERSIZE': macro redefinition
+F:\Panda Developer Folder\SkieHacker\2021 ( Source )\Panda LuaJIT (Co) Wrapper\Lua\luaconf.h(488): message : see previous definition of 'LUAL_BUFFERSIZE'
+F:\Panda Developer Folder\SkieHacker\2021 ( Source )\Panda LuaJIT (Co) Wrapper\DrawingAPI.cpp(132,38): warning C4244: '=': conversion from 'lua_Number' to 'int', possible loss of data
+F:\Panda Developer Folder\SkieHacker\2021 ( Source )\Panda LuaJIT (Co) Wrapper\DrawingAPI.cpp(146,51): warning C4244: '=': conversion from 'lua_Number' to 'float', possible loss of data
+F:\Panda Developer Folder\SkieHacker\2021 ( Source )\Panda LuaJIT (Co) Wrapper\DrawingAPI.cpp(148,51): warning C4244: '=': conversion from 'lua_Number' to 'float', possible loss of data
+F:\Panda Developer Folder\SkieHacker\2021 ( Source )\Panda LuaJIT (Co) Wrapper\DrawingAPI.cpp(155,47): warning C4244: '=': conversion from 'lua_Number' to 'float', possible loss of data
+F:\Panda Developer Folder\SkieHacker\2021 ( Source )\Panda LuaJIT (Co) Wrapper\DrawingAPI.cpp(157,47): warning C4244: '=': conversion from 'lua_Number' to 'float', possible loss of data
+F:\Panda Developer Folder\SkieHacker\2021 ( Source )\Panda LuaJIT (Co) Wrapper\DrawingAPI.cpp(159,47): warning C4244: '=': conversion from 'lua_Number' to 'float', possible loss of data
+F:\Panda Developer Folder\SkieHacker\2021 ( Source )\Panda LuaJIT (Co) Wrapper\DrawingAPI.cpp(173,44): warning C4244: '=': conversion from 'lua_Number' to 'float', possible loss of data
+F:\Panda Developer Folder\SkieHacker\2021 ( Source )\Panda LuaJIT (Co) Wrapper\DrawingAPI.cpp(268,47): warning C4244: '=': conversion from 'lua_Number' to 'float', possible loss of data
+F:\Panda Developer Folder\SkieHacker\2021 ( Source )\Panda LuaJIT (Co) Wrapper\DrawingAPI.cpp(270,47): warning C4244: '=': conversion from 'lua_Number' to 'float', possible loss of data
+F:\Panda Developer Folder\SkieHacker\2021 ( Source )\Panda LuaJIT (Co) Wrapper\DrawingAPI.cpp(277,45): warning C4244: '=': conversion from 'lua_Number' to 'float', possible loss of data
+F:\Panda Developer Folder\SkieHacker\2021 ( Source )\Panda LuaJIT (Co) Wrapper\DrawingAPI.cpp(279,45): warning C4244: '=': conversion from 'lua_Number' to 'float', possible loss of data
+F:\Panda Developer Folder\SkieHacker\2021 ( Source )\Panda LuaJIT (Co) Wrapper\DrawingAPI.cpp(286,47): warning C4244: '=': conversion from 'lua_Number' to 'float', possible loss of data
+F:\Panda Developer Folder\SkieHacker\2021 ( Source )\Panda LuaJIT (Co) Wrapper\DrawingAPI.cpp(288,47): warning C4244: '=': conversion from 'lua_Number' to 'float', possible loss of data
+F:\Panda Developer Folder\SkieHacker\2021 ( Source )\Panda LuaJIT (Co) Wrapper\DrawingAPI.cpp(290,47): warning C4244: '=': conversion from 'lua_Number' to 'float', possible loss of data
+F:\Panda Developer Folder\SkieHacker\2021 ( Source )\Panda LuaJIT (Co) Wrapper\DrawingAPI.cpp(294,41): warning C4244: '=': conversion from 'lua_Number' to 'float', possible loss of data
+F:\Panda Developer Folder\SkieHacker\2021 ( Source )\Panda LuaJIT (Co) Wrapper\DrawingAPI.cpp(298,44): warning C4244: '=': conversion from 'lua_Number' to 'float', possible loss of data
+F:\Panda Developer Folder\SkieHacker\2021 ( Source )\Panda LuaJIT (Co) Wrapper\DrawingAPI.cpp(388,38): warning C4244: '=': conversion from 'lua_Number' to 'int', possible loss of data
+F:\Panda Developer Folder\SkieHacker\2021 ( Source )\Panda LuaJIT (Co) Wrapper\DrawingAPI.cpp(394,51): warning C4244: '=': conversion from 'lua_Number' to 'float', possible loss of data
+F:\Panda Developer Folder\SkieHacker\2021 ( Source )\Panda LuaJIT (Co) Wrapper\DrawingAPI.cpp(396,51): warning C4244: '=': conversion from 'lua_Number' to 'float', possible loss of data
+F:\Panda Developer Folder\SkieHacker\2021 ( Source )\Panda LuaJIT (Co) Wrapper\DrawingAPI.cpp(403,47): warning C4244: '=': conversion from 'lua_Number' to 'float', possible loss of data
+F:\Panda Developer Folder\SkieHacker\2021 ( Source )\Panda LuaJIT (Co) Wrapper\DrawingAPI.cpp(405,47): warning C4244: '=': conversion from 'lua_Number' to 'float', possible loss of data
+F:\Panda Developer Folder\SkieHacker\2021 ( Source )\Panda LuaJIT (Co) Wrapper\DrawingAPI.cpp(412,47): warning C4244: '=': conversion from 'lua_Number' to 'float', possible loss of data
+F:\Panda Developer Folder\SkieHacker\2021 ( Source )\Panda LuaJIT (Co) Wrapper\DrawingAPI.cpp(414,47): warning C4244: '=': conversion from 'lua_Number' to 'float', possible loss of data
+F:\Panda Developer Folder\SkieHacker\2021 ( Source )\Panda LuaJIT (Co) Wrapper\DrawingAPI.cpp(416,47): warning C4244: '=': conversion from 'lua_Number' to 'float', possible loss of data
+F:\Panda Developer Folder\SkieHacker\2021 ( Source )\Panda LuaJIT (Co) Wrapper\DrawingAPI.cpp(420,41): warning C4244: '=': conversion from 'lua_Number' to 'float', possible loss of data
+F:\Panda Developer Folder\SkieHacker\2021 ( Source )\Panda LuaJIT (Co) Wrapper\DrawingAPI.cpp(427,44): warning C4244: '=': conversion from 'lua_Number' to 'float', possible loss of data
+F:\Panda Developer Folder\SkieHacker\2021 ( Source )\Panda LuaJIT (Co) Wrapper\DrawingAPI.cpp(518,38): warning C4244: '=': conversion from 'lua_Number' to 'int', possible loss of data
+F:\Panda Developer Folder\SkieHacker\2021 ( Source )\Panda LuaJIT (Co) Wrapper\DrawingAPI.cpp(524,51): warning C4244: '=': conversion from 'lua_Number' to 'float', possible loss of data
+F:\Panda Developer Folder\SkieHacker\2021 ( Source )\Panda LuaJIT (Co) Wrapper\DrawingAPI.cpp(526,51): warning C4244: '=': conversion from 'lua_Number' to 'float', possible loss of data
+F:\Panda Developer Folder\SkieHacker\2021 ( Source )\Panda LuaJIT (Co) Wrapper\DrawingAPI.cpp(530,38): warning C4244: '=': conversion from 'lua_Number' to 'float', possible loss of data
+F:\Panda Developer Folder\SkieHacker\2021 ( Source )\Panda LuaJIT (Co) Wrapper\DrawingAPI.cpp(536,47): warning C4244: '=': conversion from 'lua_Number' to 'float', possible loss of data
+F:\Panda Developer Folder\SkieHacker\2021 ( Source )\Panda LuaJIT (Co) Wrapper\DrawingAPI.cpp(538,47): warning C4244: '=': conversion from 'lua_Number' to 'float', possible loss of data
+F:\Panda Developer Folder\SkieHacker\2021 ( Source )\Panda LuaJIT (Co) Wrapper\DrawingAPI.cpp(540,47): warning C4244: '=': conversion from 'lua_Number' to 'float', possible loss of data
+F:\Panda Developer Folder\SkieHacker\2021 ( Source )\Panda LuaJIT (Co) Wrapper\DrawingAPI.cpp(544,41): warning C4244: '=': conversion from 'lua_Number' to 'float', possible loss of data
+F:\Panda Developer Folder\SkieHacker\2021 ( Source )\Panda LuaJIT (Co) Wrapper\DrawingAPI.cpp(551,44): warning C4244: '=': conversion from 'lua_Number' to 'float', possible loss of data
+F:\Panda Developer Folder\SkieHacker\2021 ( Source )\Panda LuaJIT (Co) Wrapper\DrawingAPI.cpp(554,45): warning C4244: '=': conversion from 'lua_Number' to 'float', possible loss of data
+F:\Panda Developer Folder\SkieHacker\2021 ( Source )\Panda LuaJIT (Co) Wrapper\DrawingAPI.cpp(652,38): warning C4244: '=': conversion from 'lua_Number' to 'int', possible loss of data
+F:\Panda Developer Folder\SkieHacker\2021 ( Source )\Panda LuaJIT (Co) Wrapper\DrawingAPI.cpp(658,49): warning C4244: '=': conversion from 'lua_Number' to 'float', possible loss of data
+F:\Panda Developer Folder\SkieHacker\2021 ( Source )\Panda LuaJIT (Co) Wrapper\DrawingAPI.cpp(660,49): warning C4244: '=': conversion from 'lua_Number' to 'float', possible loss of data
+F:\Panda Developer Folder\SkieHacker\2021 ( Source )\Panda LuaJIT (Co) Wrapper\DrawingAPI.cpp(667,49): warning C4244: '=': conversion from 'lua_Number' to 'float', possible loss of data
+F:\Panda Developer Folder\SkieHacker\2021 ( Source )\Panda LuaJIT (Co) Wrapper\DrawingAPI.cpp(669,49): warning C4244: '=': conversion from 'lua_Number' to 'float', possible loss of data
+F:\Panda Developer Folder\SkieHacker\2021 ( Source )\Panda LuaJIT (Co) Wrapper\DrawingAPI.cpp(676,49): warning C4244: '=': conversion from 'lua_Number' to 'float', possible loss of data
+F:\Panda Developer Folder\SkieHacker\2021 ( Source )\Panda LuaJIT (Co) Wrapper\DrawingAPI.cpp(678,49): warning C4244: '=': conversion from 'lua_Number' to 'float', possible loss of data
+F:\Panda Developer Folder\SkieHacker\2021 ( Source )\Panda LuaJIT (Co) Wrapper\DrawingAPI.cpp(685,47): warning C4244: '=': conversion from 'lua_Number' to 'float', possible loss of data
+F:\Panda Developer Folder\SkieHacker\2021 ( Source )\Panda LuaJIT (Co) Wrapper\DrawingAPI.cpp(687,47): warning C4244: '=': conversion from 'lua_Number' to 'float', possible loss of data
+F:\Panda Developer Folder\SkieHacker\2021 ( Source )\Panda LuaJIT (Co) Wrapper\DrawingAPI.cpp(689,47): warning C4244: '=': conversion from 'lua_Number' to 'float', possible loss of data
+F:\Panda Developer Folder\SkieHacker\2021 ( Source )\Panda LuaJIT (Co) Wrapper\DrawingAPI.cpp(693,41): warning C4244: '=': conversion from 'lua_Number' to 'float', possible loss of data
+F:\Panda Developer Folder\SkieHacker\2021 ( Source )\Panda LuaJIT (Co) Wrapper\DrawingAPI.cpp(700,44): warning C4244: '=': conversion from 'lua_Number' to 'float', possible loss of data
+F:\Panda Developer Folder\SkieHacker\2021 ( Source )\Panda LuaJIT (Co) Wrapper\DrawingAPI.cpp(887,223): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
+F:\Panda Developer Folder\SkieHacker\2021 ( Source )\Panda LuaJIT (Co) Wrapper\DrawingAPI.cpp(890,217): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
+  imgui.cpp
+  imgui_demo.cpp
+  imgui_draw.cpp
+  imgui_impl_dx11.cpp
+  imgui_impl_dx9.cpp
+  imgui_impl_win32.cpp
+  imgui_widgets.cpp
+  imgui.cpp
+  imgui_demo.cpp
+  imgui_draw.cpp
+  imgui_impl_dx11.cpp
+  imgui_impl_dx9.cpp
+  imgui_impl_win32.cpp
+  imgui_widgets.cpp
+  Main.cpp
+F:\Panda Developer Folder\SkieHacker\2021 ( Source )\Panda LuaJIT (Co) Wrapper\Scanner.h(50,14): warning C4244: 'argument': conversion from 'time_t' to 'unsigned int', possible loss of data
+F:\Panda Developer Folder\SkieHacker\2021 ( Source )\Panda LuaJIT (Co) Wrapper\Scanner.h(260,23): warning C4309: '=': truncation of constant value
+F:\Panda Developer Folder\SkieHacker\2021 ( Source )\Panda LuaJIT (Co) Wrapper\Rlua.h(92,1): warning C4005: 'incr_top': macro redefinition
+F:\Panda Developer Folder\SkieHacker\2021 ( Source )\Panda LuaJIT (Co) Wrapper\Lua\ldo.h(22): message : see previous definition of 'incr_top'
+F:\Panda Developer Folder\SkieHacker\2021 ( Source )\Panda LuaJIT (Co) Wrapper\Tools.h(15,51): warning C4190: 'protectfilename' has C-linkage specified, but returns UDT 'std::basic_string<char,std::char_traits<char>,std::allocator<char>>' which is incompatible with C
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\VC\Tools\MSVC\14.26.28801\include\xstring(4575): message : see declaration of 'std::basic_string<char,std::char_traits<char>,std::allocator<char>>'
+F:\Panda Developer Folder\SkieHacker\2021 ( Source )\Panda LuaJIT (Co) Wrapper\Tools.h(17,27): warning C4018: '<': signed/unsigned mismatch
+F:\Panda Developer Folder\SkieHacker\2021 ( Source )\Panda LuaJIT (Co) Wrapper\Tools.h(63,5): warning C4190: 'ReadWebsite' has C-linkage specified, but returns UDT 'std::basic_string<char,std::char_traits<char>,std::allocator<char>>' which is incompatible with C
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\VC\Tools\MSVC\14.26.28801\include\xstring(4575): message : see declaration of 'std::basic_string<char,std::char_traits<char>,std::allocator<char>>'
+F:\Panda Developer Folder\SkieHacker\2021 ( Source )\Panda LuaJIT (Co) Wrapper\Utils.h(68,20): warning C4018: '<': signed/unsigned mismatch
+F:\Panda Developer Folder\SkieHacker\2021 ( Source )\Panda LuaJIT (Co) Wrapper\Base64Encryption.h(17,22): warning C4018: '<': signed/unsigned mismatch
+F:\Panda Developer Folder\SkieHacker\2021 ( Source )\Panda LuaJIT (Co) Wrapper\Base64Encryption.h(39,22): warning C4018: '<': signed/unsigned mismatch
+F:\Panda Developer Folder\SkieHacker\2021 ( Source )\Panda LuaJIT (Co) Wrapper\Base64Encryption.h(55,22): warning C4018: '<': signed/unsigned mismatch
+F:\Panda Developer Folder\SkieHacker\2021 ( Source )\Panda LuaJIT (Co) Wrapper\Base64Encryption.h(82,51): warning C4101: 'j': unreferenced local variable
+F:\Panda Developer Folder\SkieHacker\2021 ( Source )\Panda LuaJIT (Co) Wrapper\LuaJIT-2.0.5\src\luaconf.h(24,1): warning C4005: 'LUA_PATH_DEFAULT': macro redefinition
+F:\Panda Developer Folder\SkieHacker\2021 ( Source )\Panda LuaJIT (Co) Wrapper\Lua\luaconf.h(92): message : see previous definition of 'LUA_PATH_DEFAULT'
+F:\Panda Developer Folder\SkieHacker\2021 ( Source )\Panda LuaJIT (Co) Wrapper\LuaJIT-2.0.5\src\luaconf.h(115,1): warning C4005: 'LUAL_BUFFERSIZE': macro redefinition
+F:\Panda Developer Folder\SkieHacker\2021 ( Source )\Panda LuaJIT (Co) Wrapper\Lua\luaconf.h(488): message : see previous definition of 'LUAL_BUFFERSIZE'
+F:\Panda Developer Folder\SkieHacker\2021 ( Source )\Panda LuaJIT (Co) Wrapper\mouselib.h(33,11): warning C4244: 'initializing': conversion from 'lua_Number' to 'float', possible loss of data
+F:\Panda Developer Folder\SkieHacker\2021 ( Source )\Panda LuaJIT (Co) Wrapper\mouselib.h(36,9): warning C4244: 'argument': conversion from 'float' to 'DWORD', possible loss of data
+F:\Panda Developer Folder\SkieHacker\2021 ( Source )\Panda LuaJIT (Co) Wrapper\mouselib.h(43,11): warning C4244: 'initializing': conversion from 'lua_Number' to 'float', possible loss of data
+F:\Panda Developer Folder\SkieHacker\2021 ( Source )\Panda LuaJIT (Co) Wrapper\mouselib.h(46,9): warning C4244: 'argument': conversion from 'float' to 'DWORD', possible loss of data
+F:\Panda Developer Folder\SkieHacker\2021 ( Source )\Panda LuaJIT (Co) Wrapper\mouselib.h(53,14): warning C4244: 'initializing': conversion from 'lua_Number' to 'int', possible loss of data
+F:\Panda Developer Folder\SkieHacker\2021 ( Source )\Panda LuaJIT (Co) Wrapper\mouselib.h(62,10): warning C4244: 'initializing': conversion from 'lua_Number' to 'LONG', possible loss of data
+F:\Panda Developer Folder\SkieHacker\2021 ( Source )\Panda LuaJIT (Co) Wrapper\mouselib.h(63,10): warning C4244: 'initializing': conversion from 'lua_Number' to 'LONG', possible loss of data
+F:\Panda Developer Folder\SkieHacker\2021 ( Source )\Panda LuaJIT (Co) Wrapper\mouselib.h(104,12): warning C4244: 'initializing': conversion from 'lua_Number' to 'WORD', possible loss of data
+F:\Panda Developer Folder\SkieHacker\2021 ( Source )\Panda LuaJIT (Co) Wrapper\mouselib.h(112,12): warning C4244: 'initializing': conversion from 'lua_Number' to 'WORD', possible loss of data
+F:\Panda Developer Folder\SkieHacker\2021 ( Source )\Panda LuaJIT (Co) Wrapper\mouselib.h(122,12): warning C4244: 'initializing': conversion from 'lua_Number' to 'WORD', possible loss of data
+F:\Panda Developer Folder\SkieHacker\2021 ( Source )\Panda LuaJIT (Co) Wrapper\mouselib.h(123,13): warning C4244: 'initializing': conversion from 'lua_Number' to 'int', possible loss of data
+F:\Panda Developer Folder\SkieHacker\2021 ( Source )\Panda LuaJIT (Co) Wrapper\Roblox.hpp(14,1): warning C4005: 'RLUA_TLIGHTUSERDATA': macro redefinition
+F:\Panda Developer Folder\SkieHacker\2021 ( Source )\Panda LuaJIT (Co) Wrapper\Rlua.h(114): message : see previous definition of 'RLUA_TLIGHTUSERDATA'
+F:\Panda Developer Folder\SkieHacker\2021 ( Source )\Panda LuaJIT (Co) Wrapper\Roblox.hpp(15,1): warning C4005: 'RLUA_TNUMBER': macro redefinition
+F:\Panda Developer Folder\SkieHacker\2021 ( Source )\Panda LuaJIT (Co) Wrapper\Rlua.h(109): message : see previous definition of 'RLUA_TNUMBER'
+F:\Panda Developer Folder\SkieHacker\2021 ( Source )\Panda LuaJIT (Co) Wrapper\Roblox.hpp(17,1): warning C4005: 'RLUA_TSTRING': macro redefinition
+F:\Panda Developer Folder\SkieHacker\2021 ( Source )\Panda LuaJIT (Co) Wrapper\Rlua.h(107): message : see previous definition of 'RLUA_TSTRING'
+F:\Panda Developer Folder\SkieHacker\2021 ( Source )\Panda LuaJIT (Co) Wrapper\Roblox.hpp(19,1): warning C4005: 'RLUA_TFUNCTION': macro redefinition
+F:\Panda Developer Folder\SkieHacker\2021 ( Source )\Panda LuaJIT (Co) Wrapper\Rlua.h(106): message : see previous definition of 'RLUA_TFUNCTION'
+F:\Panda Developer Folder\SkieHacker\2021 ( Source )\Panda LuaJIT (Co) Wrapper\Roblox.hpp(20,1): warning C4005: 'RLUA_TTABLE': macro redefinition
+F:\Panda Developer Folder\SkieHacker\2021 ( Source )\Panda LuaJIT (Co) Wrapper\Rlua.h(110): message : see previous definition of 'RLUA_TTABLE'
+F:\Panda Developer Folder\SkieHacker\2021 ( Source )\Panda LuaJIT (Co) Wrapper\Main.cpp(35,31): warning C4838: conversion from 'int' to 'const char' requires a narrowing conversion
+F:\Panda Developer Folder\SkieHacker\2021 ( Source )\Panda LuaJIT (Co) Wrapper\Main.cpp(35,31): warning C4309: 'initializing': truncation of constant value
+F:\Panda Developer Folder\SkieHacker\2021 ( Source )\Panda LuaJIT (Co) Wrapper\Main.cpp(35,37): warning C4838: conversion from 'int' to 'const char' requires a narrowing conversion
+F:\Panda Developer Folder\SkieHacker\2021 ( Source )\Panda LuaJIT (Co) Wrapper\Main.cpp(35,37): warning C4309: 'initializing': truncation of constant value
+F:\Panda Developer Folder\SkieHacker\2021 ( Source )\Panda LuaJIT (Co) Wrapper\Main.cpp(35,43): warning C4838: conversion from 'int' to 'const char' requires a narrowing conversion
+F:\Panda Developer Folder\SkieHacker\2021 ( Source )\Panda LuaJIT (Co) Wrapper\Main.cpp(35,43): warning C4309: 'initializing': truncation of constant value
+F:\Panda Developer Folder\SkieHacker\2021 ( Source )\Panda LuaJIT (Co) Wrapper\Main.cpp(35,49): warning C4838: conversion from 'int' to 'const char' requires a narrowing conversion
+F:\Panda Developer Folder\SkieHacker\2021 ( Source )\Panda LuaJIT (Co) Wrapper\Main.cpp(35,49): warning C4309: 'initializing': truncation of constant value
+F:\Panda Developer Folder\SkieHacker\2021 ( Source )\Panda LuaJIT (Co) Wrapper\Main.cpp(35,55): warning C4838: conversion from 'int' to 'const char' requires a narrowing conversion
+F:\Panda Developer Folder\SkieHacker\2021 ( Source )\Panda LuaJIT (Co) Wrapper\Main.cpp(35,55): warning C4309: 'initializing': truncation of constant value
+F:\Panda Developer Folder\SkieHacker\2021 ( Source )\Panda LuaJIT (Co) Wrapper\Main.cpp(35,61): warning C4838: conversion from 'int' to 'const char' requires a narrowing conversion
+F:\Panda Developer Folder\SkieHacker\2021 ( Source )\Panda LuaJIT (Co) Wrapper\Main.cpp(35,61): warning C4309: 'initializing': truncation of constant value
+F:\Panda Developer Folder\SkieHacker\2021 ( Source )\Panda LuaJIT (Co) Wrapper\Main.cpp(35,67): warning C4838: conversion from 'int' to 'const char' requires a narrowing conversion
+F:\Panda Developer Folder\SkieHacker\2021 ( Source )\Panda LuaJIT (Co) Wrapper\Main.cpp(35,67): warning C4309: 'initializing': truncation of constant value
+F:\Panda Developer Folder\SkieHacker\2021 ( Source )\Panda LuaJIT (Co) Wrapper\Main.cpp(35,73): warning C4838: conversion from 'int' to 'const char' requires a narrowing conversion
+F:\Panda Developer Folder\SkieHacker\2021 ( Source )\Panda LuaJIT (Co) Wrapper\Main.cpp(35,73): warning C4309: 'initializing': truncation of constant value
+F:\Panda Developer Folder\SkieHacker\2021 ( Source )\Panda LuaJIT (Co) Wrapper\Main.cpp(44,31): warning C4838: conversion from 'int' to 'const char' requires a narrowing conversion
+F:\Panda Developer Folder\SkieHacker\2021 ( Source )\Panda LuaJIT (Co) Wrapper\Main.cpp(44,31): warning C4309: 'initializing': truncation of constant value
+F:\Panda Developer Folder\SkieHacker\2021 ( Source )\Panda LuaJIT (Co) Wrapper\Main.cpp(44,37): warning C4838: conversion from 'int' to 'const char' requires a narrowing conversion
+F:\Panda Developer Folder\SkieHacker\2021 ( Source )\Panda LuaJIT (Co) Wrapper\Main.cpp(44,37): warning C4309: 'initializing': truncation of constant value
+F:\Panda Developer Folder\SkieHacker\2021 ( Source )\Panda LuaJIT (Co) Wrapper\Main.cpp(44,43): warning C4838: conversion from 'int' to 'const char' requires a narrowing conversion
+F:\Panda Developer Folder\SkieHacker\2021 ( Source )\Panda LuaJIT (Co) Wrapper\Main.cpp(44,43): warning C4309: 'initializing': truncation of constant value
+F:\Panda Developer Folder\SkieHacker\2021 ( Source )\Panda LuaJIT (Co) Wrapper\Main.cpp(44,49): warning C4838: conversion from 'int' to 'const char' requires a narrowing conversion
+F:\Panda Developer Folder\SkieHacker\2021 ( Source )\Panda LuaJIT (Co) Wrapper\Main.cpp(44,49): warning C4309: 'initializing': truncation of constant value
+F:\Panda Developer Folder\SkieHacker\2021 ( Source )\Panda LuaJIT (Co) Wrapper\Main.cpp(321,4): warning C4102: 'InLoadOrderModuleList': unreferenced label
+  lapi.c
+  lauxlib.c
+  lbaselib.c
+  lcode.c
+  ldblib.c
+  ldebug.c
+  ldo.c
+  ldump.c
+  lfunc.c
+  lgc.c
+  linit.c
+  liolib.c
+  llex.c
+  lmathlib.c
+  lmem.c
+  loadlib.c
+  lobject.c
+  lopcodes.c
+  loslib.c
+  lparser.c
+  Compiling...
+  lstate.c
+  lstring.c
+  lstrlib.c
+  ltable.c
+  ltablib.c
+  ltm.c
+  lundump.c
+  lvm.c
+  lzio.c
+Release\imgui.obj : warning LNK4042: object specified more than once; extras ignored
+Release\imgui_demo.obj : warning LNK4042: object specified more than once; extras ignored
+Release\imgui_draw.obj : warning LNK4042: object specified more than once; extras ignored
+Release\imgui_impl_dx11.obj : warning LNK4042: object specified more than once; extras ignored
+Release\imgui_impl_dx9.obj : warning LNK4042: object specified more than once; extras ignored
+Release\imgui_impl_win32.obj : warning LNK4042: object specified more than once; extras ignored
+Release\imgui_widgets.obj : warning LNK4042: object specified more than once; extras ignored
+  Generating code
+  Previous IPDB not found, fall back to full compilation.
+F:\Panda Developer Folder\SkieHacker\2021 ( Source )\Panda LuaJIT (Co) Wrapper\Main.cpp(96): warning C4715: 'FindFirstClass': not all control paths return a value
+F:\Panda Developer Folder\SkieHacker\2021 ( Source )\Panda LuaJIT (Co) Wrapper\Main.cpp(80): warning C4715: 'Call<unsigned long>': not all control paths return a value
+F:\Panda Developer Folder\SkieHacker\2021 ( Source )\Panda LuaJIT (Co) Wrapper\Main.cpp(80): warning C4715: 'Call<unsigned long,unsigned long,unsigned long>': not all control paths return a value
+F:\Panda Developer Folder\SkieHacker\2021 ( Source )\Panda LuaJIT (Co) Wrapper\DrawingAPI.cpp(301): warning C4715: 'DrawingAPILuaAPI::Lua::Line::__newindex': not all control paths return a value
+F:\Panda Developer Folder\SkieHacker\2021 ( Source )\Panda LuaJIT (Co) Wrapper\DrawingAPI.cpp(377): warning C4715: 'DrawingAPILuaAPI::Lua::Square::__index': not all control paths return a value
+F:\Panda Developer Folder\SkieHacker\2021 ( Source )\Panda LuaJIT (Co) Wrapper\DrawingAPI.cpp(641): warning C4715: 'DrawingAPILuaAPI::Lua::Triangle::__index': not all control paths return a value
+F:\Panda Developer Folder\SkieHacker\2021 ( Source )\Panda LuaJIT (Co) Wrapper\DrawingAPI.cpp(249): warning C4715: 'DrawingAPILuaAPI::Lua::Line::__index': not all control paths return a value
+F:\Panda Developer Folder\SkieHacker\2021 ( Source )\Panda LuaJIT (Co) Wrapper\CoreFunctions.h(298): warning C4715: '_kick': not all control paths return a value
+F:\Panda Developer Folder\SkieHacker\2021 ( Source )\Panda LuaJIT (Co) Wrapper\Main.cpp(226): warning C4715: 'InputLua': not all control paths return a value
+  All 3088 functions were compiled because no usable IPDB/IOBJ from previous compilation was found.
+  Finished generating code
+  Panda.vcxproj -> F:\Panda Developer Folder\SkieHacker\2021 ( Source )\Panda LuaJIT (Co) Wrapper\Release\Injector.dll

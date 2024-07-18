@@ -1,0 +1,334 @@
+<?xml version="1.0"?>
+<SyntaxDefinition name="SharpLua" extensions=".slua;.lua" xmlns="http://icsharpcode.net/sharpdevelop/syntaxdefinition/2008">
+  <!-- The named colors 'Comment' and 'String' are used in SharpDevelop to detect if a line is inside a multiline string/comment -->
+  <Color name="Comment" foreground="#ffa3a2a5" />
+  <Color name="String" foreground="#ff3cff39" />
+  <Color name="Punctuation" />
+  <Color name="MethodCall" foreground="#ffffcc66"/>
+  <Color name="MethodIndex" foreground="#ffffff9b"/>
+  <Color name="NumberLiteral" foreground="#ff99cc99"/>
+  <Color name="NilKeyword" fontWeight="bold" foreground="#ffbbbbbb" />
+  <Color name="Keywords" fontWeight="bold" foreground="#ffff7777" />
+  <Color name="HighlightedFunctions" foreground="#ffe0ff00" />
+  <Color name="GotoKeywords" foreground="#ffcc99cc" />
+  <Color name="Visibility" fontWeight="bold" foreground="#fff99157"/>
+  <Color name="TrueFalse" fontWeight="bold" foreground="#ff66cccc" />
+
+  <RuleSet name="CommentMarkerSet">
+    <Keywords fontWeight="bold" foreground="#ffb3b2b5">
+      <Word>TODO</Word>
+      <Word>FIXME</Word>
+    </Keywords>
+    <Keywords fontWeight="bold" foreground="#ffd3b2b5">
+      <Word>HACK</Word>
+      <Word>UNDONE</Word>
+    </Keywords>
+  </RuleSet>
+
+  <!-- This is the main ruleset. -->
+  <RuleSet>
+
+    <Span color="Comment">
+      <Begin color="XmlDoc/DocComment">---</Begin>
+      <RuleSet>
+        <Import ruleSet="XmlDoc/DocCommentSet"/>
+        <Import ruleSet="CommentMarkerSet"/>
+      </RuleSet>
+    </Span>
+
+
+    <Span color="Comment" ruleSet="CommentMarkerSet" multiline="true">
+      <Begin>--\[[=]*\[</Begin>
+      <End>\][=]*]</End>
+    </Span>
+
+
+    <Span color="Comment" ruleSet="CommentMarkerSet">
+      <Begin>--</Begin>
+    </Span>
+
+    <Span color="String">
+      <Begin>"</Begin>
+      <End>"</End>
+      <RuleSet>
+        <!-- span for escape sequences -->
+        <Span begin="\\" end="."/>
+      </RuleSet>
+    </Span>
+
+    <Span color="String">
+      <Begin>'</Begin>
+      <End>'</End>
+      <RuleSet>
+        <!-- span for escape sequences -->
+        <Span begin="\\" end="."/>
+      </RuleSet>
+    </Span>
+
+    <Span color="String" multiline="true">
+      <Begin color="String">\[[=]*\[</Begin>
+      <End>\][=]*]</End>
+    </Span>
+
+    <!-- Digits -->
+    <Rule color="NumberLiteral">
+      \b0[xX][0-9a-fA-F]+  # hex number
+	  |
+      (	\b\d+(\.[0-9]+)?   #number with optional floating point
+      |	\.[0-9]+           #or just starting with floating point
+      )
+      ([eE][+-]?[0-9]+)? # optional exponent
+    </Rule>
+
+    <Keywords color="TrueFalse">
+      <Word>true</Word>
+      <Word>false</Word>
+    </Keywords>
+
+    <Keywords color="Keywords">
+      <Word>and</Word>
+      <Word>break</Word>
+      <Word>do</Word>
+      <Word>else</Word>
+      <Word>elseif</Word>
+      <Word>end</Word>
+      <Word>false</Word>
+      <Word>for</Word>
+      <Word>function</Word>
+      <Word>if</Word>
+      <Word>in</Word>
+      <Word>local</Word>
+      <!--<Word>nil</Word>-->
+      <Word>not</Word>
+      <Word>or</Word>
+      <Word>repeat</Word>
+      <Word>return</Word>
+      <Word>then</Word>
+      <Word>true</Word>
+      <Word>until</Word>
+      <Word>while</Word>
+      <Word>using</Word>
+      <Word>continue</Word>
+    </Keywords>
+
+    <Keywords color="GotoKeywords">
+      <Word>break</Word>
+      <Word>return</Word>
+      <Word>continue</Word>
+    </Keywords>
+
+    <Keywords color="HighlightedFunctions">
+      <Word>self</Word>
+      <Word>wait</Word>
+      <Word>print</Word>
+      <Word>warn</Word>
+      <Word>Vector3</Word>
+      <Word>Instance</Word>
+      <Word>bit32</Word>
+      <Word>string</Word>
+      <Word>table</Word>
+      <Word>math</Word>
+      <Word>error</Word>
+      <Word>game</Word>
+      <Word>workspace</Word>
+      <Word>pairs</Word>
+      <Word>ipairs</Word>
+      <Word>next</Word>
+      <Word>task</Word>
+      <Word>sleep</Word>
+      <Word>delay</Word>
+      <Word>debug</Word>
+      <Word>getfenv</Word>
+      <Word>setfenv</Word>
+      <Word>select</Word>
+      <Word>assert</Word>
+      <Word>newproxy</Word>
+      <Word>BrickColor</Word>
+      <Word>Vector2</Word>
+      <Word>Vector3</Word>
+      <Word>Vector2int16</Word>
+      <Word>Vector3int16</Word>
+      <Word>version</Word>
+      <Word>Color3</Word>
+      <Word>collectgarbage</Word>
+      <Word>getmetatable</Word>
+      <Word>setmetatable</Word>
+      <Word>CFrame</Word>
+      <Word>coroutine</Word>
+      <Word>pcall</Word>
+      <Word>xpcall</Word>
+      <Word>ypcall</Word>
+      <Word>printidentity</Word>
+      <Word>unpack</Word>
+      <Word>UDim</Word>
+      <Word>UDim2</Word>
+      <Word>utf8</Word>
+      <Word>tostring</Word>
+      <Word>tonumber</Word>
+      <Word>tick</Word>
+      <Word>type</Word>
+      <Word>typeof</Word>
+      <Word>time</Word>
+      <Word>require</Word>
+      <Word>rawget</Word>
+      <Word>rawequal</Word>
+      <Word>rawlen</Word>
+      <Word>rawset</Word>
+      <Word>Region3</Word>
+      <Word>Region3int16</Word>
+      <Word>Random</Word>
+      <Word>Ray</Word>
+      <Word>RaycastParams</Word>
+      <Word>Enum</Word>
+      <Word>request</Word>
+      <Word>newcclosure</Word>
+      <Word>newlclosure</Word>
+      <Word>getsupportedfunctions</Word>
+      <Word>getuniquefunctions</Word>
+      <Word>isluau</Word>
+      <Word>istaaprclosure</Word>
+      <Word>isexecutorclosure</Word>
+      <Word>getexecutorname</Word>
+      <Word>identifyexecutor</Word>
+      <Word>getidentity</Word>
+      <Word>setidentity</Word>
+      <Word>getthreadidentity</Word>
+      <Word>setthreadidentity</Word>
+      <Word>getthreadcontext</Word>
+      <Word>setthreadcontext</Word>
+      <Word>fireproximityprompt</Word>
+      <Word>clonefunction</Word>
+      <Word>getcallingscript</Word>
+      <Word>getobjects</Word>
+      <Word>httpget</Word>
+      <Word>gamecrash</Word>
+      <Word>mouse1down</Word>
+      <Word>mouse1up</Word>
+      <Word>mouse1click</Word>
+      <Word>mouse2down</Word>
+      <Word>mouse2up</Word>
+      <Word>mouse2click</Word>
+      <Word>keydown</Word>
+      <Word>keyup</Word>
+      <Word>keyclick</Word>
+      <Word>getgenv</Word>
+      <Word>getrenv</Word>
+      <Word>getsenv</Word>
+      <Word>getmenv</Word>
+      <Word>getreg</Word>
+      <Word>loadstring</Word>
+      <Word>getrunningscripts</Word>
+      <Word>getmodulescripts</Word>
+      <Word>getloadedmodules</Word>
+      <Word>getscripts</Word>
+      <Word>checkcaller</Word>
+      <Word>randomstring</Word>
+      <Word>getclipboard</Word>
+      <Word>setclipboard</Word>
+      <Word>getclipboard</Word>
+      <Word>getthread</Word>
+      <Word>getaddress</Word>
+      <Word>getinstanceaddress</Word>
+      <Word>__debugbreak</Word>
+      <Word>readfile</Word>
+      <Word>isfile</Word>
+      <Word>listfiles</Word>
+      <Word>writefile</Word>
+      <Word>makefolder</Word>
+      <Word>appendfile</Word>
+      <Word>isfolder</Word>
+      <Word>delfile</Word>
+      <Word>delfolder</Word>
+      <Word>loadfile</Word>
+      <Word>dofile</Word>
+      <Word>getfpscap</Word>
+      <Word>setfpscap</Word>
+      <Word>listfolders</Word>
+      <Word>gettop</Word>
+      <Word>settop</Word>
+      <Word>Drawing</Word>
+      <Word>getrenderproperty</Word>
+      <Word>setrenderproperty</Word>
+      <Word>tohex</Word>
+      <Word>getnilinstances</Word>
+      <Word>gethash</Word>
+      <Word>sethash</Word>
+      <Word>messagebox</Word>
+      <Word>rconsoleprint</Word>
+      <Word>rconsolewarn</Word>
+      <Word>rconsoleerr</Word>
+      <Word>rconsoleinfo</Word>
+      <Word>rconsolesettitle</Word>
+      <Word>rconsolecreate</Word>
+      <Word>rconsoledestroy</Word>
+      <Word>consoleprint</Word>
+      <Word>consolewarn</Word>
+      <Word>consoleerr</Word>
+      <Word>consoleinfo</Word>
+      <Word>consolesettitle</Word>
+      <Word>consolecreate</Word>
+      <Word>consoledestroy</Word>
+      <Word>rconsoleinput</Word>
+      <Word>consoleinput</Word>
+      <Word>mousescroll</Word>
+      <Word>mousemoverel</Word>
+      <Word>mousemoveabs</Word>
+      <Word>isrbxactive</Word>
+      <Word>rawprint</Word>
+      <Word>getrawmetatable</Word>
+      <Word>setrawmetatable</Word>
+      <Word>getnamecallmethod</Word>
+      <Word>setnamecallmethod</Word>
+      <Word>hookmetamethod</Word>
+      <Word>safehookmetamethod</Word>
+      <Word>getsimulationradius</Word>
+      <Word>getsimradius</Word>
+      <Word>setsimulationradius</Word>
+      <Word>setsimradius</Word>
+    </Keywords>
+
+    <Keywords color="Visibility">
+      <Word>local</Word>
+    </Keywords>
+
+    <Keywords color="NilKeyword">
+      <Word>nil</Word>
+    </Keywords>
+
+    <!-- Mark previous rule-->
+    <Rule color="MethodCall">
+      \b
+      [\d\w_]+  # an identifier
+      (?=\s*\() # followed by (
+    </Rule>
+    <Rule color="MethodCall">
+      \b
+      [\d\w_]+  # an identifier
+      (?=\s*\") # followed by "
+    </Rule>
+    <Rule color="MethodCall">
+      \b
+      [\d\w_]+  # an identifier
+      (?=\s*\') # followed by '
+    </Rule>
+    <Rule color="MethodCall">
+      \b
+      [\d\w_]+  # an identifier
+      (?=\s*\{) # followed by {
+    </Rule>
+    <Rule color="MethodIndex">
+      \b
+      [\d\w_]+  # an identifier
+      (?=\s*\[) # followed by [
+    </Rule>
+	  <Rule color="MethodIndex">
+      \b
+      [\d\w_]+  # an identifier
+      (?=\s*\.[^\.]) # followed by . but not ..
+    </Rule>
+
+    <Rule color="Punctuation">
+      [?,.;()\[\]{}+\-/%*&lt;&gt;^+~!|&amp;]+
+    </Rule>
+  </RuleSet>
+</SyntaxDefinition>

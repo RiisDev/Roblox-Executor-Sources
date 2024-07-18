@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="Main.cpp" />
+    <ClCompile Include="Scheduler.cpp">
+      <Filter>Scheduler</Filter>
+    </ClCompile>
+    <ClCompile Include="Execution.cpp">
+      <Filter>Execution</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Execution">
+      <UniqueIdentifier>{84c063d0-b89d-4063-9a26-c4ea6b849a3a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Roblox">
+      <UniqueIdentifier>{494c74d0-6866-4df9-90a5-4e045e546c14}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Scheduler">
+      <UniqueIdentifier>{ff474c05-2153-4a99-8b23-abdfea3afdf3}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Scheduler.hpp">
+      <Filter>Scheduler</Filter>
+    </ClInclude>
+    <ClInclude Include="Execution.hpp">
+      <Filter>Execution</Filter>
+    </ClInclude>
+    <ClInclude Include="Roblox.hpp">
+      <Filter>Roblox</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>

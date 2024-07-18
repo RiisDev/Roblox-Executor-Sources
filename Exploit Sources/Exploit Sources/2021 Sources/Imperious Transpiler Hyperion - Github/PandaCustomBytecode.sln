@@ -1,0 +1,37 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30503.244
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Imperious Transpiler", "Imperious Transpiler.vcxproj", "{BC21689E-CEE6-4B32-AA3E-4AE98F5E3B94}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|ARM = Debug|ARM
+		Debug|x64 = Debug|x64
+		Debug|x86 = Debug|x86
+		Release|ARM = Release|ARM
+		Release|x64 = Release|x64
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{BC21689E-CEE6-4B32-AA3E-4AE98F5E3B94}.Debug|ARM.ActiveCfg = Debug|ARM
+		{BC21689E-CEE6-4B32-AA3E-4AE98F5E3B94}.Debug|ARM.Build.0 = Debug|ARM
+		{BC21689E-CEE6-4B32-AA3E-4AE98F5E3B94}.Debug|x64.ActiveCfg = Debug|x64
+		{BC21689E-CEE6-4B32-AA3E-4AE98F5E3B94}.Debug|x64.Build.0 = Debug|x64
+		{BC21689E-CEE6-4B32-AA3E-4AE98F5E3B94}.Debug|x86.ActiveCfg = Debug|Win32
+		{BC21689E-CEE6-4B32-AA3E-4AE98F5E3B94}.Debug|x86.Build.0 = Debug|Win32
+		{BC21689E-CEE6-4B32-AA3E-4AE98F5E3B94}.Release|ARM.ActiveCfg = Release|ARM
+		{BC21689E-CEE6-4B32-AA3E-4AE98F5E3B94}.Release|ARM.Build.0 = Release|ARM
+		{BC21689E-CEE6-4B32-AA3E-4AE98F5E3B94}.Release|x64.ActiveCfg = Release|x64
+		{BC21689E-CEE6-4B32-AA3E-4AE98F5E3B94}.Release|x64.Build.0 = Release|x64
+		{BC21689E-CEE6-4B32-AA3E-4AE98F5E3B94}.Release|x86.ActiveCfg = Release|Win32
+		{BC21689E-CEE6-4B32-AA3E-4AE98F5E3B94}.Release|x86.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {1DF1DCCD-365B-4D26-BEC2-888140A1E242}
+	EndGlobalSection
+EndGlobal

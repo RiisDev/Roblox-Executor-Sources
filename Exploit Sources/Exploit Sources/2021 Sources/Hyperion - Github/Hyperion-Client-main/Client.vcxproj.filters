@@ -1,0 +1,526 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="hyperion">
+      <UniqueIdentifier>{df4a1e76-a424-4015-afec-cee6c3feea13}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="hyperion\main">
+      <UniqueIdentifier>{037fe317-8fc9-4f1f-84e1-3a240de3ba1f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="hyperion\roblox">
+      <UniqueIdentifier>{cedd5563-c754-4c09-bdac-01a2ce77ca57}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="hyperion\roblox\bypasses">
+      <UniqueIdentifier>{ca53ec03-6a92-4170-840a-2b0ba6c73298}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="hyperion\roblox\bypasses\console">
+      <UniqueIdentifier>{7e546187-ed6f-4149-924a-07a195c13de7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="hyperion\roblox\datamodel">
+      <UniqueIdentifier>{4cc0e311-ae9e-4bab-9979-3c268a969cc8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="hyperion\roblox\offsets">
+      <UniqueIdentifier>{4e3693c1-3229-481f-8e33-af7bf818fe65}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="hyperion\roblox\state">
+      <UniqueIdentifier>{4233a1fb-68d4-43b4-b84c-d0775721a284}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="hyperion\roblox\vmthook">
+      <UniqueIdentifier>{bae298e0-ffa8-46f2-8646-ea8bb5aa101d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="hyperion\roblox\bypasses\returncheck">
+      <UniqueIdentifier>{04ecc9a0-a12c-4b59-9b5e-9fc221f2d1e5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="hyperion\roblox\bypasses\callcheck">
+      <UniqueIdentifier>{df6a5011-757f-43b1-a394-4817b91cdc0b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="hyperion\roblox\bypasses\exceptionfilter">
+      <UniqueIdentifier>{46bcceed-bb0c-4098-b668-df2f696f01a3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="hyperion\roblox\environment">
+      <UniqueIdentifier>{01b0fe68-4999-457c-9aa4-dd1833ab80ee}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="hyperion\compiler">
+      <UniqueIdentifier>{4227b914-789c-4eb9-96d1-a7043f2f6d0c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="hyperion\compiler\lexer">
+      <UniqueIdentifier>{7944c6d0-fdce-4911-82ce-3b6b1be8dac0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="hyperion\compiler\lexer\lexeme">
+      <UniqueIdentifier>{c8ffed56-9554-451f-8065-fa661b229890}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="hyperion\compiler\parser">
+      <UniqueIdentifier>{0283503e-c933-4a61-b736-315587c85144}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="hyperion\compiler\ir">
+      <UniqueIdentifier>{b71ab2a7-543b-468c-b299-edc3eb061281}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="hyperion\compiler\ir\ast">
+      <UniqueIdentifier>{83112342-8f1f-45fe-b9be-ca9ee26dd41f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="hyperion\utils">
+      <UniqueIdentifier>{189444bf-2d7d-4307-b4bc-d6e16b447a32}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="hyperion\utils\error">
+      <UniqueIdentifier>{74245af4-71fd-4042-9936-2460f91030fb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="hyperion\compiler\codegen">
+      <UniqueIdentifier>{bbb14c13-2952-429d-8251-0ea9d62d91a3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="hyperion\compiler\codegen\chunk">
+      <UniqueIdentifier>{c54f2533-a233-4c4c-a403-0a0208c5a5f8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="hyperion\compiler\serializer">
+      <UniqueIdentifier>{d104ce67-ec5b-46b4-b71e-6743cfebd532}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="hyperion\compiler\serializer\writer">
+      <UniqueIdentifier>{61bfa34e-cca1-480f-9e37-033e9a4e219d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="hyperion\roblox\execution">
+      <UniqueIdentifier>{ed60cb36-8fdf-400d-9c1d-8d386e257be2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="hyperion\roblox\bypasses\istainted">
+      <UniqueIdentifier>{21415d7a-00a2-499e-8eb0-b54b3c6bd0fa}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="hyperion\renderer">
+      <UniqueIdentifier>{5c134f91-58c8-46bc-aff4-1137a783717a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="hyperion\imgui">
+      <UniqueIdentifier>{423c99d1-02b9-4654-818c-e195ff0a9e6b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="hyperion\transpiler">
+      <UniqueIdentifier>{3541139d-0834-4722-ac08-bcf928e83884}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="hyperion\transpiler\writer">
+      <UniqueIdentifier>{dc7ba326-8729-4af9-a5bd-d5813159dc70}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="hyperion\transpiler\instruction_conversion">
+      <UniqueIdentifier>{9ed0a111-6b37-47b4-80ad-b563594497bb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="hyperion\transpiler\serializer">
+      <UniqueIdentifier>{4e327a74-fbce-4a1c-a056-0c0ec24d6039}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="hyperion\lua">
+      <UniqueIdentifier>{9681150b-40a7-45a2-a0c3-3b6a25a80f2c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="hyperion\roblox\taskscheduler">
+      <UniqueIdentifier>{be176387-22c4-479b-8d70-3c176272788a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="hyperion\roblox\lualibs">
+      <UniqueIdentifier>{15f50dd3-7a66-4a0f-aba6-6d199eb73f05}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="hyperion\roblox\globals">
+      <UniqueIdentifier>{67085c47-d97f-4f48-8bb0-fbfcb13f26d6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="hyperion\curl">
+      <UniqueIdentifier>{8f66713b-7a97-4f25-aca7-f219c341d6fa}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="hyperion\entry_point.cpp">
+      <Filter>hyperion</Filter>
+    </ClCompile>
+    <ClCompile Include="hyperion\main\main.cpp">
+      <Filter>hyperion\main</Filter>
+    </ClCompile>
+    <ClCompile Include="hyperion\roblox\datamodel\datamodel.cpp">
+      <Filter>hyperion\roblox\datamodel</Filter>
+    </ClCompile>
+    <ClCompile Include="hyperion\roblox\taskscheduler\taskscheduler.cpp">
+      <Filter>hyperion\roblox\taskscheduler</Filter>
+    </ClCompile>
+    <ClCompile Include="hyperion\roblox\vmthook\vmthook.cpp">
+      <Filter>hyperion\roblox\vmthook</Filter>
+    </ClCompile>
+    <ClCompile Include="hyperion\roblox\bypasses\callcheck\callcheck.cpp">
+      <Filter>hyperion\roblox\bypasses\callcheck</Filter>
+    </ClCompile>
+    <ClCompile Include="hyperion\roblox\bypasses\exceptionfilter\exceptionfilter.cpp">
+      <Filter>hyperion\roblox\bypasses\exceptionfilter</Filter>
+    </ClCompile>
+    <ClCompile Include="hyperion\roblox\environment\environment.cpp">
+      <Filter>hyperion\roblox\environment</Filter>
+    </ClCompile>
+    <ClCompile Include="hyperion\compiler\Lexer\lexer.cpp">
+      <Filter>hyperion\compiler\lexer</Filter>
+    </ClCompile>
+    <ClCompile Include="hyperion\compiler\Parser\parser.cpp">
+      <Filter>hyperion\compiler\parser</Filter>
+    </ClCompile>
+    <ClCompile Include="hyperion\compiler\IR\AST\ast.cpp">
+      <Filter>hyperion\compiler\ir\ast</Filter>
+    </ClCompile>
+    <ClCompile Include="hyperion\compiler\CodeGen\codegen.cpp">
+      <Filter>hyperion\compiler\codegen</Filter>
+    </ClCompile>
+    <ClCompile Include="hyperion\compiler\Serializer\serializer.cpp">
+      <Filter>hyperion\compiler\serializer</Filter>
+    </ClCompile>
+    <ClCompile Include="hyperion\roblox\execution\execution.cpp">
+      <Filter>hyperion\roblox\execution</Filter>
+    </ClCompile>
+    <ClCompile Include="hyperion\roblox\bypasses\returncheck\returncheck.cpp">
+      <Filter>hyperion\roblox\bypasses\returncheck</Filter>
+    </ClCompile>
+    <ClCompile Include="hyperion\roblox\globals\globals.cpp">
+      <Filter>hyperion\roblox\globals</Filter>
+    </ClCompile>
+    <ClCompile Include="hyperion\roblox\bypasses\istainted\istainted.cpp">
+      <Filter>hyperion\roblox\bypasses\istainted</Filter>
+    </ClCompile>
+    <ClCompile Include="hyperion\renderer\renderer.cpp">
+      <Filter>hyperion\renderer</Filter>
+    </ClCompile>
+    <ClCompile Include="hyperion\imgui\imgui_impl_win32.cpp">
+      <Filter>hyperion\imgui</Filter>
+    </ClCompile>
+    <ClCompile Include="hyperion\imgui\imgui_tables.cpp">
+      <Filter>hyperion\imgui</Filter>
+    </ClCompile>
+    <ClCompile Include="hyperion\imgui\imgui_widgets.cpp">
+      <Filter>hyperion\imgui</Filter>
+    </ClCompile>
+    <ClCompile Include="hyperion\imgui\imgui.cpp">
+      <Filter>hyperion\imgui</Filter>
+    </ClCompile>
+    <ClCompile Include="hyperion\imgui\imgui_demo.cpp">
+      <Filter>hyperion\imgui</Filter>
+    </ClCompile>
+    <ClCompile Include="hyperion\imgui\imgui_draw.cpp">
+      <Filter>hyperion\imgui</Filter>
+    </ClCompile>
+    <ClCompile Include="hyperion\imgui\imgui_impl_dx11.cpp">
+      <Filter>hyperion\imgui</Filter>
+    </ClCompile>
+    <ClCompile Include="hyperion\imgui\texteditor.cpp">
+      <Filter>hyperion\imgui</Filter>
+    </ClCompile>
+    <ClCompile Include="hyperion\transpiler\instruction_conversion\instruction_conversion.cpp">
+      <Filter>hyperion\transpiler\instruction_conversion</Filter>
+    </ClCompile>
+    <ClCompile Include="hyperion\lua\ldo.c">
+      <Filter>hyperion\lua</Filter>
+    </ClCompile>
+    <ClCompile Include="hyperion\lua\ldump.c">
+      <Filter>hyperion\lua</Filter>
+    </ClCompile>
+    <ClCompile Include="hyperion\lua\lfunc.c">
+      <Filter>hyperion\lua</Filter>
+    </ClCompile>
+    <ClCompile Include="hyperion\lua\lgc.c">
+      <Filter>hyperion\lua</Filter>
+    </ClCompile>
+    <ClCompile Include="hyperion\lua\linit.c">
+      <Filter>hyperion\lua</Filter>
+    </ClCompile>
+    <ClCompile Include="hyperion\lua\liolib.c">
+      <Filter>hyperion\lua</Filter>
+    </ClCompile>
+    <ClCompile Include="hyperion\lua\llex.c">
+      <Filter>hyperion\lua</Filter>
+    </ClCompile>
+    <ClCompile Include="hyperion\lua\lmathlib.c">
+      <Filter>hyperion\lua</Filter>
+    </ClCompile>
+    <ClCompile Include="hyperion\lua\lmem.c">
+      <Filter>hyperion\lua</Filter>
+    </ClCompile>
+    <ClCompile Include="hyperion\lua\loadlib.c">
+      <Filter>hyperion\lua</Filter>
+    </ClCompile>
+    <ClCompile Include="hyperion\lua\lobject.c">
+      <Filter>hyperion\lua</Filter>
+    </ClCompile>
+    <ClCompile Include="hyperion\lua\lopcodes.c">
+      <Filter>hyperion\lua</Filter>
+    </ClCompile>
+    <ClCompile Include="hyperion\lua\loslib.c">
+      <Filter>hyperion\lua</Filter>
+    </ClCompile>
+    <ClCompile Include="hyperion\lua\lparser.c">
+      <Filter>hyperion\lua</Filter>
+    </ClCompile>
+    <ClCompile Include="hyperion\lua\lstate.c">
+      <Filter>hyperion\lua</Filter>
+    </ClCompile>
+    <ClCompile Include="hyperion\lua\lstring.c">
+      <Filter>hyperion\lua</Filter>
+    </ClCompile>
+    <ClCompile Include="hyperion\lua\lstrlib.c">
+      <Filter>hyperion\lua</Filter>
+    </ClCompile>
+    <ClCompile Include="hyperion\lua\ltable.c">
+      <Filter>hyperion\lua</Filter>
+    </ClCompile>
+    <ClCompile Include="hyperion\lua\ltablib.c">
+      <Filter>hyperion\lua</Filter>
+    </ClCompile>
+    <ClCompile Include="hyperion\lua\ltm.c">
+      <Filter>hyperion\lua</Filter>
+    </ClCompile>
+    <ClCompile Include="hyperion\lua\lundump.c">
+      <Filter>hyperion\lua</Filter>
+    </ClCompile>
+    <ClCompile Include="hyperion\lua\lvm.c">
+      <Filter>hyperion\lua</Filter>
+    </ClCompile>
+    <ClCompile Include="hyperion\lua\lzio.c">
+      <Filter>hyperion\lua</Filter>
+    </ClCompile>
+    <ClCompile Include="hyperion\lua\print.c">
+      <Filter>hyperion\lua</Filter>
+    </ClCompile>
+    <ClCompile Include="hyperion\lua\lapi.c">
+      <Filter>hyperion\lua</Filter>
+    </ClCompile>
+    <ClCompile Include="hyperion\lua\lauxlib.c">
+      <Filter>hyperion\lua</Filter>
+    </ClCompile>
+    <ClCompile Include="hyperion\lua\lbaselib.c">
+      <Filter>hyperion\lua</Filter>
+    </ClCompile>
+    <ClCompile Include="hyperion\lua\lcode.c">
+      <Filter>hyperion\lua</Filter>
+    </ClCompile>
+    <ClCompile Include="hyperion\lua\ldblib.c">
+      <Filter>hyperion\lua</Filter>
+    </ClCompile>
+    <ClCompile Include="hyperion\lua\ldebug.c">
+      <Filter>hyperion\lua</Filter>
+    </ClCompile>
+    <ClCompile Include="hyperion\transpiler\serializer\bytecode_serializer.cpp">
+      <Filter>hyperion\transpiler\serializer</Filter>
+    </ClCompile>
+    <ClCompile Include="hyperion\roblox\lualibs\drawlib.cpp">
+      <Filter>hyperion\roblox\lualibs</Filter>
+    </ClCompile>
+    <ClCompile Include="hyperion\roblox\lualibs\objectmapper.cpp">
+      <Filter>hyperion\roblox\lualibs</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="hyperion\main\main.hpp">
+      <Filter>hyperion\main</Filter>
+    </ClInclude>
+    <ClInclude Include="hyperion\roblox\bypasses\console\console.hpp">
+      <Filter>hyperion\roblox\bypasses\console</Filter>
+    </ClInclude>
+    <ClInclude Include="hyperion\roblox\datamodel\datamodel.hpp">
+      <Filter>hyperion\roblox\datamodel</Filter>
+    </ClInclude>
+    <ClInclude Include="hyperion\roblox\offsets\offsets.hpp">
+      <Filter>hyperion\roblox\offsets</Filter>
+    </ClInclude>
+    <ClInclude Include="hyperion\roblox\state\state.hpp">
+      <Filter>hyperion\roblox\state</Filter>
+    </ClInclude>
+    <ClInclude Include="hyperion\roblox\taskscheduler\taskscheduler.hpp">
+      <Filter>hyperion\roblox\taskscheduler</Filter>
+    </ClInclude>
+    <ClInclude Include="hyperion\roblox\vmthook\vmthook.hpp">
+      <Filter>hyperion\roblox\vmthook</Filter>
+    </ClInclude>
+    <ClInclude Include="hyperion\roblox\bypasses\returncheck\returncheck.hpp">
+      <Filter>hyperion\roblox\bypasses\returncheck</Filter>
+    </ClInclude>
+    <ClInclude Include="hyperion\roblox\bypasses\callcheck\callcheck.hpp">
+      <Filter>hyperion\roblox\bypasses\callcheck</Filter>
+    </ClInclude>
+    <ClInclude Include="hyperion\roblox\bypasses\exceptionfilter\expectionfilter.hpp">
+      <Filter>hyperion\roblox\bypasses\exceptionfilter</Filter>
+    </ClInclude>
+    <ClInclude Include="hyperion\roblox\environment\environment.hpp">
+      <Filter>hyperion\roblox\environment</Filter>
+    </ClInclude>
+    <ClInclude Include="hyperion\compiler\Lexer\lexer.hpp">
+      <Filter>hyperion\compiler\lexer</Filter>
+    </ClInclude>
+    <ClInclude Include="hyperion\compiler\Lexer\Lexeme\lexeme.hpp">
+      <Filter>hyperion\compiler\lexer\lexeme</Filter>
+    </ClInclude>
+    <ClInclude Include="hyperion\compiler\Parser\parser.hpp">
+      <Filter>hyperion\compiler\parser</Filter>
+    </ClInclude>
+    <ClInclude Include="hyperion\compiler\IR\AST\ast.hpp">
+      <Filter>hyperion\compiler\ir\ast</Filter>
+    </ClInclude>
+    <ClInclude Include="hyperion\utils\Error\error.hpp">
+      <Filter>hyperion\utils\error</Filter>
+    </ClInclude>
+    <ClInclude Include="hyperion\compiler\CodeGen\codegen.hpp">
+      <Filter>hyperion\compiler\codegen</Filter>
+    </ClInclude>
+    <ClInclude Include="hyperion\compiler\CodeGen\Chunk\chunk.hpp">
+      <Filter>hyperion\compiler\codegen\chunk</Filter>
+    </ClInclude>
+    <ClInclude Include="hyperion\compiler\Serializer\Writer\writer.hpp">
+      <Filter>hyperion\compiler\serializer\writer</Filter>
+    </ClInclude>
+    <ClInclude Include="hyperion\compiler\Serializer\serializer.hpp">
+      <Filter>hyperion\compiler\serializer</Filter>
+    </ClInclude>
+    <ClInclude Include="hyperion\roblox\execution\execution.hpp">
+      <Filter>hyperion\roblox\execution</Filter>
+    </ClInclude>
+    <ClInclude Include="hyperion\roblox\globals\globals.hpp">
+      <Filter>hyperion\roblox\globals</Filter>
+    </ClInclude>
+    <ClInclude Include="hyperion\roblox\bypasses\istainted\istainted.hpp">
+      <Filter>hyperion\roblox\bypasses\istainted</Filter>
+    </ClInclude>
+    <ClInclude Include="hyperion\renderer\renderer.hpp">
+      <Filter>hyperion\renderer</Filter>
+    </ClInclude>
+    <ClInclude Include="hyperion\imgui\imgui_impl_dx11.h">
+      <Filter>hyperion\imgui</Filter>
+    </ClInclude>
+    <ClInclude Include="hyperion\imgui\imgui_impl_win32.h">
+      <Filter>hyperion\imgui</Filter>
+    </ClInclude>
+    <ClInclude Include="hyperion\imgui\imgui_internal.h">
+      <Filter>hyperion\imgui</Filter>
+    </ClInclude>
+    <ClInclude Include="hyperion\imgui\imstb_rectpack.h">
+      <Filter>hyperion\imgui</Filter>
+    </ClInclude>
+    <ClInclude Include="hyperion\imgui\imstb_textedit.h">
+      <Filter>hyperion\imgui</Filter>
+    </ClInclude>
+    <ClInclude Include="hyperion\imgui\imstb_truetype.h">
+      <Filter>hyperion\imgui</Filter>
+    </ClInclude>
+    <ClInclude Include="hyperion\imgui\imconfig.h">
+      <Filter>hyperion\imgui</Filter>
+    </ClInclude>
+    <ClInclude Include="hyperion\imgui\imgui.h">
+      <Filter>hyperion\imgui</Filter>
+    </ClInclude>
+    <ClInclude Include="hyperion\imgui\texteditor.hpp">
+      <Filter>hyperion\imgui</Filter>
+    </ClInclude>
+    <ClInclude Include="hyperion\transpiler\instruction_conversion\instruction_conversion.hpp">
+      <Filter>hyperion\transpiler\instruction_conversion</Filter>
+    </ClInclude>
+    <ClInclude Include="hyperion\transpiler\writer\writer.hpp">
+      <Filter>hyperion\transpiler\writer</Filter>
+    </ClInclude>
+    <ClInclude Include="hyperion\lua\ldo.h">
+      <Filter>hyperion\lua</Filter>
+    </ClInclude>
+    <ClInclude Include="hyperion\lua\lfunc.h">
+      <Filter>hyperion\lua</Filter>
+    </ClInclude>
+    <ClInclude Include="hyperion\lua\lgc.h">
+      <Filter>hyperion\lua</Filter>
+    </ClInclude>
+    <ClInclude Include="hyperion\lua\llex.h">
+      <Filter>hyperion\lua</Filter>
+    </ClInclude>
+    <ClInclude Include="hyperion\lua\llimits.h">
+      <Filter>hyperion\lua</Filter>
+    </ClInclude>
+    <ClInclude Include="hyperion\lua\lmem.h">
+      <Filter>hyperion\lua</Filter>
+    </ClInclude>
+    <ClInclude Include="hyperion\lua\lobject.h">
+      <Filter>hyperion\lua</Filter>
+    </ClInclude>
+    <ClInclude Include="hyperion\lua\lopcodes.h">
+      <Filter>hyperion\lua</Filter>
+    </ClInclude>
+    <ClInclude Include="hyperion\lua\lparser.h">
+      <Filter>hyperion\lua</Filter>
+    </ClInclude>
+    <ClInclude Include="hyperion\lua\lstate.h">
+      <Filter>hyperion\lua</Filter>
+    </ClInclude>
+    <ClInclude Include="hyperion\lua\lstring.h">
+      <Filter>hyperion\lua</Filter>
+    </ClInclude>
+    <ClInclude Include="hyperion\lua\ltable.h">
+      <Filter>hyperion\lua</Filter>
+    </ClInclude>
+    <ClInclude Include="hyperion\lua\ltm.h">
+      <Filter>hyperion\lua</Filter>
+    </ClInclude>
+    <ClInclude Include="hyperion\lua\lua.h">
+      <Filter>hyperion\lua</Filter>
+    </ClInclude>
+    <ClInclude Include="hyperion\lua\luaconf.h">
+      <Filter>hyperion\lua</Filter>
+    </ClInclude>
+    <ClInclude Include="hyperion\lua\lualib.h">
+      <Filter>hyperion\lua</Filter>
+    </ClInclude>
+    <ClInclude Include="hyperion\lua\lundump.h">
+      <Filter>hyperion\lua</Filter>
+    </ClInclude>
+    <ClInclude Include="hyperion\lua\lvm.h">
+      <Filter>hyperion\lua</Filter>
+    </ClInclude>
+    <ClInclude Include="hyperion\lua\lzio.h">
+      <Filter>hyperion\lua</Filter>
+    </ClInclude>
+    <ClInclude Include="hyperion\lua\lapi.h">
+      <Filter>hyperion\lua</Filter>
+    </ClInclude>
+    <ClInclude Include="hyperion\lua\lauxlib.h">
+      <Filter>hyperion\lua</Filter>
+    </ClInclude>
+    <ClInclude Include="hyperion\lua\lcode.h">
+      <Filter>hyperion\lua</Filter>
+    </ClInclude>
+    <ClInclude Include="hyperion\lua\ldebug.h">
+      <Filter>hyperion\lua</Filter>
+    </ClInclude>
+    <ClInclude Include="hyperion\transpiler\serializer\bytecode_serializer.hpp">
+      <Filter>hyperion\transpiler\serializer</Filter>
+    </ClInclude>
+    <ClInclude Include="hyperion\roblox\lualibs\drawlib.hpp">
+      <Filter>hyperion\roblox\lualibs</Filter>
+    </ClInclude>
+    <ClInclude Include="hyperion\curl\easy.h">
+      <Filter>hyperion\curl</Filter>
+    </ClInclude>
+    <ClInclude Include="hyperion\curl\mprintf.h">
+      <Filter>hyperion\curl</Filter>
+    </ClInclude>
+    <ClInclude Include="hyperion\curl\multi.h">
+      <Filter>hyperion\curl</Filter>
+    </ClInclude>
+    <ClInclude Include="hyperion\curl\stdcheaders.h">
+      <Filter>hyperion\curl</Filter>
+    </ClInclude>
+    <ClInclude Include="hyperion\curl\system.h">
+      <Filter>hyperion\curl</Filter>
+    </ClInclude>
+    <ClInclude Include="hyperion\curl\typecheck-gcc.h">
+      <Filter>hyperion\curl</Filter>
+    </ClInclude>
+    <ClInclude Include="hyperion\curl\urlapi.h">
+      <Filter>hyperion\curl</Filter>
+    </ClInclude>
+    <ClInclude Include="hyperion\curl\curl.h">
+      <Filter>hyperion\curl</Filter>
+    </ClInclude>
+    <ClInclude Include="hyperion\curl\curlver.h">
+      <Filter>hyperion\curl</Filter>
+    </ClInclude>
+    <ClInclude Include="hyperion\utils\request.hpp">
+      <Filter>hyperion\utils</Filter>
+    </ClInclude>
+    <ClInclude Include="hyperion\roblox\lualibs\objectmapper.hpp">
+      <Filter>hyperion\roblox\lualibs</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="hyperion\lua\Makefile">
+      <Filter>hyperion\lua</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Library Include="hyperion\curl\libcurl_a.lib">
+      <Filter>hyperion\curl</Filter>
+    </Library>
+  </ItemGroup>
+</Project>

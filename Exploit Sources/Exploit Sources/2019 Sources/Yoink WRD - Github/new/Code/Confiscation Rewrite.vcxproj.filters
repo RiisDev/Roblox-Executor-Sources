@@ -1,0 +1,356 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="FW1FontWrapper\CFW1ColorRGBA.cpp">
+      <Filter>Stuff</Filter>
+    </ClCompile>
+    <ClCompile Include="FW1FontWrapper\CFW1ColorRGBAInterface.cpp">
+      <Filter>Stuff</Filter>
+    </ClCompile>
+    <ClCompile Include="FW1FontWrapper\CFW1DWriteRenderTarget.cpp">
+      <Filter>Stuff</Filter>
+    </ClCompile>
+    <ClCompile Include="FW1FontWrapper\CFW1DWriteRenderTargetInterface.cpp">
+      <Filter>Stuff</Filter>
+    </ClCompile>
+    <ClCompile Include="FW1FontWrapper\CFW1Factory.cpp">
+      <Filter>Stuff</Filter>
+    </ClCompile>
+    <ClCompile Include="FW1FontWrapper\CFW1FactoryInterface.cpp">
+      <Filter>Stuff</Filter>
+    </ClCompile>
+    <ClCompile Include="FW1FontWrapper\CFW1FontWrapper.cpp">
+      <Filter>Stuff</Filter>
+    </ClCompile>
+    <ClCompile Include="FW1FontWrapper\CFW1FontWrapperInterface.cpp">
+      <Filter>Stuff</Filter>
+    </ClCompile>
+    <ClCompile Include="FW1FontWrapper\CFW1GlyphAtlas.cpp">
+      <Filter>Stuff</Filter>
+    </ClCompile>
+    <ClCompile Include="FW1FontWrapper\CFW1GlyphAtlasInterface.cpp">
+      <Filter>Stuff</Filter>
+    </ClCompile>
+    <ClCompile Include="FW1FontWrapper\CFW1GlyphProvider.cpp">
+      <Filter>Stuff</Filter>
+    </ClCompile>
+    <ClCompile Include="FW1FontWrapper\CFW1GlyphProviderInterface.cpp">
+      <Filter>Stuff</Filter>
+    </ClCompile>
+    <ClCompile Include="FW1FontWrapper\CFW1GlyphRenderStates.cpp">
+      <Filter>Stuff</Filter>
+    </ClCompile>
+    <ClCompile Include="FW1FontWrapper\CFW1GlyphRenderStatesInterface.cpp">
+      <Filter>Stuff</Filter>
+    </ClCompile>
+    <ClCompile Include="FW1FontWrapper\CFW1GlyphSheet.cpp">
+      <Filter>Stuff</Filter>
+    </ClCompile>
+    <ClCompile Include="FW1FontWrapper\CFW1GlyphSheetInterface.cpp">
+      <Filter>Stuff</Filter>
+    </ClCompile>
+    <ClCompile Include="FW1FontWrapper\CFW1GlyphVertexDrawer.cpp">
+      <Filter>Stuff</Filter>
+    </ClCompile>
+    <ClCompile Include="FW1FontWrapper\CFW1GlyphVertexDrawerInterface.cpp">
+      <Filter>Stuff</Filter>
+    </ClCompile>
+    <ClCompile Include="FW1FontWrapper\CFW1StateSaver.cpp">
+      <Filter>Stuff</Filter>
+    </ClCompile>
+    <ClCompile Include="FW1FontWrapper\CFW1TextGeometry.cpp">
+      <Filter>Stuff</Filter>
+    </ClCompile>
+    <ClCompile Include="FW1FontWrapper\CFW1TextGeometryInterface.cpp">
+      <Filter>Stuff</Filter>
+    </ClCompile>
+    <ClCompile Include="FW1FontWrapper\CFW1TextRenderer.cpp">
+      <Filter>Stuff</Filter>
+    </ClCompile>
+    <ClCompile Include="FW1FontWrapper\CFW1TextRendererInterface.cpp">
+      <Filter>Stuff</Filter>
+    </ClCompile>
+    <ClCompile Include="FW1FontWrapper\FW1FontWrapper.cpp">
+      <Filter>Stuff</Filter>
+    </ClCompile>
+    <ClCompile Include="FW1FontWrapper\FW1Precompiled.cpp">
+      <Filter>Stuff</Filter>
+    </ClCompile>
+    <ClCompile Include="ImGUI\imgui.cpp">
+      <Filter>Stuff</Filter>
+    </ClCompile>
+    <ClCompile Include="ImGUI\imgui_demo.cpp">
+      <Filter>Stuff</Filter>
+    </ClCompile>
+    <ClCompile Include="ImGUI\imgui_draw.cpp">
+      <Filter>Stuff</Filter>
+    </ClCompile>
+    <ClCompile Include="ImGUI\imgui_impl_dx11.cpp">
+      <Filter>Stuff</Filter>
+    </ClCompile>
+    <ClCompile Include="Lua\lapi.c">
+      <Filter>Stuff</Filter>
+    </ClCompile>
+    <ClCompile Include="Lua\lauxlib.c">
+      <Filter>Stuff</Filter>
+    </ClCompile>
+    <ClCompile Include="Lua\lbaselib.c">
+      <Filter>Stuff</Filter>
+    </ClCompile>
+    <ClCompile Include="Lua\lcode.c">
+      <Filter>Stuff</Filter>
+    </ClCompile>
+    <ClCompile Include="Lua\ldblib.c">
+      <Filter>Stuff</Filter>
+    </ClCompile>
+    <ClCompile Include="Lua\ldebug.c">
+      <Filter>Stuff</Filter>
+    </ClCompile>
+    <ClCompile Include="Lua\ldo.c">
+      <Filter>Stuff</Filter>
+    </ClCompile>
+    <ClCompile Include="Lua\ldump.c">
+      <Filter>Stuff</Filter>
+    </ClCompile>
+    <ClCompile Include="Lua\lfunc.c">
+      <Filter>Stuff</Filter>
+    </ClCompile>
+    <ClCompile Include="Lua\lgc.c">
+      <Filter>Stuff</Filter>
+    </ClCompile>
+    <ClCompile Include="Lua\linit.c">
+      <Filter>Stuff</Filter>
+    </ClCompile>
+    <ClCompile Include="Lua\liolib.c">
+      <Filter>Stuff</Filter>
+    </ClCompile>
+    <ClCompile Include="Lua\llex.c">
+      <Filter>Stuff</Filter>
+    </ClCompile>
+    <ClCompile Include="Lua\lmathlib.c">
+      <Filter>Stuff</Filter>
+    </ClCompile>
+    <ClCompile Include="Lua\lmem.c">
+      <Filter>Stuff</Filter>
+    </ClCompile>
+    <ClCompile Include="Lua\loadlib.c">
+      <Filter>Stuff</Filter>
+    </ClCompile>
+    <ClCompile Include="Lua\lobject.c">
+      <Filter>Stuff</Filter>
+    </ClCompile>
+    <ClCompile Include="Lua\lopcodes.c">
+      <Filter>Stuff</Filter>
+    </ClCompile>
+    <ClCompile Include="Lua\loslib.c">
+      <Filter>Stuff</Filter>
+    </ClCompile>
+    <ClCompile Include="Lua\lparser.c">
+      <Filter>Stuff</Filter>
+    </ClCompile>
+    <ClCompile Include="Lua\lstate.c">
+      <Filter>Stuff</Filter>
+    </ClCompile>
+    <ClCompile Include="Lua\lstring.c">
+      <Filter>Stuff</Filter>
+    </ClCompile>
+    <ClCompile Include="Lua\lstrlib.c">
+      <Filter>Stuff</Filter>
+    </ClCompile>
+    <ClCompile Include="Lua\ltable.c">
+      <Filter>Stuff</Filter>
+    </ClCompile>
+    <ClCompile Include="Lua\ltablib.c">
+      <Filter>Stuff</Filter>
+    </ClCompile>
+    <ClCompile Include="Lua\ltm.c">
+      <Filter>Stuff</Filter>
+    </ClCompile>
+    <ClCompile Include="Lua\lundump.c">
+      <Filter>Stuff</Filter>
+    </ClCompile>
+    <ClCompile Include="Lua\lvm.c">
+      <Filter>Stuff</Filter>
+    </ClCompile>
+    <ClCompile Include="Lua\lzio.c">
+      <Filter>Stuff</Filter>
+    </ClCompile>
+    <ClCompile Include="Main.cpp" />
+    <ClCompile Include="Auth\SHA\sha.cpp">
+      <Filter>Auth\SHA</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="LuaWrapper.hpp" />
+    <ClInclude Include="MinHook\MinHook.h" />
+    <ClInclude Include="RetCheck.hpp" />
+    <ClInclude Include="Util.hpp" />
+    <ClInclude Include="FW1FontWrapper\CFW1ColorRGBA.h">
+      <Filter>Stuff</Filter>
+    </ClInclude>
+    <ClInclude Include="FW1FontWrapper\CFW1DWriteRenderTarget.h">
+      <Filter>Stuff</Filter>
+    </ClInclude>
+    <ClInclude Include="FW1FontWrapper\CFW1Factory.h">
+      <Filter>Stuff</Filter>
+    </ClInclude>
+    <ClInclude Include="FW1FontWrapper\CFW1FontWrapper.h">
+      <Filter>Stuff</Filter>
+    </ClInclude>
+    <ClInclude Include="FW1FontWrapper\CFW1GlyphAtlas.h">
+      <Filter>Stuff</Filter>
+    </ClInclude>
+    <ClInclude Include="FW1FontWrapper\CFW1GlyphProvider.h">
+      <Filter>Stuff</Filter>
+    </ClInclude>
+    <ClInclude Include="FW1FontWrapper\CFW1GlyphRenderStates.h">
+      <Filter>Stuff</Filter>
+    </ClInclude>
+    <ClInclude Include="FW1FontWrapper\CFW1GlyphSheet.h">
+      <Filter>Stuff</Filter>
+    </ClInclude>
+    <ClInclude Include="FW1FontWrapper\CFW1GlyphVertexDrawer.h">
+      <Filter>Stuff</Filter>
+    </ClInclude>
+    <ClInclude Include="FW1FontWrapper\CFW1Object.h">
+      <Filter>Stuff</Filter>
+    </ClInclude>
+    <ClInclude Include="FW1FontWrapper\CFW1StateSaver.h">
+      <Filter>Stuff</Filter>
+    </ClInclude>
+    <ClInclude Include="FW1FontWrapper\CFW1TextGeometry.h">
+      <Filter>Stuff</Filter>
+    </ClInclude>
+    <ClInclude Include="FW1FontWrapper\CFW1TextRenderer.h">
+      <Filter>Stuff</Filter>
+    </ClInclude>
+    <ClInclude Include="FW1FontWrapper\FW1CompileSettings.h">
+      <Filter>Stuff</Filter>
+    </ClInclude>
+    <ClInclude Include="FW1FontWrapper\FW1FontWrapper.h">
+      <Filter>Stuff</Filter>
+    </ClInclude>
+    <ClInclude Include="FW1FontWrapper\FW1Precompiled.h">
+      <Filter>Stuff</Filter>
+    </ClInclude>
+    <ClInclude Include="ImGUI\imconfig.h">
+      <Filter>Stuff</Filter>
+    </ClInclude>
+    <ClInclude Include="ImGUI\imgui.h">
+      <Filter>Stuff</Filter>
+    </ClInclude>
+    <ClInclude Include="ImGUI\imgui_impl_dx11.h">
+      <Filter>Stuff</Filter>
+    </ClInclude>
+    <ClInclude Include="ImGUI\imgui_internal.h">
+      <Filter>Stuff</Filter>
+    </ClInclude>
+    <ClInclude Include="Lua\lapi.h">
+      <Filter>Stuff</Filter>
+    </ClInclude>
+    <ClInclude Include="Lua\lauxlib.h">
+      <Filter>Stuff</Filter>
+    </ClInclude>
+    <ClInclude Include="Lua\lcode.h">
+      <Filter>Stuff</Filter>
+    </ClInclude>
+    <ClInclude Include="Lua\ldebug.h">
+      <Filter>Stuff</Filter>
+    </ClInclude>
+    <ClInclude Include="Lua\ldo.h">
+      <Filter>Stuff</Filter>
+    </ClInclude>
+    <ClInclude Include="Lua\lfunc.h">
+      <Filter>Stuff</Filter>
+    </ClInclude>
+    <ClInclude Include="Lua\lgc.h">
+      <Filter>Stuff</Filter>
+    </ClInclude>
+    <ClInclude Include="Lua\llex.h">
+      <Filter>Stuff</Filter>
+    </ClInclude>
+    <ClInclude Include="Lua\llimits.h">
+      <Filter>Stuff</Filter>
+    </ClInclude>
+    <ClInclude Include="Lua\lmem.h">
+      <Filter>Stuff</Filter>
+    </ClInclude>
+    <ClInclude Include="Lua\lobject.h">
+      <Filter>Stuff</Filter>
+    </ClInclude>
+    <ClInclude Include="Lua\lopcodes.h">
+      <Filter>Stuff</Filter>
+    </ClInclude>
+    <ClInclude Include="Lua\lparser.h">
+      <Filter>Stuff</Filter>
+    </ClInclude>
+    <ClInclude Include="Lua\lstate.h">
+      <Filter>Stuff</Filter>
+    </ClInclude>
+    <ClInclude Include="Lua\lstring.h">
+      <Filter>Stuff</Filter>
+    </ClInclude>
+    <ClInclude Include="Lua\ltable.h">
+      <Filter>Stuff</Filter>
+    </ClInclude>
+    <ClInclude Include="Lua\ltm.h">
+      <Filter>Stuff</Filter>
+    </ClInclude>
+    <ClInclude Include="Lua\lua.h">
+      <Filter>Stuff</Filter>
+    </ClInclude>
+    <ClInclude Include="Lua\lua.hpp">
+      <Filter>Stuff</Filter>
+    </ClInclude>
+    <ClInclude Include="Lua\luaconf.h">
+      <Filter>Stuff</Filter>
+    </ClInclude>
+    <ClInclude Include="Lua\lualib.h">
+      <Filter>Stuff</Filter>
+    </ClInclude>
+    <ClInclude Include="Lua\lundump.h">
+      <Filter>Stuff</Filter>
+    </ClInclude>
+    <ClInclude Include="Lua\lvm.h">
+      <Filter>Stuff</Filter>
+    </ClInclude>
+    <ClInclude Include="Lua\lzio.h">
+      <Filter>Stuff</Filter>
+    </ClInclude>
+    <ClInclude Include="ImGUI\stb_rect_pack.h">
+      <Filter>Stuff</Filter>
+    </ClInclude>
+    <ClInclude Include="ImGUI\stb_textedit.h">
+      <Filter>Stuff</Filter>
+    </ClInclude>
+    <ClInclude Include="ImGUI\stb_truetype.h">
+      <Filter>Stuff</Filter>
+    </ClInclude>
+    <ClInclude Include="InternalUI.h" />
+    <ClInclude Include="VMProtectSDK.h" />
+    <ClInclude Include="Console.h" />
+    <ClInclude Include="MouseLib.h" />
+    <ClInclude Include="Address.hpp" />
+    <ClInclude Include="Auth.h" />
+    <ClInclude Include="Auth\SHA\sha.h">
+      <Filter>Auth\SHA</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Stuff">
+      <UniqueIdentifier>{62494248-ba30-4c53-bf29-e5091edf0bd7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Auth">
+      <UniqueIdentifier>{178b901e-dc82-4f77-a688-9eca9a5cbcd9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Auth\SHA">
+      <UniqueIdentifier>{1e8b2380-8702-4b7d-b71f-1ab245cb1d5b}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <Library Include="MinHook\libMinHook.x86.lib">
+      <Filter>Stuff</Filter>
+    </Library>
+    <Library Include="VMProtectSDK32.lib" />
+  </ItemGroup>
+</Project>

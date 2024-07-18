@@ -1,0 +1,98 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;c++;cppm;ixx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;h++;hm;inl;inc;ipp;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Header Files\include">
+      <UniqueIdentifier>{6e7f156b-e2fa-4327-a366-06e65ac0a39d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\library">
+      <UniqueIdentifier>{d5c4e7a7-2362-4d0c-b679-3b8986423b19}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\include\Luau">
+      <UniqueIdentifier>{e5e20028-578c-4043-80f5-280f7e735ce8}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="dllmain.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="luavm_load_hook.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="roblox.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="luavm_load_hook.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\luacode.h">
+      <Filter>Header Files\include</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Luau\Confusables.h">
+      <Filter>Header Files\include\Luau</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Luau\DenseHash.h">
+      <Filter>Header Files\include\Luau</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Luau\ExperimentalFlags.h">
+      <Filter>Header Files\include\Luau</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Luau\Lexer.h">
+      <Filter>Header Files\include\Luau</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Luau\Location.h">
+      <Filter>Header Files\include\Luau</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Luau\ParseOptions.h">
+      <Filter>Header Files\include\Luau</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Luau\Parser.h">
+      <Filter>Header Files\include\Luau</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Luau\ParseResult.h">
+      <Filter>Header Files\include\Luau</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Luau\StringUtils.h">
+      <Filter>Header Files\include\Luau</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Luau\TimeTrace.h">
+      <Filter>Header Files\include\Luau</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Luau\Ast.h">
+      <Filter>Header Files\include\Luau</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Luau\Bytecode.h">
+      <Filter>Header Files\include\Luau</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Luau\BytecodeBuilder.h">
+      <Filter>Header Files\include\Luau</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Luau\Common.h">
+      <Filter>Header Files\include\Luau</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Luau\Compiler.h">
+      <Filter>Header Files\include\Luau</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Library Include="library\Luau.Ast.lib">
+      <Filter>Header Files\library</Filter>
+    </Library>
+    <Library Include="library\Luau.Compiler.lib">
+      <Filter>Header Files\library</Filter>
+    </Library>
+  </ItemGroup>
+</Project>

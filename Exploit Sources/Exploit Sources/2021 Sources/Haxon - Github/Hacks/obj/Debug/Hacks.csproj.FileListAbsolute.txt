@@ -1,0 +1,10 @@
+c:\users\dezfo\documents\visual studio 2017\Projects\Hacks\Hacks\bin\Debug\Hacks.exe.config
+c:\users\dezfo\documents\visual studio 2017\Projects\Hacks\Hacks\bin\Debug\Hacks.exe
+c:\users\dezfo\documents\visual studio 2017\Projects\Hacks\Hacks\bin\Debug\Hacks.pdb
+c:\users\dezfo\documents\visual studio 2017\Projects\Hacks\Hacks\obj\Debug\Hacks.csprojResolveAssemblyReference.cache
+c:\users\dezfo\documents\visual studio 2017\Projects\Hacks\Hacks\obj\Debug\Hacks.Properties.Resources.resources
+c:\users\dezfo\documents\visual studio 2017\Projects\Hacks\Hacks\obj\Debug\Hacks.csproj.GenerateResource.Cache
+c:\users\dezfo\documents\visual studio 2017\Projects\Hacks\Hacks\obj\Debug\Hacks.exe
+c:\users\dezfo\documents\visual studio 2017\Projects\Hacks\Hacks\obj\Debug\Hacks.pdb
+c:\users\dezfo\documents\visual studio 2017\Projects\Hacks\Hacks\obj\Debug\Hacks.HaxonWindow.resources
+c:\users\dezfo\documents\visual studio 2017\Projects\Hacks\Hacks\obj\Debug\Hacks.TermsOfUse.resources

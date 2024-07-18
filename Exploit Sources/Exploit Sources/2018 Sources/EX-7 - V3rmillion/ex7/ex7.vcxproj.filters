@@ -1,0 +1,245 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Header Files\LuaCore">
+      <UniqueIdentifier>{1b0e335c-0f65-496d-9766-14a4e9637402}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Main">
+      <UniqueIdentifier>{366f4267-cd0e-4cef-93b9-d9180bf7521e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\ROBLOX">
+      <UniqueIdentifier>{95617b06-ee32-49a0-ac03-b451739ec818}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Utilities">
+      <UniqueIdentifier>{e951daac-bc39-4043-86b8-133d2f3c116b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Extra">
+      <UniqueIdentifier>{f20cbdaa-09e8-4bff-ad31-3fffb347729c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\lz4">
+      <UniqueIdentifier>{c02ffcd1-33f0-4042-ac83-a6b66ef86a9a}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="ReadMe.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="lapi.c">
+      <Filter>Header Files\LuaCore</Filter>
+    </ClCompile>
+    <ClCompile Include="lcode.c">
+      <Filter>Header Files\LuaCore</Filter>
+    </ClCompile>
+    <ClCompile Include="ldebug.c">
+      <Filter>Header Files\LuaCore</Filter>
+    </ClCompile>
+    <ClCompile Include="ldo.c">
+      <Filter>Header Files\LuaCore</Filter>
+    </ClCompile>
+    <ClCompile Include="ldump.c">
+      <Filter>Header Files\LuaCore</Filter>
+    </ClCompile>
+    <ClCompile Include="lfunc.c">
+      <Filter>Header Files\LuaCore</Filter>
+    </ClCompile>
+    <ClCompile Include="lgc.c">
+      <Filter>Header Files\LuaCore</Filter>
+    </ClCompile>
+    <ClCompile Include="llex.c">
+      <Filter>Header Files\LuaCore</Filter>
+    </ClCompile>
+    <ClCompile Include="lmem.c">
+      <Filter>Header Files\LuaCore</Filter>
+    </ClCompile>
+    <ClCompile Include="lobject.c">
+      <Filter>Header Files\LuaCore</Filter>
+    </ClCompile>
+    <ClCompile Include="lopcodes.c">
+      <Filter>Header Files\LuaCore</Filter>
+    </ClCompile>
+    <ClCompile Include="lparser.c">
+      <Filter>Header Files\LuaCore</Filter>
+    </ClCompile>
+    <ClCompile Include="lstate.c">
+      <Filter>Header Files\LuaCore</Filter>
+    </ClCompile>
+    <ClCompile Include="lstring.c">
+      <Filter>Header Files\LuaCore</Filter>
+    </ClCompile>
+    <ClCompile Include="ltable.c">
+      <Filter>Header Files\LuaCore</Filter>
+    </ClCompile>
+    <ClCompile Include="ltm.c">
+      <Filter>Header Files\LuaCore</Filter>
+    </ClCompile>
+    <ClCompile Include="lundump.c">
+      <Filter>Header Files\LuaCore</Filter>
+    </ClCompile>
+    <ClCompile Include="lvm.c">
+      <Filter>Header Files\LuaCore</Filter>
+    </ClCompile>
+    <ClCompile Include="lzio.c">
+      <Filter>Header Files\LuaCore</Filter>
+    </ClCompile>
+    <ClCompile Include="lz4.c">
+      <Filter>Header Files\lz4</Filter>
+    </ClCompile>
+    <ClCompile Include="lz4hc.c">
+      <Filter>Header Files\lz4</Filter>
+    </ClCompile>
+    <ClCompile Include="xxhash.c">
+      <Filter>Header Files\lz4</Filter>
+    </ClCompile>
+    <ClCompile Include="OpcodeEncryption.cpp">
+      <Filter>Header Files\ROBLOX</Filter>
+    </ClCompile>
+    <ClCompile Include="form.cpp">
+      <Filter>Header Files\Main</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="EX7.h">
+      <Filter>Header Files\Extra</Filter>
+    </ClInclude>
+    <ClInclude Include="form.h">
+      <Filter>Header Files\Extra</Filter>
+    </ClInclude>
+    <ClInclude Include="Functions.h">
+      <Filter>Header Files\Extra</Filter>
+    </ClInclude>
+    <ClInclude Include="lapi.h">
+      <Filter>Header Files\LuaCore</Filter>
+    </ClInclude>
+    <ClInclude Include="lauxlib.h">
+      <Filter>Header Files\LuaCore</Filter>
+    </ClInclude>
+    <ClInclude Include="lcode.h">
+      <Filter>Header Files\LuaCore</Filter>
+    </ClInclude>
+    <ClInclude Include="ldebug.h">
+      <Filter>Header Files\LuaCore</Filter>
+    </ClInclude>
+    <ClInclude Include="ldo.h">
+      <Filter>Header Files\LuaCore</Filter>
+    </ClInclude>
+    <ClInclude Include="lfunc.h">
+      <Filter>Header Files\LuaCore</Filter>
+    </ClInclude>
+    <ClInclude Include="lgc.h">
+      <Filter>Header Files\LuaCore</Filter>
+    </ClInclude>
+    <ClInclude Include="llex.h">
+      <Filter>Header Files\LuaCore</Filter>
+    </ClInclude>
+    <ClInclude Include="llimits.h">
+      <Filter>Header Files\LuaCore</Filter>
+    </ClInclude>
+    <ClInclude Include="lmem.h">
+      <Filter>Header Files\LuaCore</Filter>
+    </ClInclude>
+    <ClInclude Include="lobject.h">
+      <Filter>Header Files\LuaCore</Filter>
+    </ClInclude>
+    <ClInclude Include="lopcodes.h">
+      <Filter>Header Files\LuaCore</Filter>
+    </ClInclude>
+    <ClInclude Include="lparser.h">
+      <Filter>Header Files\LuaCore</Filter>
+    </ClInclude>
+    <ClInclude Include="lstate.h">
+      <Filter>Header Files\LuaCore</Filter>
+    </ClInclude>
+    <ClInclude Include="lstring.h">
+      <Filter>Header Files\LuaCore</Filter>
+    </ClInclude>
+    <ClInclude Include="ltable.h">
+      <Filter>Header Files\LuaCore</Filter>
+    </ClInclude>
+    <ClInclude Include="ltm.h">
+      <Filter>Header Files\LuaCore</Filter>
+    </ClInclude>
+    <ClInclude Include="lua.h">
+      <Filter>Header Files\LuaCore</Filter>
+    </ClInclude>
+    <ClInclude Include="luaconf.h">
+      <Filter>Header Files\LuaCore</Filter>
+    </ClInclude>
+    <ClInclude Include="lualib.h">
+      <Filter>Header Files\LuaCore</Filter>
+    </ClInclude>
+    <ClInclude Include="lundump.h">
+      <Filter>Header Files\LuaCore</Filter>
+    </ClInclude>
+    <ClInclude Include="lvm.h">
+      <Filter>Header Files\LuaCore</Filter>
+    </ClInclude>
+    <ClInclude Include="lzio.h">
+      <Filter>Header Files\LuaCore</Filter>
+    </ClInclude>
+    <ClInclude Include="lz4.h">
+      <Filter>Header Files\lz4</Filter>
+    </ClInclude>
+    <ClInclude Include="lz4hc.h">
+      <Filter>Header Files\lz4</Filter>
+    </ClInclude>
+    <ClInclude Include="lz4hc_encoder.h">
+      <Filter>Header Files\lz4</Filter>
+    </ClInclude>
+    <ClInclude Include="xxhash.h">
+      <Filter>Header Files\lz4</Filter>
+    </ClInclude>
+    <ClInclude Include="DenseHash.h">
+      <Filter>Header Files\ROBLOX</Filter>
+    </ClInclude>
+    <ClInclude Include="OpcodeEncryption.h">
+      <Filter>Header Files\ROBLOX</Filter>
+    </ClInclude>
+    <ClInclude Include="Serializer.h">
+      <Filter>Header Files\ROBLOX</Filter>
+    </ClInclude>
+    <ClInclude Include="Globals.h">
+      <Filter>Header Files\Main</Filter>
+    </ClInclude>
+    <ClInclude Include="Memory.h">
+      <Filter>Header Files\Utilities</Filter>
+    </ClInclude>
+    <ClInclude Include="Retcheck.h">
+      <Filter>Header Files\Utilities</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="ex7.rc">
+      <Filter>Resource Files</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="..\..\..\..\..\Pictures\ex7.ico">
+      <Filter>Resource Files</Filter>
+    </Image>
+  </ItemGroup>
+  <ItemGroup>
+    <Library Include="..\..\..\..\..\Desktop\Stuff\vmp3\Lib\Windows\VMProtectSDK32.lib">
+      <Filter>Header Files\Extra</Filter>
+    </Library>
+    <Library Include="lua5.1.lib">
+      <Filter>Header Files\LuaCore</Filter>
+    </Library>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="lua5.1.dll">
+      <Filter>Header Files\LuaCore</Filter>
+    </None>
+  </ItemGroup>
+</Project>

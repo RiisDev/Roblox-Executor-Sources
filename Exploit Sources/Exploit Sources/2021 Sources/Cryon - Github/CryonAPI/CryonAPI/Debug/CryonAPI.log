@@ -1,0 +1,26 @@
+﻿  Main.cpp
+C:\Users\qvold\source\repos\CryonAPI\CryonAPI\r_lua.h(1106,82): warning C4554: '>>': check operator precedence for possible error; use parentheses to clarify precedence
+C:\Users\qvold\source\repos\CryonAPI\CryonAPI\Bridge.h(173,32): warning C4838: conversion from 'int' to 'const char' requires a narrowing conversion
+C:\Users\qvold\source\repos\CryonAPI\CryonAPI\Bridge.h(173,32): warning C4309: 'initializing': truncation of constant value
+C:\Users\qvold\source\repos\CryonAPI\CryonAPI\Bridge.h(173,38): warning C4838: conversion from 'int' to 'const char' requires a narrowing conversion
+C:\Users\qvold\source\repos\CryonAPI\CryonAPI\Bridge.h(173,38): warning C4309: 'initializing': truncation of constant value
+C:\Users\qvold\source\repos\CryonAPI\CryonAPI\Bridge.h(173,44): warning C4838: conversion from 'int' to 'const char' requires a narrowing conversion
+C:\Users\qvold\source\repos\CryonAPI\CryonAPI\Bridge.h(173,44): warning C4309: 'initializing': truncation of constant value
+C:\Users\qvold\source\repos\CryonAPI\CryonAPI\Bridge.h(173,50): warning C4838: conversion from 'int' to 'const char' requires a narrowing conversion
+C:\Users\qvold\source\repos\CryonAPI\CryonAPI\Bridge.h(173,50): warning C4309: 'initializing': truncation of constant value
+C:\Users\qvold\source\repos\CryonAPI\CryonAPI\Bridge.h(173,56): warning C4838: conversion from 'int' to 'const char' requires a narrowing conversion
+C:\Users\qvold\source\repos\CryonAPI\CryonAPI\Bridge.h(173,56): warning C4309: 'initializing': truncation of constant value
+C:\Users\qvold\source\repos\CryonAPI\CryonAPI\Bridge.h(173,62): warning C4838: conversion from 'int' to 'const char' requires a narrowing conversion
+C:\Users\qvold\source\repos\CryonAPI\CryonAPI\Bridge.h(173,62): warning C4309: 'initializing': truncation of constant value
+C:\Users\qvold\source\repos\CryonAPI\CryonAPI\Bridge.h(173,68): warning C4838: conversion from 'int' to 'const char' requires a narrowing conversion
+C:\Users\qvold\source\repos\CryonAPI\CryonAPI\Bridge.h(173,68): warning C4309: 'initializing': truncation of constant value
+C:\Users\qvold\source\repos\CryonAPI\CryonAPI\Bridge.h(173,74): warning C4838: conversion from 'int' to 'const char' requires a narrowing conversion
+C:\Users\qvold\source\repos\CryonAPI\CryonAPI\Bridge.h(173,74): warning C4309: 'initializing': truncation of constant value
+C:\Users\qvold\source\repos\CryonAPI\CryonAPI\Bridge.h(349,11): warning C4244: 'initializing': conversion from 'lua_Number' to 'int', possible loss of data
+C:\Users\qvold\source\repos\CryonAPI\CryonAPI\Bridge.h(358,31): warning C4002: too many arguments for function-like macro invocation 'r_lua_tostring'
+C:\Users\qvold\source\repos\CryonAPI\CryonAPI\Bridge.h(398,11): warning C4244: 'initializing': conversion from 'double' to 'int', possible loss of data
+C:\Users\qvold\source\repos\CryonAPI\CryonAPI\Main.cpp(285,20): warning C4018: '<': signed/unsigned mismatch
+C:\Users\qvold\source\repos\CryonAPI\CryonAPI\Main.cpp(305,1): warning C4326: return type of 'main' should be 'int' instead of 'void'
+C:\Users\qvold\source\repos\CryonAPI\CryonAPI\Main.cpp(110): warning C4715: 'input': not all control paths return a value
+C:\Users\qvold\source\repos\CryonAPI\CryonAPI\Main.cpp(255): warning C4715: 'FindFirstClass': not all control paths return a value
+  CryonAPI.vcxproj -> C:\Users\qvold\source\repos\CryonAPI\Debug\CryonAPI.dll

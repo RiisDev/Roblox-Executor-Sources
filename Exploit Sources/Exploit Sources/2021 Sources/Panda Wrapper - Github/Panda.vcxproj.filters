@@ -1,0 +1,390 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="DrawingAPI.cpp">
+      <Filter>Drawing Lib</Filter>
+    </ClCompile>
+    <ClCompile Include="ImGui\imgui.cpp">
+      <Filter>Others</Filter>
+    </ClCompile>
+    <ClCompile Include="ImGUIDrawing\imgui.cpp">
+      <Filter>Others</Filter>
+    </ClCompile>
+    <ClCompile Include="ImGui\imgui_demo.cpp">
+      <Filter>Others</Filter>
+    </ClCompile>
+    <ClCompile Include="ImGUIDrawing\imgui_demo.cpp">
+      <Filter>Others</Filter>
+    </ClCompile>
+    <ClCompile Include="ImGui\imgui_draw.cpp">
+      <Filter>Others</Filter>
+    </ClCompile>
+    <ClCompile Include="ImGUIDrawing\imgui_draw.cpp">
+      <Filter>Others</Filter>
+    </ClCompile>
+    <ClCompile Include="ImGUIDrawing\imgui_impl_dx9.cpp">
+      <Filter>Others</Filter>
+    </ClCompile>
+    <ClCompile Include="ImGui\imgui_impl_dx9.cpp">
+      <Filter>Others</Filter>
+    </ClCompile>
+    <ClCompile Include="ImGUIDrawing\imgui_impl_dx11.cpp">
+      <Filter>Others</Filter>
+    </ClCompile>
+    <ClCompile Include="ImGui\imgui_impl_dx11.cpp">
+      <Filter>Others</Filter>
+    </ClCompile>
+    <ClCompile Include="ImGUIDrawing\imgui_impl_win32.cpp">
+      <Filter>Others</Filter>
+    </ClCompile>
+    <ClCompile Include="ImGui\imgui_impl_win32.cpp">
+      <Filter>Others</Filter>
+    </ClCompile>
+    <ClCompile Include="ImGui\imgui_widgets.cpp">
+      <Filter>Others</Filter>
+    </ClCompile>
+    <ClCompile Include="ImGUIDrawing\imgui_widgets.cpp">
+      <Filter>Others</Filter>
+    </ClCompile>
+    <ClCompile Include="Lua\lapi.c">
+      <Filter>Others</Filter>
+    </ClCompile>
+    <ClCompile Include="Lua\lauxlib.c">
+      <Filter>Others</Filter>
+    </ClCompile>
+    <ClCompile Include="Lua\lbaselib.c">
+      <Filter>Others</Filter>
+    </ClCompile>
+    <ClCompile Include="Lua\lcode.c">
+      <Filter>Others</Filter>
+    </ClCompile>
+    <ClCompile Include="Lua\ldblib.c">
+      <Filter>Others</Filter>
+    </ClCompile>
+    <ClCompile Include="Lua\ldebug.c">
+      <Filter>Others</Filter>
+    </ClCompile>
+    <ClCompile Include="Lua\ldo.c">
+      <Filter>Others</Filter>
+    </ClCompile>
+    <ClCompile Include="Lua\ldump.c">
+      <Filter>Others</Filter>
+    </ClCompile>
+    <ClCompile Include="Lua\lfunc.c">
+      <Filter>Others</Filter>
+    </ClCompile>
+    <ClCompile Include="Lua\lgc.c">
+      <Filter>Others</Filter>
+    </ClCompile>
+    <ClCompile Include="Lua\linit.c">
+      <Filter>Others</Filter>
+    </ClCompile>
+    <ClCompile Include="Lua\liolib.c">
+      <Filter>Others</Filter>
+    </ClCompile>
+    <ClCompile Include="Lua\llex.c">
+      <Filter>Others</Filter>
+    </ClCompile>
+    <ClCompile Include="Lua\lmathlib.c">
+      <Filter>Others</Filter>
+    </ClCompile>
+    <ClCompile Include="Lua\lmem.c">
+      <Filter>Others</Filter>
+    </ClCompile>
+    <ClCompile Include="Lua\loadlib.c">
+      <Filter>Others</Filter>
+    </ClCompile>
+    <ClCompile Include="Lua\lobject.c">
+      <Filter>Others</Filter>
+    </ClCompile>
+    <ClCompile Include="Lua\lopcodes.c">
+      <Filter>Others</Filter>
+    </ClCompile>
+    <ClCompile Include="Lua\loslib.c">
+      <Filter>Others</Filter>
+    </ClCompile>
+    <ClCompile Include="Lua\lparser.c">
+      <Filter>Others</Filter>
+    </ClCompile>
+    <ClCompile Include="Lua\lstate.c">
+      <Filter>Others</Filter>
+    </ClCompile>
+    <ClCompile Include="Lua\lstring.c">
+      <Filter>Others</Filter>
+    </ClCompile>
+    <ClCompile Include="Lua\lstrlib.c">
+      <Filter>Others</Filter>
+    </ClCompile>
+    <ClCompile Include="Lua\ltable.c">
+      <Filter>Others</Filter>
+    </ClCompile>
+    <ClCompile Include="Lua\ltablib.c">
+      <Filter>Others</Filter>
+    </ClCompile>
+    <ClCompile Include="Lua\ltm.c">
+      <Filter>Others</Filter>
+    </ClCompile>
+    <ClCompile Include="Lua\lundump.c">
+      <Filter>Others</Filter>
+    </ClCompile>
+    <ClCompile Include="Lua\lvm.c">
+      <Filter>Others</Filter>
+    </ClCompile>
+    <ClCompile Include="Lua\lzio.c">
+      <Filter>Others</Filter>
+    </ClCompile>
+    <ClCompile Include="Main.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="CoreFunctions.h">
+      <Filter>Functions</Filter>
+    </ClInclude>
+    <ClInclude Include="Converter.h">
+      <Filter>Functions</Filter>
+    </ClInclude>
+    <ClInclude Include="DebugFunctions.h">
+      <Filter>Functions</Filter>
+    </ClInclude>
+    <ClInclude Include="DrawingLib.hpp">
+      <Filter>Drawing Lib</Filter>
+    </ClInclude>
+    <ClInclude Include="DrawingAPI.hpp">
+      <Filter>Drawing Lib</Filter>
+    </ClInclude>
+    <ClInclude Include="xorstring.h">
+      <Filter>Others</Filter>
+    </ClInclude>
+    <ClInclude Include="_G.h">
+      <Filter>Others</Filter>
+    </ClInclude>
+    <ClInclude Include="Base64Encryption.h">
+      <Filter>Others</Filter>
+    </ClInclude>
+    <ClInclude Include="Bit.h">
+      <Filter>Others</Filter>
+    </ClInclude>
+    <ClInclude Include="Cloak.h">
+      <Filter>Others</Filter>
+    </ClInclude>
+    <ClInclude Include="ConsoleColors.h">
+      <Filter>Others</Filter>
+    </ClInclude>
+    <ClInclude Include="curl\curl.h">
+      <Filter>Others</Filter>
+    </ClInclude>
+    <ClInclude Include="curl\curlver.h">
+      <Filter>Others</Filter>
+    </ClInclude>
+    <ClInclude Include="curl\easy.h">
+      <Filter>Others</Filter>
+    </ClInclude>
+    <ClInclude Include="ImGui\imconfig.h">
+      <Filter>Others</Filter>
+    </ClInclude>
+    <ClInclude Include="ImGUIDrawing\imconfig.h">
+      <Filter>Others</Filter>
+    </ClInclude>
+    <ClInclude Include="ImGui\imgui.h">
+      <Filter>Others</Filter>
+    </ClInclude>
+    <ClInclude Include="ImGUIDrawing\imgui.h">
+      <Filter>Others</Filter>
+    </ClInclude>
+    <ClInclude Include="ImGui\imgui_impl_dx9.h">
+      <Filter>Others</Filter>
+    </ClInclude>
+    <ClInclude Include="ImGUIDrawing\imgui_impl_dx9.h">
+      <Filter>Others</Filter>
+    </ClInclude>
+    <ClInclude Include="ImGui\imgui_impl_dx11.h">
+      <Filter>Others</Filter>
+    </ClInclude>
+    <ClInclude Include="ImGUIDrawing\imgui_impl_dx11.h">
+      <Filter>Others</Filter>
+    </ClInclude>
+    <ClInclude Include="ImGui\imgui_impl_win32.h">
+      <Filter>Others</Filter>
+    </ClInclude>
+    <ClInclude Include="ImGUIDrawing\imgui_impl_win32.h">
+      <Filter>Others</Filter>
+    </ClInclude>
+    <ClInclude Include="ImGui\imgui_internal.h">
+      <Filter>Others</Filter>
+    </ClInclude>
+    <ClInclude Include="ImGUIDrawing\imgui_internal.h">
+      <Filter>Others</Filter>
+    </ClInclude>
+    <ClInclude Include="ImGUIDrawing\imstb_rectpack.h">
+      <Filter>Others</Filter>
+    </ClInclude>
+    <ClInclude Include="ImGui\imstb_rectpack.h">
+      <Filter>Others</Filter>
+    </ClInclude>
+    <ClInclude Include="ImGUIDrawing\imstb_textedit.h">
+      <Filter>Others</Filter>
+    </ClInclude>
+    <ClInclude Include="ImGui\imstb_textedit.h">
+      <Filter>Others</Filter>
+    </ClInclude>
+    <ClInclude Include="ImGUIDrawing\imstb_truetype.h">
+      <Filter>Others</Filter>
+    </ClInclude>
+    <ClInclude Include="ImGui\imstb_truetype.h">
+      <Filter>Others</Filter>
+    </ClInclude>
+    <ClInclude Include="Lua\lapi.h">
+      <Filter>Others</Filter>
+    </ClInclude>
+    <ClInclude Include="Lua\lauxlib.h">
+      <Filter>Others</Filter>
+    </ClInclude>
+    <ClInclude Include="Lua\lcode.h">
+      <Filter>Others</Filter>
+    </ClInclude>
+    <ClInclude Include="Lua\ldebug.h">
+      <Filter>Others</Filter>
+    </ClInclude>
+    <ClInclude Include="Lua\ldo.h">
+      <Filter>Others</Filter>
+    </ClInclude>
+    <ClInclude Include="Lua\lfunc.h">
+      <Filter>Others</Filter>
+    </ClInclude>
+    <ClInclude Include="Lua\lgc.h">
+      <Filter>Others</Filter>
+    </ClInclude>
+    <ClInclude Include="Lua\llex.h">
+      <Filter>Others</Filter>
+    </ClInclude>
+    <ClInclude Include="Lua\llimits.h">
+      <Filter>Others</Filter>
+    </ClInclude>
+    <ClInclude Include="Lua\lmem.h">
+      <Filter>Others</Filter>
+    </ClInclude>
+    <ClInclude Include="Lua\lobject.h">
+      <Filter>Others</Filter>
+    </ClInclude>
+    <ClInclude Include="Lua\lopcodes.h">
+      <Filter>Others</Filter>
+    </ClInclude>
+    <ClInclude Include="Lua\lparser.h">
+      <Filter>Others</Filter>
+    </ClInclude>
+    <ClInclude Include="Lua\lstate.h">
+      <Filter>Others</Filter>
+    </ClInclude>
+    <ClInclude Include="Lua\lstring.h">
+      <Filter>Others</Filter>
+    </ClInclude>
+    <ClInclude Include="Lua\ltable.h">
+      <Filter>Others</Filter>
+    </ClInclude>
+    <ClInclude Include="Lua\ltm.h">
+      <Filter>Others</Filter>
+    </ClInclude>
+    <ClInclude Include="Lua\lua.h">
+      <Filter>Others</Filter>
+    </ClInclude>
+    <ClInclude Include="Lua\lua.hpp">
+      <Filter>Others</Filter>
+    </ClInclude>
+    <ClInclude Include="Lua\luaconf.h">
+      <Filter>Others</Filter>
+    </ClInclude>
+    <ClInclude Include="Lua\lualib.h">
+      <Filter>Others</Filter>
+    </ClInclude>
+    <ClInclude Include="Lua\lundump.h">
+      <Filter>Others</Filter>
+    </ClInclude>
+    <ClInclude Include="Lua\lvm.h">
+      <Filter>Others</Filter>
+    </ClInclude>
+    <ClInclude Include="Lua\lzio.h">
+      <Filter>Others</Filter>
+    </ClInclude>
+    <ClInclude Include="Minhook\MinHook.h">
+      <Filter>Others</Filter>
+    </ClInclude>
+    <ClInclude Include="mouselib.h">
+      <Filter>Others</Filter>
+    </ClInclude>
+    <ClInclude Include="curl\mprintf.h">
+      <Filter>Others</Filter>
+    </ClInclude>
+    <ClInclude Include="curl\multi.h">
+      <Filter>Others</Filter>
+    </ClInclude>
+    <ClInclude Include="RetCheck.h">
+      <Filter>Others</Filter>
+    </ClInclude>
+    <ClInclude Include="Rlua.h">
+      <Filter>Others</Filter>
+    </ClInclude>
+    <ClInclude Include="Scanner.h">
+      <Filter>Others</Filter>
+    </ClInclude>
+    <ClInclude Include="curl\stdcheaders.h">
+      <Filter>Others</Filter>
+    </ClInclude>
+    <ClInclude Include="Structs.hpp">
+      <Filter>Others</Filter>
+    </ClInclude>
+    <ClInclude Include="Stuffs.h">
+      <Filter>Others</Filter>
+    </ClInclude>
+    <ClInclude Include="curl\system.h">
+      <Filter>Others</Filter>
+    </ClInclude>
+    <ClInclude Include="TestFunctions.h">
+      <Filter>Others</Filter>
+    </ClInclude>
+    <ClInclude Include="Tools.h">
+      <Filter>Others</Filter>
+    </ClInclude>
+    <ClInclude Include="curl\typecheck-gcc.h">
+      <Filter>Others</Filter>
+    </ClInclude>
+    <ClInclude Include="unitdata.h">
+      <Filter>Others</Filter>
+    </ClInclude>
+    <ClInclude Include="curl\urlapi.h">
+      <Filter>Others</Filter>
+    </ClInclude>
+    <ClInclude Include="utf8.h">
+      <Filter>Others</Filter>
+    </ClInclude>
+    <ClInclude Include="Utils.h">
+      <Filter>Others</Filter>
+    </ClInclude>
+    <ClInclude Include="Wrapper.h">
+      <Filter>Others</Filter>
+    </ClInclude>
+    <ClInclude Include="Address.h">
+      <Filter>Others</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Library Include="curl\libcurl_a.lib">
+      <Filter>Others</Filter>
+    </Library>
+    <Library Include="Minhook\libMinHook.x86.lib">
+      <Filter>Others</Filter>
+    </Library>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Functions">
+      <UniqueIdentifier>{f1187596-55a0-4a99-b382-9329048a0a8f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Drawing Lib">
+      <UniqueIdentifier>{69aaef32-9c9f-40a2-873e-e01331f6a490}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Others">
+      <UniqueIdentifier>{6aafcc52-dbb7-42c2-87a8-3587ffac3f2a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Official Hosted+">
+      <UniqueIdentifier>{70ac349f-08ca-4f4e-b034-4f42b800e132}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

@@ -1,0 +1,16 @@
+sooooo i saw a lot of open source dlls and i thought of releasing one as well..
+
+LETS LET ROBLOX DIEEE THEY CANT STOP US FROM THE INLINE UPDATE
+
+this is a fully working luau script compiler that works until the end of time until roblox detects something...
+UPDATE THE ADDRESSSES addresses.h needs everything you need to know and update
+
+if you want custom functions then go to VM and edit the files with the structures and offsets
+happy 2023 easter.
+
+also plssss for the luvv of jessusssss (no pun) dont SKID or use this forever. use it as a learning base
+if i see ur shitskidsploit on the internet using my src ur done for
+
+enjoy life as it is. i might make v2 later on or smth idrk school is busy af
+I SPEED RUN THIS BCUZ FINAL EXAMS SO W
+thanks and bye - speed was here ;DDDDD

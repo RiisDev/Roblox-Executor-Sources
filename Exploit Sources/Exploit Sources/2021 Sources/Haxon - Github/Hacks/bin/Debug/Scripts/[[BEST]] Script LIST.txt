@@ -1,0 +1,122 @@
+- Racist Dolfin ESP
+https://raw.githubusercontent.com/ChaosityYT/GameScripts/master/Racist%20Dolphin%20ESP.txt
+
+- Infinite Yield Hub
+https://raw.githubusercontent.com/ChaosityYT/GameScripts/master/Infinite%20Yield%20Script%20Hub.txt
+
+- T0PK3K 4.0
+https://raw.githubusercontent.com/ChaosityYT/GameScripts/master/T0PK3K%204.0.txt
+
+- Reviz FE Admin
+https://raw.githubusercontent.com/ChaosityYT/GameScripts/master/Reviz%20FE%20Admin.txt
+
+- Dex V1
+loadstring(game:GetObjects('rbxassetid://2180084478')[1].Source)()
+
+- Jailbreak Autorob
+https://raw.githubusercontent.com/ChaosityYT/GameScripts/master/Jailbreak%20Autorob.txt
+
+- Mad City Dark Devs GUI
+https://raw.githubusercontent.com/ChaosityYT/GameScripts/master/Mad%20City%20Dark%20Devs%20GUI
+
+- Jailbreak Nodoors
+https://raw.githubusercontent.com/ChaosityYT/GameScripts/master/Jailbreak%20Nodoors.txt
+
+- Jailbreak Noclip
+https://raw.githubusercontent.com/ChaosityYT/GameScripts/master/Jailbreak%20Noclip.txt
+
+- Adopt Me Money Script
+https://raw.githubusercontent.com/ChaosityYT/GameScripts/master/Adopt%20Me%20Money%20Script.txt
+
+- MadCity Haxx0 GUI
+https://raw.githubusercontent.com/ChaosityYT/GameScripts/master/MadCity%20Haxx0%20GUI.txt
+
+- Bean Mad City GUI 
+https://raw.githubusercontent.com/ChaosityYT/GameScripts/master/Bean%20Mad%20City%20GUI.txt
+
+- Mad City Dark Devs GUI
+https://raw.githubusercontent.com/ChaosityYT/GameScripts/master/Mad%20City%20Dark%20Devs%20GUI.txt
+
+- MadReaper GUI
+https://raw.githubusercontent.com/ChaosityYT/GameScripts/master/MadReaper%20GUI.txt
+
+- MadFucker GUI
+https://raw.githubusercontent.com/ChaosityYT/GameScripts/master/MadFucker%20GUI.txt
+
+- Mad City Glare V2 GUI
+https://raw.githubusercontent.com/ChaosityYT/GameScripts/master/Mad%20City%20Glare%20V2%20GUI.txt
+
+- Mad City BossGRT GUI
+https://raw.githubusercontent.com/ChaosityYT/GameScripts/master/Mad%20City%20BossGRT%20GUI.txt
+
+- Mad City EfeStyle GUI
+https://raw.githubusercontent.com/ChaosityYT/GameScripts/master/Mad%20City%20EfeStyle%20GUI.txt
+
+- Mad City Hax GUI
+https://raw.githubusercontent.com/ChaosityYT/GameScripts/master/Mad%20City%20Hax%20GUI.txt
+
+- Dungeon Quest GUI
+https://raw.githubusercontent.com/ChaosityYT/GameScripts/master/Dungeon%20Quest%20GUI.txt
+
+- Murder Mystery 2 TryingFX GUI
+https://raw.githubusercontent.com/ChaosityYT/GameScripts/master/Murder%20Mystery%202%20TryingFX%20GUI.txt
+
+- Murder Mystery 2 PsyTools
+https://raw.githubusercontent.com/ChaosityYT/GameScripts/master/Murder%20Mystery%202%20PsyTools.txt
+
+- DukyBG Vehicle Simulator GUI
+https://raw.githubusercontent.com/ChaosityYT/GameScripts/master/DukyBG%20Vehicle%20Simulator%20GUI.txt
+
+- Build A Boat For Treasure RayanChehabHAX GUI
+https://raw.githubusercontent.com/ChaosityYT/GameScripts/master/Build%20A%20Boat%20For%20Treasure%20RayanChehabHAX%20GUI.txt
+
+- Arsenal ESP & Aimbot
+https://raw.githubusercontent.com/ChaosityYT/GameScripts/master/Arsenal%20ESP%20&%20Aimbot.txt
+
+- Booga Booga Polar Bear GUI
+https://raw.githubusercontent.com/ChaosityYT/GameScripts/master/Booga%20Booga%20Polar%20Bear%20GUI.txt
+
+- Lumber Tycoon 2 Harley GUI
+https://raw.githubusercontent.com/ChaosityYT/GameScripts/master/Lumber%20Tycoon%202%20Harley%20GUI.txt
+
+Lumber Tycoon 2 DrSTaTTiK GUI
+https://raw.githubusercontent.com/ChaosityYT/GameScripts/master/Lumber%20Tycoon%202%20DrSTaTTiK%20GUI.txt
+
+- Lumber Tycoon 2 Hailstone GUI
+https://raw.githubusercontent.com/ChaosityYT/GameScripts/master/Lumber%20Tycoon%202%20Hailstone%20GUI.txt
+
+- Flee The Facility Hamburghini GUI
+https://raw.githubusercontent.com/ChaosityYT/GameScripts/master/Flee%20The%20Facility%20Hamburghini%20GUI.txt
+
+- Pew Pew Simulator GUI
+https://raw.githubusercontent.com/ChaosityYT/GameScripts/master/Pew%20Pew%20Simulator%20GUI.txt
+
+- Dragon Ball Z Final Stand GUI
+https://raw.githubusercontent.com/ChaosityYT/GameScripts/master/Dragon%20Ball%20Z%20Final%20Stand%20GUI.txt
+
+- Counter Blox Aimbot
+https://raw.githubusercontent.com/ChaosityYT/GameScripts/master/Counter%20Blox%20Aimbot.txt
+
+- Vesteria GUI
+https://raw.githubusercontent.com/ChaosityYT/GameScripts/master/Vesteria%20GUI.txt
+
+- Infinity Heroes GUI
+https://raw.githubusercontent.com/ChaosityYT/GameScripts/master/Infinity%20Heroes%20GUI.txt
+
+- Charwar Electric State DarkRP GUI
+https://raw.githubusercontent.com/ChaosityYT/GameScripts/master/Charwar%20Electric%20State%20DarkRP%20GUI.txt
+
+- Wanted GUI
+https://raw.githubusercontent.com/ChaosityYT/GameScripts/master/Wanted%20GUI.txt
+
+- The Northern Frontier GUI UranicPower6
+https://raw.githubusercontent.com/ChaosityYT/GameScripts/master/The%20Northern%20Frontier%20GUI%20UranicPower6.txt
+
+- Speed City Sch0ll3r GUI
+https://raw.githubusercontent.com/ChaosityYT/GameScripts/master/Speed%20City%20Sch0ll3r%20GUI.txt
+
+- Reason 2 Die refrfgrtgef GUI
+https://raw.githubusercontent.com/ChaosityYT/GameScripts/master/Reason%202%20Die%20refrfgrtgef%20GUI.txt
+
+- Blood And Iron FunTrat0r GUI
+https://raw.githubusercontent.com/ChaosityYT/GameScripts/master/Blood%20And%20Iron%20FunTrat0r%20GUI.txt

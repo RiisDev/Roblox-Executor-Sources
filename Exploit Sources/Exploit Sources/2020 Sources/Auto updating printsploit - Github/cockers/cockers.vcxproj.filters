@@ -1,0 +1,53 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;hm;inl;inc;ipp;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Header Files\EyeStep">
+      <UniqueIdentifier>{7c95cbfe-f331-4c30-a4c0-be8be9dd0df8}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\..\ScreamSploit%27s Source codes\cockers\cockers\Retcheck.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\ScreamSploit%27s Source codes\cockers\cockers\EyeStep\eyestep.h">
+      <Filter>Header Files\EyeStep</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\ScreamSploit%27s Source codes\cockers\cockers\EyeStep\eyestep_utility.h">
+      <Filter>Header Files\EyeStep</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\ScreamSploit%27s Source codes\cockers\cockers\AutoPP.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\..\ScreamSploit%27s Source codes\cockers\cockers\Main.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ScreamSploit%27s Source codes\cockers\cockers\EyeStep\eyestep.cpp">
+      <Filter>Header Files\EyeStep</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\ScreamSploit%27s Source codes\cockers\cockers\EyeStep\eyestep_utility.cpp">
+      <Filter>Header Files\EyeStep</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="..\..\..\ScreamSploit%27s Source codes\cockers\cockers\EyeStep\README.txt">
+      <Filter>Header Files\EyeStep</Filter>
+    </Text>
+    <Text Include="..\..\..\ScreamSploit%27s Source codes\cockers\cockers\EyeStep\UPDATE_LOG.txt">
+      <Filter>Header Files\EyeStep</Filter>
+    </Text>
+  </ItemGroup>
+</Project>

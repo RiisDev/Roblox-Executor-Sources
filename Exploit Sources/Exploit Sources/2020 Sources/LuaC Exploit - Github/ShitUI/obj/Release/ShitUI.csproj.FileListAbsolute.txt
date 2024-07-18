@@ -1,0 +1,11 @@
+C:\Users\zakar\source\repos\Learn From Koaxy\ShitUI\bin\Release\ShitUI.exe.config
+C:\Users\zakar\source\repos\Learn From Koaxy\ShitUI\bin\Release\ShitUI.exe
+C:\Users\zakar\source\repos\Learn From Koaxy\ShitUI\bin\Release\ShitUI.pdb
+C:\Users\zakar\source\repos\Learn From Koaxy\ShitUI\bin\Release\FastColoredTextBox.dll
+C:\Users\zakar\source\repos\Learn From Koaxy\ShitUI\obj\Release\ShitUI.Form1.resources
+C:\Users\zakar\source\repos\Learn From Koaxy\ShitUI\obj\Release\ShitUI.Properties.Resources.resources
+C:\Users\zakar\source\repos\Learn From Koaxy\ShitUI\obj\Release\ShitUI.csproj.GenerateResource.cache
+C:\Users\zakar\source\repos\Learn From Koaxy\ShitUI\obj\Release\ShitUI.csproj.CoreCompileInputs.cache
+C:\Users\zakar\source\repos\Learn From Koaxy\ShitUI\obj\Release\ShitUI.csproj.CopyComplete
+C:\Users\zakar\source\repos\Learn From Koaxy\ShitUI\obj\Release\ShitUI.exe
+C:\Users\zakar\source\repos\Learn From Koaxy\ShitUI\obj\Release\ShitUI.pdb

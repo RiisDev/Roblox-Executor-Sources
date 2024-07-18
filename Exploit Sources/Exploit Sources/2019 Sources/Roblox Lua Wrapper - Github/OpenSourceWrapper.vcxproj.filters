@@ -1,0 +1,236 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;hm;inl;inc;ipp;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Resource Files\Lua">
+      <UniqueIdentifier>{6852a7bf-9269-4c73-a7dd-c0742baf2458}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="pch.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="wrap.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="internal_ui.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="pipes.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="roblox_getobjects.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="r_lua.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Documents\ProtoConversion-master (1)\ProtoConversion-master\src\Lua\lapi.h">
+      <Filter>Resource Files\Lua</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Documents\ProtoConversion-master (1)\ProtoConversion-master\src\Lua\lauxlib.h">
+      <Filter>Resource Files\Lua</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Documents\ProtoConversion-master (1)\ProtoConversion-master\src\Lua\lcode.h">
+      <Filter>Resource Files\Lua</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Documents\ProtoConversion-master (1)\ProtoConversion-master\src\Lua\ldebug.h">
+      <Filter>Resource Files\Lua</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Documents\ProtoConversion-master (1)\ProtoConversion-master\src\Lua\ldo.h">
+      <Filter>Resource Files\Lua</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Documents\ProtoConversion-master (1)\ProtoConversion-master\src\Lua\lfunc.h">
+      <Filter>Resource Files\Lua</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Documents\ProtoConversion-master (1)\ProtoConversion-master\src\Lua\lgc.h">
+      <Filter>Resource Files\Lua</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Documents\ProtoConversion-master (1)\ProtoConversion-master\src\Lua\llex.h">
+      <Filter>Resource Files\Lua</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Documents\ProtoConversion-master (1)\ProtoConversion-master\src\Lua\llimits.h">
+      <Filter>Resource Files\Lua</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Documents\ProtoConversion-master (1)\ProtoConversion-master\src\Lua\lmem.h">
+      <Filter>Resource Files\Lua</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Documents\ProtoConversion-master (1)\ProtoConversion-master\src\Lua\lobject.h">
+      <Filter>Resource Files\Lua</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Documents\ProtoConversion-master (1)\ProtoConversion-master\src\Lua\lopcodes.h">
+      <Filter>Resource Files\Lua</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Documents\ProtoConversion-master (1)\ProtoConversion-master\src\Lua\lparser.h">
+      <Filter>Resource Files\Lua</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Documents\ProtoConversion-master (1)\ProtoConversion-master\src\Lua\lstate.h">
+      <Filter>Resource Files\Lua</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Documents\ProtoConversion-master (1)\ProtoConversion-master\src\Lua\lstring.h">
+      <Filter>Resource Files\Lua</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Documents\ProtoConversion-master (1)\ProtoConversion-master\src\Lua\ltable.h">
+      <Filter>Resource Files\Lua</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Documents\ProtoConversion-master (1)\ProtoConversion-master\src\Lua\ltm.h">
+      <Filter>Resource Files\Lua</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Documents\ProtoConversion-master (1)\ProtoConversion-master\src\Lua\lua.h">
+      <Filter>Resource Files\Lua</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Documents\ProtoConversion-master (1)\ProtoConversion-master\src\Lua\lua.hpp">
+      <Filter>Resource Files\Lua</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Documents\ProtoConversion-master (1)\ProtoConversion-master\src\Lua\luaconf.h">
+      <Filter>Resource Files\Lua</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Documents\ProtoConversion-master (1)\ProtoConversion-master\src\Lua\luadefs.h">
+      <Filter>Resource Files\Lua</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Documents\ProtoConversion-master (1)\ProtoConversion-master\src\Lua\lualib.h">
+      <Filter>Resource Files\Lua</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Documents\ProtoConversion-master (1)\ProtoConversion-master\src\Lua\luaop.h">
+      <Filter>Resource Files\Lua</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Documents\ProtoConversion-master (1)\ProtoConversion-master\src\Lua\lundump.h">
+      <Filter>Resource Files\Lua</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Documents\ProtoConversion-master (1)\ProtoConversion-master\src\Lua\lvm.h">
+      <Filter>Resource Files\Lua</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Documents\ProtoConversion-master (1)\ProtoConversion-master\src\Lua\lzio.h">
+      <Filter>Resource Files\Lua</Filter>
+    </ClInclude>
+    <ClInclude Include="retcheck.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="retcheck_brandon.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="pch.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="OpenSourceWrapper.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Documents\ProtoConversion-master (1)\ProtoConversion-master\src\Lua\lauxlib.c">
+      <Filter>Resource Files\Lua</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Documents\ProtoConversion-master (1)\ProtoConversion-master\src\Lua\lbaselib.c">
+      <Filter>Resource Files\Lua</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Documents\ProtoConversion-master (1)\ProtoConversion-master\src\Lua\lcode.c">
+      <Filter>Resource Files\Lua</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Documents\ProtoConversion-master (1)\ProtoConversion-master\src\Lua\ldblib.c">
+      <Filter>Resource Files\Lua</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Documents\ProtoConversion-master (1)\ProtoConversion-master\src\Lua\ldebug.c">
+      <Filter>Resource Files\Lua</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Documents\ProtoConversion-master (1)\ProtoConversion-master\src\Lua\ldo.c">
+      <Filter>Resource Files\Lua</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Documents\ProtoConversion-master (1)\ProtoConversion-master\src\Lua\ldump.c">
+      <Filter>Resource Files\Lua</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Documents\ProtoConversion-master (1)\ProtoConversion-master\src\Lua\lfunc.c">
+      <Filter>Resource Files\Lua</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Documents\ProtoConversion-master (1)\ProtoConversion-master\src\Lua\lgc.c">
+      <Filter>Resource Files\Lua</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Documents\ProtoConversion-master (1)\ProtoConversion-master\src\Lua\linit.c">
+      <Filter>Resource Files\Lua</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Documents\ProtoConversion-master (1)\ProtoConversion-master\src\Lua\liolib.c">
+      <Filter>Resource Files\Lua</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Documents\ProtoConversion-master (1)\ProtoConversion-master\src\Lua\llex.c">
+      <Filter>Resource Files\Lua</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Documents\ProtoConversion-master (1)\ProtoConversion-master\src\Lua\lmathlib.c">
+      <Filter>Resource Files\Lua</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Documents\ProtoConversion-master (1)\ProtoConversion-master\src\Lua\lmem.c">
+      <Filter>Resource Files\Lua</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Documents\ProtoConversion-master (1)\ProtoConversion-master\src\Lua\loadlib.c">
+      <Filter>Resource Files\Lua</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Documents\ProtoConversion-master (1)\ProtoConversion-master\src\Lua\lobject.c">
+      <Filter>Resource Files\Lua</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Documents\ProtoConversion-master (1)\ProtoConversion-master\src\Lua\lopcodes.c">
+      <Filter>Resource Files\Lua</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Documents\ProtoConversion-master (1)\ProtoConversion-master\src\Lua\loslib.c">
+      <Filter>Resource Files\Lua</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Documents\ProtoConversion-master (1)\ProtoConversion-master\src\Lua\lparser.c">
+      <Filter>Resource Files\Lua</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Documents\ProtoConversion-master (1)\ProtoConversion-master\src\Lua\lstate.c">
+      <Filter>Resource Files\Lua</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Documents\ProtoConversion-master (1)\ProtoConversion-master\src\Lua\lstring.c">
+      <Filter>Resource Files\Lua</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Documents\ProtoConversion-master (1)\ProtoConversion-master\src\Lua\lstrlib.c">
+      <Filter>Resource Files\Lua</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Documents\ProtoConversion-master (1)\ProtoConversion-master\src\Lua\ltable.c">
+      <Filter>Resource Files\Lua</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Documents\ProtoConversion-master (1)\ProtoConversion-master\src\Lua\ltablib.c">
+      <Filter>Resource Files\Lua</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Documents\ProtoConversion-master (1)\ProtoConversion-master\src\Lua\ltm.c">
+      <Filter>Resource Files\Lua</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Documents\ProtoConversion-master (1)\ProtoConversion-master\src\Lua\lua.c">
+      <Filter>Resource Files\Lua</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Documents\ProtoConversion-master (1)\ProtoConversion-master\src\Lua\luac.c">
+      <Filter>Resource Files\Lua</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Documents\ProtoConversion-master (1)\ProtoConversion-master\src\Lua\lundump.c">
+      <Filter>Resource Files\Lua</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Documents\ProtoConversion-master (1)\ProtoConversion-master\src\Lua\lvm.c">
+      <Filter>Resource Files\Lua</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Documents\ProtoConversion-master (1)\ProtoConversion-master\src\Lua\lzio.c">
+      <Filter>Resource Files\Lua</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Documents\ProtoConversion-master (1)\ProtoConversion-master\src\Lua\print.c">
+      <Filter>Resource Files\Lua</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Documents\ProtoConversion-master (1)\ProtoConversion-master\src\Lua\lapi.c">
+      <Filter>Resource Files\Lua</Filter>
+    </ClCompile>
+    <ClCompile Include="wrap.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\..\..\..\Documents\ProtoConversion-master (1)\ProtoConversion-master\src\Lua\Makefile">
+      <Filter>Resource Files\Lua</Filter>
+    </None>
+  </ItemGroup>
+</Project>

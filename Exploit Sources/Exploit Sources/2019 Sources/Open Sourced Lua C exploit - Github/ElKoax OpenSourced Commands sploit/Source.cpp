@@ -1,0 +1,94 @@
+#pragma once
+#include <Windows.h>
+#include <string>
+#include <iostream>
+#include <vector>
+#include <fstream>
+#include <istream>
+#include <iterator>
+#include <sstream>
+
+#include "RLUA.h"
+#include "LuaC and commands.h"
+
+
+
+
+
+void ConsoleBypass(const char* Title) {
+	DWORD aaaa;
+	VirtualProtect((PVOID)&FreeConsole, 1, PAGE_EXECUTE_READWRITE, &aaaa);
+	*(BYTE*)(&FreeConsole) = 0xC3;
+	AllocConsole();
+	SetConsoleTitleA(Title);
+	freopen("CONOUT$", "w", stdout);
+	freopen("CONIN$", "r", stdin);
+	HWND ConsoleHandle = GetConsoleWindow();
+	::SetWindowPos(ConsoleHandle, HWND_TOPMOST, 0, 0, 0, 0, SWP_DRAWFRAME | SWP_NOMOVE | SWP_NOSIZE | SWP_SHOWWINDOW);
+	::ShowWindow(ConsoleHandle, SW_NORMAL);
+}
+
+
+
+
+
+
+
+int main() {
+
+	// Full source code improved.
+	// you will need to update the offsets
+	ConsoleBypass("Nigger");
+
+	auto SCVFTBLE = x(0xd33db33f);
+
+
+	std::cout << "Yeet Started scanning...... " << "\n";
+	ScriptContext = Memory::Scan((BYTE*)&SCVFTBLE, (BYTE*)"xxxx", PAGE_READWRITE);
+	if (!ScriptContext) {
+		printf("ScriptContext Scan Failed!\n");
+		system("pause");
+		exit(0);
+	}
+
+	//int v39 = ScriptContext;
+	//int v51 = 0;
+	RESTATE = (ScriptContext + 56 * 0 + 172) ^ *(DWORD *)(ScriptContext + 56 * 1 + 172);
+	printf("Finished the scanning....\n");
+
+	std::cout << "RSTATE:  " << std::uppercase << std::hex << ScriptContext << std::endl;
+	std::cout << "LUA STATE:  " << std::uppercase << std::hex << RESTATE << std::endl;
+
+	while (true)
+	{
+		
+		std::string Yeet;
+		std::getline(std::cin, Yeet);		
+		CMDs(Yeet);
+		
+	}
+
+
+
+
+	return 1;
+}
+
+
+BOOL APIENTRY DllMain(HMODULE Module, DWORD Reason, void* Reserved)
+{
+	switch (Reason)
+	{
+	case DLL_PROCESS_ATTACH:
+		DisableThreadLibraryCalls(Module);
+		CreateThread(NULL, NULL, (LPTHREAD_START_ROUTINE)main, NULL, NULL, NULL);
+		break;
+	case DLL_PROCESS_DETACH:
+		//MH_Uninitialize();
+		exit(0);
+		break;
+	default: break;
+	}
+	return TRUE;
+}
+

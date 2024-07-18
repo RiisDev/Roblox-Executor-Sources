@@ -1,0 +1,14 @@
+﻿  Main.cpp
+D:\ScreamSploit's Source codes\cockers\cockers\EyeStep\eyestep.h(19,1): warning C4005:  'PRE_66': macro redefinition
+D:\ScreamSploit's Source codes\cockers\cockers\Retcheck.h(121): message :  see previous definition of 'PRE_66'
+D:\ScreamSploit's Source codes\cockers\cockers\EyeStep\eyestep.h(20,1): warning C4005:  'PRE_67': macro redefinition
+D:\ScreamSploit's Source codes\cockers\cockers\Retcheck.h(122): message :  see previous definition of 'PRE_67'
+D:\ScreamSploit's Source codes\cockers\cockers\EyeStep\eyestep.h(21,1): warning C4005:  'PRE_LOCK': macro redefinition
+D:\ScreamSploit's Source codes\cockers\cockers\Retcheck.h(123): message :  see previous definition of 'PRE_LOCK'
+D:\ScreamSploit's Source codes\cockers\cockers\Main.cpp(38,1): warning C4326:  return type of 'main' should be 'int' instead of 'void'
+  Generating code
+  27 of 639 functions ( 4.2%) were compiled, the rest were copied from previous compilation.
+    11 functions were new in current compilation
+    42 functions had inline decision re-evaluated but remain unchanged
+  Finished generating code
+  cockers.vcxproj -> D:\ScreamSploit's Source codes\cockers\Release\cockers.dll

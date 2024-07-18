@@ -1,0 +1,46 @@
+﻿  Source.cpp
+d:\repos\for the skids\elkoax opensourced commands sploit\rlua.h(12): warning C4312: 'type cast': conversion from 'DWORD' to 'BYTE *' of greater size
+d:\repos\for the skids\elkoax opensourced commands sploit\rlua.h(18): warning C4312: 'type cast': conversion from 'DWORD' to 'BYTE *' of greater size
+d:\repos\for the skids\elkoax opensourced commands sploit\rlua.h(18): warning C4244: 'initializing': conversion from '__int64' to 'DWORD', possible loss of data
+d:\repos\for the skids\elkoax opensourced commands sploit\rlua.h(24): warning C4312: 'type cast': conversion from 'DWORD' to 'void *' of greater size
+d:\repos\for the skids\elkoax opensourced commands sploit\rlua.h(33): warning C4311: 'type cast': pointer truncation from 'PVOID' to 'DWORD'
+d:\repos\for the skids\elkoax opensourced commands sploit\rlua.h(33): warning C4302: 'type cast': truncation from 'PVOID' to 'DWORD'
+d:\repos\for the skids\elkoax opensourced commands sploit\rlua.h(36): warning C4312: 'type cast': conversion from 'DWORD' to 'BYTE *' of greater size
+d:\repos\for the skids\elkoax opensourced commands sploit\rlua.h(38): warning C4311: 'type cast': pointer truncation from 'PVOID' to 'DWORD'
+d:\repos\for the skids\elkoax opensourced commands sploit\rlua.h(38): warning C4302: 'type cast': truncation from 'PVOID' to 'DWORD'
+d:\repos\for the skids\elkoax opensourced commands sploit\rlua.h(39): warning C4312: 'type cast': conversion from 'DWORD' to 'DWORD *' of greater size
+d:\repos\for the skids\elkoax opensourced commands sploit\rlua.h(44): warning C4312: 'type cast': conversion from 'DWORD' to 'DWORD *' of greater size
+d:\repos\for the skids\elkoax opensourced commands sploit\rlua.h(51): warning C4311: 'type cast': pointer truncation from 'PVOID' to 'DWORD'
+d:\repos\for the skids\elkoax opensourced commands sploit\rlua.h(51): warning C4302: 'type cast': truncation from 'PVOID' to 'DWORD'
+d:\repos\for the skids\elkoax opensourced commands sploit\rlua.h(56): warning C4311: 'type cast': pointer truncation from 'BYTE *' to 'DWORD'
+d:\repos\for the skids\elkoax opensourced commands sploit\rlua.h(56): warning C4302: 'type cast': truncation from 'BYTE *' to 'DWORD'
+d:\repos\for the skids\elkoax opensourced commands sploit\rlua.h(56): warning C4311: 'type cast': pointer truncation from 'PVOID' to 'DWORD'
+d:\repos\for the skids\elkoax opensourced commands sploit\rlua.h(56): warning C4302: 'type cast': truncation from 'PVOID' to 'DWORD'
+d:\repos\for the skids\elkoax opensourced commands sploit\rlua.h(64): warning C4311: 'type cast': pointer truncation from 'PVOID' to 'DWORD'
+d:\repos\for the skids\elkoax opensourced commands sploit\rlua.h(64): warning C4302: 'type cast': truncation from 'PVOID' to 'DWORD'
+d:\repos\for the skids\elkoax opensourced commands sploit\rlua.h(84): warning C4311: 'type cast': pointer truncation from 'HMODULE' to 'DWORD'
+d:\repos\for the skids\elkoax opensourced commands sploit\rlua.h(84): warning C4302: 'type cast': truncation from 'HMODULE' to 'DWORD'
+d:\repos\for the skids\elkoax opensourced commands sploit\rlua.h(85): warning C4312: 'type cast': conversion from 'DWORD' to 'void *' of greater size
+d:\repos\for the skids\elkoax opensourced commands sploit\rlua.h(87): warning C4311: 'type cast': pointer truncation from 'PVOID' to 'DWORD'
+d:\repos\for the skids\elkoax opensourced commands sploit\rlua.h(87): warning C4302: 'type cast': truncation from 'PVOID' to 'DWORD'
+d:\repos\for the skids\elkoax opensourced commands sploit\rlua.h(88): warning C4312: 'type cast': conversion from 'DWORD' to 'BYTE *' of greater size
+d:\repos\for the skids\elkoax opensourced commands sploit\rlua.h(93): warning C4244: '+=': conversion from 'SIZE_T' to 'DWORD', possible loss of data
+d:\repos\for the skids\elkoax opensourced commands sploit\rlua.h(103): warning C4311: 'type cast': pointer truncation from 'HMODULE' to 'DWORD'
+d:\repos\for the skids\elkoax opensourced commands sploit\rlua.h(103): warning C4302: 'type cast': truncation from 'HMODULE' to 'DWORD'
+d:\repos\for the skids\elkoax opensourced commands sploit\rlua.h(104): warning C4311: 'type cast': pointer truncation from 'HMODULE' to 'DWORD'
+d:\repos\for the skids\elkoax opensourced commands sploit\rlua.h(104): warning C4302: 'type cast': truncation from 'HMODULE' to 'DWORD'
+d:\repos\for the skids\elkoax opensourced commands sploit\rlua.h(105): warning C4311: 'type cast': pointer truncation from 'HMODULE' to 'DWORD'
+d:\repos\for the skids\elkoax opensourced commands sploit\rlua.h(105): warning C4302: 'type cast': truncation from 'HMODULE' to 'DWORD'
+d:\repos\for the skids\elkoax opensourced commands sploit\rlua.h(106): warning C4311: 'type cast': pointer truncation from 'HMODULE' to 'DWORD'
+d:\repos\for the skids\elkoax opensourced commands sploit\rlua.h(106): warning C4302: 'type cast': truncation from 'HMODULE' to 'DWORD'
+d:\repos\for the skids\elkoax opensourced commands sploit\rlua.h(109): warning C4312: 'type cast': conversion from 'DWORD' to 'rgetfield' of greater size
+d:\repos\for the skids\elkoax opensourced commands sploit\rlua.h(112): warning C4312: 'type cast': conversion from 'DWORD' to 'rpushstring' of greater size
+d:\repos\for the skids\elkoax opensourced commands sploit\rlua.h(115): warning C4312: 'type cast': conversion from 'DWORD' to 'pcall' of greater size
+d:\repos\for the skids\elkoax opensourced commands sploit\rlua.h(118): warning C4312: 'type cast': conversion from 'DWORD' to 'pushvalue' of greater size
+d:\repos\for the skids\elkoax opensourced commands sploit\source.cpp(43): warning C4311: 'type cast': pointer truncation from 'HMODULE' to 'DWORD'
+d:\repos\for the skids\elkoax opensourced commands sploit\source.cpp(43): warning C4302: 'type cast': truncation from 'HMODULE' to 'DWORD'
+d:\repos\for the skids\elkoax opensourced commands sploit\source.cpp(56): warning C4312: 'type cast': conversion from 'DWORD' to 'DWORD *' of greater size
+  Generating code
+  All 259 functions were compiled because no usable IPDB/IOBJ from previous compilation was found.
+  Finished generating code
+  ElKoax OpenSourced Commands sploit.vcxproj -> D:\repos\for the skids\x64\Release\ElKoax OpenSourced Commands sploit.dll

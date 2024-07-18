@@ -1,0 +1,28 @@
+--   FE Chat Bypass
+--   By: Unknown
+--   Modded By: OpenGamerTips
+
+local CommandPrefix = "/s" -- You can set a custom prefix here.
+
+---------------------------------------------------------------------------------------------------
+local bc = {"اا"}
+local r = function(size)
+return math.random(1,size)
+end
+if _G.chatBypassScript == nil then
+_G.chatBypassScript = 0
+end
+local currentVersion = _G.chatBypassScript + 1
+_G.chatBypassScript = currentVersion
+game.Players.LocalPlayer.Chatted:Connect(function(a)
+  if currentVersion == _G.chatBypassScript then
+      if a:sub(1,3) == CommandPrefix.." " then
+          a = a:sub(4,#a)
+          local b = ""..bc[r(#bc)]
+          for i=1,#a do
+              b = b..bc[r(#bc)]..a:sub(i,i)
+          end         
+          game.ReplicatedStorage.DefaultChatSystemChatEvents.SayMessageRequest:FireServer(b,"All")
+      end
+  end
+end)

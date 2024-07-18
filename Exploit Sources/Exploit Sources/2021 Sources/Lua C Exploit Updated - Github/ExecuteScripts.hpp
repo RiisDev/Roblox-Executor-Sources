@@ -1,0 +1,74 @@
+#include "Offset.hpp"
+
+const char* FirePlayer = R""""(
+getglobal game
+getfield -1 GetService
+pushvalue -2
+pushstring Players
+pcall 2 1 0
+getfield -1 LocalPlayer
+getfield -1 Character
+getfield -1 Head
+getglobal Instance
+getfield -1 new
+pushstring Fire
+pushvalue -4
+pcall 2 0 0
+emptystack
+)"""";
+
+void ExecuteCmd(DWORD RBX, std::string CMD)
+{
+	auto Command = CMD;
+	if (Command.find("fire()") != std::string::npos)
+	{
+		ROffsets::getglobal(RBXState, "game");
+		ROffsets::getfield(RBXState, -1, "GetService");
+		ROffsets::pushvalue(RBXState, -2);
+		ROffsets::pushstring(RBXState, "Players");
+		ROffsets::pcall(RBXState, 2, 1, 0);
+		ROffsets::getfield(RBXState, -1, "LocalPlayer");
+		ROffsets::getfield(RBXState, -1, "Character");
+		ROffsets::getfield(RBXState, -1, "Head");
+		ROffsets::getglobal(RBXState, "Instance");
+		ROffsets::getfield(RBXState, -1, "new");
+		ROffsets::pushstring(RBXState, "Fire");
+		ROffsets::pushvalue(RBXState, -4);
+		ROffsets::pcall(RBXState, 2, 0, 0);
+		ROffsets::settop(RBXState, 0);
+	}
+	else if (Command.find("sparkle()") != std::string::npos)
+	{
+		ROffsets::getglobal(RBXState, "game");
+		ROffsets::getfield(RBXState, -1, "GetService");
+		ROffsets::pushvalue(RBXState, -2);
+		ROffsets::pushstring(RBXState, "Players");
+		ROffsets::pcall(RBXState, 2, 1, 0);
+		ROffsets::getfield(RBXState, -1, "LocalPlayer");
+		ROffsets::getfield(RBXState, -1, "Character");
+		ROffsets::getfield(RBXState, -1, "Head");
+		ROffsets::getglobal(RBXState, "Instance");
+		ROffsets::getfield(RBXState, -1, "new");
+		ROffsets::pushstring(RBXState, "Sparkles");
+		ROffsets::pushvalue(RBXState, -4);
+		ROffsets::pcall(RBXState, 2, 0, 0);
+		ROffsets::settop(RBXState, 0);
+	}
+	else if (Command.find("smoke()") != std::string::npos)
+	{
+		ROffsets::getglobal(RBXState, "game");
+		ROffsets::getfield(RBXState, -1, "GetService");
+		ROffsets::pushvalue(RBXState, -2);
+		ROffsets::pushstring(RBXState, "Players");
+		ROffsets::pcall(RBXState, 2, 1, 0);
+		ROffsets::getfield(RBXState, -1, "LocalPlayer");
+		ROffsets::getfield(RBXState, -1, "Character");
+		ROffsets::getfield(RBXState, -1, "Head");
+		ROffsets::getglobal(RBXState, "Instance");
+		ROffsets::getfield(RBXState, -1, "new");
+		ROffsets::pushstring(RBXState, "Smoke");
+		ROffsets::pushvalue(RBXState, -4);
+		ROffsets::pcall(RBXState, 2, 0, 0);
+		ROffsets::settop(RBXState, 0);
+	}
+}

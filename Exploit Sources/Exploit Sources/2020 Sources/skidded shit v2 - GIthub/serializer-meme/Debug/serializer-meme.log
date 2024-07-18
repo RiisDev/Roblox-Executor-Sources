@@ -1,0 +1,5 @@
+﻿  Source.cpp
+C:\Users\b\source\repos\serializer-meme\serializer-meme\Source.cpp(18,1): error C4996: 'freopen': This function or variable may be unsafe. Consider using freopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\ucrt\stdio.h(243): message : see declaration of 'freopen'
+C:\Users\b\source\repos\serializer-meme\serializer-meme\Source.cpp(19,1): error C4996: 'freopen': This function or variable may be unsafe. Consider using freopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\ucrt\stdio.h(243): message : see declaration of 'freopen'

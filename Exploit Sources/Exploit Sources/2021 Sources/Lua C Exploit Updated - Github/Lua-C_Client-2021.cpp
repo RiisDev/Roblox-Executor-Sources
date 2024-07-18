@@ -1,0 +1,119 @@
+#include "pch.h"
+#include <Windows.h>
+#include <string.h>
+#include "Offset.hpp"
+
+using namespace ROffsets;
+
+
+/* 
+
+Roblox Lua-C Source Code ( Executes Script from a Lua-C Scripts ) 
+I have no intentionally idea why speedsterkawaii made this Lua-C Source Code probably he wants to bring back the dead.
+well me skiehacker just giving him some Scripts based on Lua-C so he can test it to his insane lmfao project well he made it with no mistake
+
+Credit to
+[ + ] Speedsterkawaii for the Sources
+[ + ] SkieHacker - Feeding you some waste scripts that crash ur roblox and Implementing Mellon's Address so you can update it copy paste.
+[ + ] Mellon - Offsets / Roblox Address
+[ + ] You - For being Script Kiddies
+
+*/
+DWORD __stdcall InitializePipe(PVOID lvpParameter)
+{
+	string WholeScript = "";
+	HANDLE hPipe;
+	char buffer[999999];
+	DWORD dwRead;
+	hPipe = CreateNamedPipeW(TEXT("\\\\.\\pipe\\LuaCSploit"), // this is the lua c pipe name. change it whatever you want
+		PIPE_ACCESS_DUPLEX | PIPE_TYPE_BYTE | PIPE_READMODE_BYTE,
+		PIPE_WAIT,
+		1,
+		999999,
+		999999,
+		NMPWAIT_USE_DEFAULT_WAIT,
+		NULL);
+	while (hPipe != INVALID_HANDLE_VALUE)
+	{
+		if (ConnectNamedPipe(hPipe, NULL) != FALSE)
+		{
+			while (ReadFile(hPipe, buffer, sizeof(buffer) - 1, &dwRead, NULL) != FALSE)
+			{
+				buffer[dwRead] = '\0';
+				try {
+					try {
+						WholeScript = WholeScript + buffer;
+					}
+					catch (...) {
+					}
+				}
+				catch (std::exception e) {
+
+				}
+				catch (...) {
+
+				}
+			}
+			Execution::ExecuteLuaC(RBXState, WholeScript);
+			WholeScript = "";
+		}
+		DisconnectNamedPipe(hPipe);
+	}
+}
+
+void HideConsole()
+{
+	::ShowWindow(::GetConsoleWindow(), SW_HIDE);
+}
+
+void ShowConsole()
+{
+	::ShowWindow(::GetConsoleWindow(), SW_SHOW);
+}
+
+bool IsConsoleVisible()
+{
+	return ::IsWindowVisible(::GetConsoleWindow()) != FALSE;
+}
+
+void RConsole(const char* Title) {
+	VirtualProtect((PVOID)&FreeConsole, 1, PAGE_EXECUTE_READWRITE, &RobloxState);
+	*(BYTE*)(&FreeConsole) = 0xC3;
+	AllocConsole();
+	SetConsoleTitleA(Title);
+	freopen("CONOUT$", "w", stdout);
+	freopen("CONIN$", "r", stdin);
+	HWND ConsoleHandle = GetConsoleWindow();
+	::SetWindowPos(ConsoleHandle, HWND_TOPMOST, 0, 0, 0, 0, SWP_DRAWFRAME | SWP_NOMOVE | SWP_NOSIZE | SWP_SHOWWINDOW);
+	::ShowWindow(ConsoleHandle, SW_NORMAL);
+}
+
+void RStart()
+{
+	RConsole("Lua C Sploit"); //Console's Title
+	printf("NEW UPDATE NOW WITH WORKING LUA C PARSER\n"); //some print ofc lmfao
+	printf("----------------------------------------\n");
+	printf("Pls Wait a few seconds scanning lua state\n");
+	RBXState = RLuaState(Scanner::Scan(PAGE_READWRITE, (char*)&ScriptContextA, (char*)"xxxx")); //Scan or Getting Lua State from Roblox
+	CreateThread(NULL, NULL, (LPTHREAD_START_ROUTINE)InitializePipe, NULL, NULL, NULL); //Creates Pipe
+
+	getfield(RBXState, -10002, "print"); //Yea it will Execute this ofc
+	pushstring(RBXState, "Lua-C Client-based Loaded");
+	pcall(RBXState, 1, 0, 0);
+	HideConsole();
+}
+
+bool __stdcall DllMain(HINSTANCE a1, DWORD a2, LPVOID a3)
+{
+	switch (a2)
+	{
+	case 1:
+		RStart();
+	case 2:
+	case 3:
+	case 0:
+		break;
+	}
+	return true;
+}
+

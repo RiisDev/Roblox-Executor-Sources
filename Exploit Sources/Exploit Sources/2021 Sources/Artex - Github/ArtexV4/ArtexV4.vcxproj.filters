@@ -1,0 +1,296 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;c++;cppm;ixx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;h++;hm;inl;inc;ipp;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Header Files\Conversion">
+      <UniqueIdentifier>{517bb335-f36c-47a4-9ae1-07a47ed046ef}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\LuaToLuau">
+      <UniqueIdentifier>{c6929cd7-4136-4416-82ed-d066c21aff68}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Static">
+      <UniqueIdentifier>{02944223-506d-4afb-8dfd-e20590718c0b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Execution">
+      <UniqueIdentifier>{ac250bed-031e-41b8-a685-0928715e2292}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Bypasses">
+      <UniqueIdentifier>{52d9458a-6bb0-4f2d-addf-7f4be0f2750b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Enviroment">
+      <UniqueIdentifier>{b4c59b76-d4c1-4997-b749-62ca6bcc71da}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Static\Misc">
+      <UniqueIdentifier>{162939b4-3c40-4530-b65a-535078dfc8a2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Resource Files\Lua">
+      <UniqueIdentifier>{08874250-1142-4a95-bdf4-6557043ca7dd}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Static\Misc\AutoUpdate">
+      <UniqueIdentifier>{8a60c9a8-db81-4a8f-910b-53c73cd1521e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Static\Misc\AutoUpdate\Pointers">
+      <UniqueIdentifier>{c0e0495f-85e0-409a-bcb3-7a77300b86c4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Decompiltation">
+      <UniqueIdentifier>{4eb09d1c-c8c5-4429-9837-fec641135619}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Decompiltation\Decompiler">
+      <UniqueIdentifier>{09df3c71-02f0-4c52-8826-51abe3bc6b1e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Conversion\Virtual Machine">
+      <UniqueIdentifier>{f5c3a7d1-508f-41ef-809b-574593b962a5}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="ProtoConversion.h">
+      <Filter>Header Files\Conversion</Filter>
+    </ClInclude>
+    <ClInclude Include="Translator.h">
+      <Filter>Header Files\LuaToLuau</Filter>
+    </ClInclude>
+    <ClInclude Include="GeneralUpdates.hpp">
+      <Filter>Header Files\Static</Filter>
+    </ClInclude>
+    <ClInclude Include="Executor.hpp">
+      <Filter>Header Files\Execution</Filter>
+    </ClInclude>
+    <ClInclude Include="retcheck.h">
+      <Filter>Header Files\Bypasses</Filter>
+    </ClInclude>
+    <ClInclude Include="Sandbox.hpp">
+      <Filter>Header Files\Enviroment</Filter>
+    </ClInclude>
+    <ClInclude Include="Serializer.h">
+      <Filter>Header Files\Conversion</Filter>
+    </ClInclude>
+    <ClInclude Include="RbxConversion.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="PEParser32.hpp">
+      <Filter>Header Files\Static\Misc</Filter>
+    </ClInclude>
+    <ClInclude Include="CallingConventionDetector.hpp">
+      <Filter>Header Files\Static\Misc\AutoUpdate</Filter>
+    </ClInclude>
+    <ClInclude Include="UnmanagedPointer.hpp">
+      <Filter>Header Files\Static\Misc\AutoUpdate\Pointers</Filter>
+    </ClInclude>
+    <ClInclude Include="RBX.h">
+      <Filter>Header Files\Enviroment</Filter>
+    </ClInclude>
+    <ClInclude Include="ClosureCheck.hpp">
+      <Filter>Header Files\Bypasses</Filter>
+    </ClInclude>
+    <ClInclude Include="RbxLua.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="decompiler.hpp">
+      <Filter>Header Files\Decompiltation\Decompiler</Filter>
+    </ClInclude>
+    <ClInclude Include="DownloadURL.hpp">
+      <Filter>Header Files\Static</Filter>
+    </ClInclude>
+    <ClInclude Include="HAVM.hpp">
+      <Filter>Header Files\Conversion\Virtual Machine</Filter>
+    </ClInclude>
+    <ClInclude Include="VMBase.hpp">
+      <Filter>Header Files\Conversion\Virtual Machine</Filter>
+    </ClInclude>
+    <ClInclude Include="Lua\lapi.h">
+      <Filter>Resource Files\Lua</Filter>
+    </ClInclude>
+    <ClInclude Include="Lua\lauxlib.h">
+      <Filter>Resource Files\Lua</Filter>
+    </ClInclude>
+    <ClInclude Include="Lua\lcode.h">
+      <Filter>Resource Files\Lua</Filter>
+    </ClInclude>
+    <ClInclude Include="Lua\ldebug.h">
+      <Filter>Resource Files\Lua</Filter>
+    </ClInclude>
+    <ClInclude Include="Lua\ldo.h">
+      <Filter>Resource Files\Lua</Filter>
+    </ClInclude>
+    <ClInclude Include="Lua\lfunc.h">
+      <Filter>Resource Files\Lua</Filter>
+    </ClInclude>
+    <ClInclude Include="Lua\lgc.h">
+      <Filter>Resource Files\Lua</Filter>
+    </ClInclude>
+    <ClInclude Include="Lua\llex.h">
+      <Filter>Resource Files\Lua</Filter>
+    </ClInclude>
+    <ClInclude Include="Lua\llimits.h">
+      <Filter>Resource Files\Lua</Filter>
+    </ClInclude>
+    <ClInclude Include="Lua\lmem.h">
+      <Filter>Resource Files\Lua</Filter>
+    </ClInclude>
+    <ClInclude Include="Lua\lobject.h">
+      <Filter>Resource Files\Lua</Filter>
+    </ClInclude>
+    <ClInclude Include="Lua\lopcodes.h">
+      <Filter>Resource Files\Lua</Filter>
+    </ClInclude>
+    <ClInclude Include="Lua\lparser.h">
+      <Filter>Resource Files\Lua</Filter>
+    </ClInclude>
+    <ClInclude Include="Lua\lstate.h">
+      <Filter>Resource Files\Lua</Filter>
+    </ClInclude>
+    <ClInclude Include="Lua\lstring.h">
+      <Filter>Resource Files\Lua</Filter>
+    </ClInclude>
+    <ClInclude Include="Lua\ltable.h">
+      <Filter>Resource Files\Lua</Filter>
+    </ClInclude>
+    <ClInclude Include="Lua\ltm.h">
+      <Filter>Resource Files\Lua</Filter>
+    </ClInclude>
+    <ClInclude Include="Lua\lua.h">
+      <Filter>Resource Files\Lua</Filter>
+    </ClInclude>
+    <ClInclude Include="Lua\luaconf.h">
+      <Filter>Resource Files\Lua</Filter>
+    </ClInclude>
+    <ClInclude Include="Lua\lualib.h">
+      <Filter>Resource Files\Lua</Filter>
+    </ClInclude>
+    <ClInclude Include="Lua\lundump.h">
+      <Filter>Resource Files\Lua</Filter>
+    </ClInclude>
+    <ClInclude Include="Lua\lvm.h">
+      <Filter>Resource Files\Lua</Filter>
+    </ClInclude>
+    <ClInclude Include="Lua\lzio.h">
+      <Filter>Resource Files\Lua</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="dllinterface.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="PEParser32.cpp">
+      <Filter>Header Files\Static\Misc</Filter>
+    </ClCompile>
+    <ClCompile Include="CallingConventionDetector.cpp">
+      <Filter>Header Files\Static\Misc\AutoUpdate</Filter>
+    </ClCompile>
+    <ClCompile Include="HAVM.cpp">
+      <Filter>Header Files\Conversion\Virtual Machine</Filter>
+    </ClCompile>
+    <ClCompile Include="Lua\lapi.c">
+      <Filter>Resource Files\Lua</Filter>
+    </ClCompile>
+    <ClCompile Include="Lua\lauxlib.c">
+      <Filter>Resource Files\Lua</Filter>
+    </ClCompile>
+    <ClCompile Include="Lua\lbaselib.c">
+      <Filter>Resource Files\Lua</Filter>
+    </ClCompile>
+    <ClCompile Include="Lua\lcode.c">
+      <Filter>Resource Files\Lua</Filter>
+    </ClCompile>
+    <ClCompile Include="Lua\ldblib.c">
+      <Filter>Resource Files\Lua</Filter>
+    </ClCompile>
+    <ClCompile Include="Lua\ldebug.c">
+      <Filter>Resource Files\Lua</Filter>
+    </ClCompile>
+    <ClCompile Include="Lua\ldo.c">
+      <Filter>Resource Files\Lua</Filter>
+    </ClCompile>
+    <ClCompile Include="Lua\ldump.c">
+      <Filter>Resource Files\Lua</Filter>
+    </ClCompile>
+    <ClCompile Include="Lua\lfunc.c">
+      <Filter>Resource Files\Lua</Filter>
+    </ClCompile>
+    <ClCompile Include="Lua\lgc.c">
+      <Filter>Resource Files\Lua</Filter>
+    </ClCompile>
+    <ClCompile Include="Lua\linit.c">
+      <Filter>Resource Files\Lua</Filter>
+    </ClCompile>
+    <ClCompile Include="Lua\liolib.c">
+      <Filter>Resource Files\Lua</Filter>
+    </ClCompile>
+    <ClCompile Include="Lua\llex.c">
+      <Filter>Resource Files\Lua</Filter>
+    </ClCompile>
+    <ClCompile Include="Lua\lmathlib.c">
+      <Filter>Resource Files\Lua</Filter>
+    </ClCompile>
+    <ClCompile Include="Lua\lmem.c">
+      <Filter>Resource Files\Lua</Filter>
+    </ClCompile>
+    <ClCompile Include="Lua\loadlib.c">
+      <Filter>Resource Files\Lua</Filter>
+    </ClCompile>
+    <ClCompile Include="Lua\lobject.c">
+      <Filter>Resource Files\Lua</Filter>
+    </ClCompile>
+    <ClCompile Include="Lua\lopcodes.c">
+      <Filter>Resource Files\Lua</Filter>
+    </ClCompile>
+    <ClCompile Include="Lua\loslib.c">
+      <Filter>Resource Files\Lua</Filter>
+    </ClCompile>
+    <ClCompile Include="Lua\lparser.c">
+      <Filter>Resource Files\Lua</Filter>
+    </ClCompile>
+    <ClCompile Include="Lua\lstate.c">
+      <Filter>Resource Files\Lua</Filter>
+    </ClCompile>
+    <ClCompile Include="Lua\lstring.c">
+      <Filter>Resource Files\Lua</Filter>
+    </ClCompile>
+    <ClCompile Include="Lua\lstrlib.c">
+      <Filter>Resource Files\Lua</Filter>
+    </ClCompile>
+    <ClCompile Include="Lua\ltable.c">
+      <Filter>Resource Files\Lua</Filter>
+    </ClCompile>
+    <ClCompile Include="Lua\ltablib.c">
+      <Filter>Resource Files\Lua</Filter>
+    </ClCompile>
+    <ClCompile Include="Lua\ltm.c">
+      <Filter>Resource Files\Lua</Filter>
+    </ClCompile>
+    <ClCompile Include="Lua\lua.c">
+      <Filter>Resource Files\Lua</Filter>
+    </ClCompile>
+    <ClCompile Include="Lua\luac.c">
+      <Filter>Resource Files\Lua</Filter>
+    </ClCompile>
+    <ClCompile Include="Lua\lundump.c">
+      <Filter>Resource Files\Lua</Filter>
+    </ClCompile>
+    <ClCompile Include="Lua\lvm.c">
+      <Filter>Resource Files\Lua</Filter>
+    </ClCompile>
+    <ClCompile Include="Lua\lzio.c">
+      <Filter>Resource Files\Lua</Filter>
+    </ClCompile>
+    <ClCompile Include="Lua\print.c">
+      <Filter>Resource Files\Lua</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Lua\Makefile">
+      <Filter>Resource Files\Lua</Filter>
+    </None>
+  </ItemGroup>
+</Project>

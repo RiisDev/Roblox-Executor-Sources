@@ -1,0 +1,239 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;c++;cppm;ixx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;h++;hm;inl;inc;ipp;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Header Files\Libraries">
+      <UniqueIdentifier>{19e2e51a-56c7-4659-a107-db0889b02a60}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Roblox">
+      <UniqueIdentifier>{c85bf46c-cf64-4c51-a734-8dbf50e1fe11}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Libraries\Lua">
+      <UniqueIdentifier>{49294eda-3ac5-498e-91c1-3632bd7646d4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Roblox\Bypasses">
+      <UniqueIdentifier>{7661c4ec-e20e-4ca0-b72b-b38392133c8c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Roblox\RLua">
+      <UniqueIdentifier>{12bffa48-2a18-4f49-a367-aceff8c05b35}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Roblox\Environment">
+      <UniqueIdentifier>{968eec5b-f9d8-4f29-b854-6f65c4bff4a7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Roblox\Execution">
+      <UniqueIdentifier>{633b0339-e23b-48a8-9308-1fcb0dfac0ed}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Entry.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Libraries\Lua\lapi.c">
+      <Filter>Header Files\Libraries\Lua</Filter>
+    </ClCompile>
+    <ClCompile Include="Libraries\Lua\lauxlib.c">
+      <Filter>Header Files\Libraries\Lua</Filter>
+    </ClCompile>
+    <ClCompile Include="Libraries\Lua\lbaselib.c">
+      <Filter>Header Files\Libraries\Lua</Filter>
+    </ClCompile>
+    <ClCompile Include="Libraries\Lua\lcode.c">
+      <Filter>Header Files\Libraries\Lua</Filter>
+    </ClCompile>
+    <ClCompile Include="Libraries\Lua\ldblib.c">
+      <Filter>Header Files\Libraries\Lua</Filter>
+    </ClCompile>
+    <ClCompile Include="Libraries\Lua\ldebug.c">
+      <Filter>Header Files\Libraries\Lua</Filter>
+    </ClCompile>
+    <ClCompile Include="Libraries\Lua\ldo.c">
+      <Filter>Header Files\Libraries\Lua</Filter>
+    </ClCompile>
+    <ClCompile Include="Libraries\Lua\ldump.c">
+      <Filter>Header Files\Libraries\Lua</Filter>
+    </ClCompile>
+    <ClCompile Include="Libraries\Lua\lfunc.c">
+      <Filter>Header Files\Libraries\Lua</Filter>
+    </ClCompile>
+    <ClCompile Include="Libraries\Lua\lgc.c">
+      <Filter>Header Files\Libraries\Lua</Filter>
+    </ClCompile>
+    <ClCompile Include="Libraries\Lua\linit.c">
+      <Filter>Header Files\Libraries\Lua</Filter>
+    </ClCompile>
+    <ClCompile Include="Libraries\Lua\liolib.c">
+      <Filter>Header Files\Libraries\Lua</Filter>
+    </ClCompile>
+    <ClCompile Include="Libraries\Lua\llex.c">
+      <Filter>Header Files\Libraries\Lua</Filter>
+    </ClCompile>
+    <ClCompile Include="Libraries\Lua\lmathlib.c">
+      <Filter>Header Files\Libraries\Lua</Filter>
+    </ClCompile>
+    <ClCompile Include="Libraries\Lua\lmem.c">
+      <Filter>Header Files\Libraries\Lua</Filter>
+    </ClCompile>
+    <ClCompile Include="Libraries\Lua\loadlib.c">
+      <Filter>Header Files\Libraries\Lua</Filter>
+    </ClCompile>
+    <ClCompile Include="Libraries\Lua\lobject.c">
+      <Filter>Header Files\Libraries\Lua</Filter>
+    </ClCompile>
+    <ClCompile Include="Libraries\Lua\lopcodes.c">
+      <Filter>Header Files\Libraries\Lua</Filter>
+    </ClCompile>
+    <ClCompile Include="Libraries\Lua\loslib.c">
+      <Filter>Header Files\Libraries\Lua</Filter>
+    </ClCompile>
+    <ClCompile Include="Libraries\Lua\lparser.c">
+      <Filter>Header Files\Libraries\Lua</Filter>
+    </ClCompile>
+    <ClCompile Include="Libraries\Lua\lstate.c">
+      <Filter>Header Files\Libraries\Lua</Filter>
+    </ClCompile>
+    <ClCompile Include="Libraries\Lua\lstring.c">
+      <Filter>Header Files\Libraries\Lua</Filter>
+    </ClCompile>
+    <ClCompile Include="Libraries\Lua\lstrlib.c">
+      <Filter>Header Files\Libraries\Lua</Filter>
+    </ClCompile>
+    <ClCompile Include="Libraries\Lua\ltable.c">
+      <Filter>Header Files\Libraries\Lua</Filter>
+    </ClCompile>
+    <ClCompile Include="Libraries\Lua\ltablib.c">
+      <Filter>Header Files\Libraries\Lua</Filter>
+    </ClCompile>
+    <ClCompile Include="Libraries\Lua\ltm.c">
+      <Filter>Header Files\Libraries\Lua</Filter>
+    </ClCompile>
+    <ClCompile Include="Libraries\Lua\lua.c">
+      <Filter>Header Files\Libraries\Lua</Filter>
+    </ClCompile>
+    <ClCompile Include="Libraries\Lua\lundump.c">
+      <Filter>Header Files\Libraries\Lua</Filter>
+    </ClCompile>
+    <ClCompile Include="Libraries\Lua\lvm.c">
+      <Filter>Header Files\Libraries\Lua</Filter>
+    </ClCompile>
+    <ClCompile Include="Libraries\Lua\lzio.c">
+      <Filter>Header Files\Libraries\Lua</Filter>
+    </ClCompile>
+    <ClCompile Include="Libraries\Lua\print.c">
+      <Filter>Header Files\Libraries\Lua</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Libraries\Lua\lapi.h">
+      <Filter>Header Files\Libraries\Lua</Filter>
+    </ClInclude>
+    <ClInclude Include="Libraries\Lua\lauxlib.h">
+      <Filter>Header Files\Libraries\Lua</Filter>
+    </ClInclude>
+    <ClInclude Include="Libraries\Lua\lcode.h">
+      <Filter>Header Files\Libraries\Lua</Filter>
+    </ClInclude>
+    <ClInclude Include="Libraries\Lua\ldebug.h">
+      <Filter>Header Files\Libraries\Lua</Filter>
+    </ClInclude>
+    <ClInclude Include="Libraries\Lua\ldo.h">
+      <Filter>Header Files\Libraries\Lua</Filter>
+    </ClInclude>
+    <ClInclude Include="Libraries\Lua\lfunc.h">
+      <Filter>Header Files\Libraries\Lua</Filter>
+    </ClInclude>
+    <ClInclude Include="Libraries\Lua\lgc.h">
+      <Filter>Header Files\Libraries\Lua</Filter>
+    </ClInclude>
+    <ClInclude Include="Libraries\Lua\llex.h">
+      <Filter>Header Files\Libraries\Lua</Filter>
+    </ClInclude>
+    <ClInclude Include="Libraries\Lua\llimits.h">
+      <Filter>Header Files\Libraries\Lua</Filter>
+    </ClInclude>
+    <ClInclude Include="Libraries\Lua\lmem.h">
+      <Filter>Header Files\Libraries\Lua</Filter>
+    </ClInclude>
+    <ClInclude Include="Libraries\Lua\lobject.h">
+      <Filter>Header Files\Libraries\Lua</Filter>
+    </ClInclude>
+    <ClInclude Include="Libraries\Lua\lopcodes.h">
+      <Filter>Header Files\Libraries\Lua</Filter>
+    </ClInclude>
+    <ClInclude Include="Libraries\Lua\lparser.h">
+      <Filter>Header Files\Libraries\Lua</Filter>
+    </ClInclude>
+    <ClInclude Include="Libraries\Lua\lstate.h">
+      <Filter>Header Files\Libraries\Lua</Filter>
+    </ClInclude>
+    <ClInclude Include="Libraries\Lua\lstring.h">
+      <Filter>Header Files\Libraries\Lua</Filter>
+    </ClInclude>
+    <ClInclude Include="Libraries\Lua\ltable.h">
+      <Filter>Header Files\Libraries\Lua</Filter>
+    </ClInclude>
+    <ClInclude Include="Libraries\Lua\ltm.h">
+      <Filter>Header Files\Libraries\Lua</Filter>
+    </ClInclude>
+    <ClInclude Include="Libraries\Lua\lua.h">
+      <Filter>Header Files\Libraries\Lua</Filter>
+    </ClInclude>
+    <ClInclude Include="Libraries\Lua\lua.hpp">
+      <Filter>Header Files\Libraries\Lua</Filter>
+    </ClInclude>
+    <ClInclude Include="Libraries\Lua\luaconf.h">
+      <Filter>Header Files\Libraries\Lua</Filter>
+    </ClInclude>
+    <ClInclude Include="Libraries\Lua\luadefs.h">
+      <Filter>Header Files\Libraries\Lua</Filter>
+    </ClInclude>
+    <ClInclude Include="Libraries\Lua\lualib.h">
+      <Filter>Header Files\Libraries\Lua</Filter>
+    </ClInclude>
+    <ClInclude Include="Libraries\Lua\luaop.h">
+      <Filter>Header Files\Libraries\Lua</Filter>
+    </ClInclude>
+    <ClInclude Include="Libraries\Lua\lundump.h">
+      <Filter>Header Files\Libraries\Lua</Filter>
+    </ClInclude>
+    <ClInclude Include="Libraries\Lua\lvm.h">
+      <Filter>Header Files\Libraries\Lua</Filter>
+    </ClInclude>
+    <ClInclude Include="Libraries\Lua\lzio.h">
+      <Filter>Header Files\Libraries\Lua</Filter>
+    </ClInclude>
+    <ClInclude Include="Roblox\Bypasses\Callcheck.h">
+      <Filter>Header Files\Roblox\Bypasses</Filter>
+    </ClInclude>
+    <ClInclude Include="Roblox\Bypasses\Retcheck.h">
+      <Filter>Header Files\Roblox\Bypasses</Filter>
+    </ClInclude>
+    <ClInclude Include="Roblox\Execution\Execution.h">
+      <Filter>Header Files\Roblox\Execution</Filter>
+    </ClInclude>
+    <ClInclude Include="Roblox\RLua\RLua.h">
+      <Filter>Header Files\Roblox\RLua</Filter>
+    </ClInclude>
+    <ClInclude Include="Roblox\RLua\Addresses.h">
+      <Filter>Header Files\Roblox\RLua</Filter>
+    </ClInclude>
+    <ClInclude Include="Roblox\Environment\Functions.h">
+      <Filter>Header Files\Roblox\Environment</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Libraries\Lua\Makefile">
+      <Filter>Header Files\Libraries\Lua</Filter>
+    </None>
+  </ItemGroup>
+</Project>

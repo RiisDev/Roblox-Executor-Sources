@@ -1,0 +1,12 @@
+c:\users\dezfo\documents\visual studio 2017\Projects\Hacks\Hacks\bin\Debug\Siticone.UI.dll
+c:\users\dezfo\documents\visual studio 2017\Projects\Hacks\Hacks\obj\Debug\Haxon.csprojResolveAssemblyReference.cache
+c:\users\dezfo\documents\visual studio 2017\Projects\Hacks\Hacks\obj\Debug\Hacks.HaxonWindow.resources
+c:\users\dezfo\documents\visual studio 2017\Projects\Hacks\Hacks\obj\Debug\Hacks.TermsOfUse.resources
+c:\users\dezfo\documents\visual studio 2017\Projects\Hacks\Hacks\obj\Debug\Haxon.csproj.GenerateResource.Cache
+c:\users\dezfo\documents\visual studio 2017\Projects\Hacks\Hacks\bin\Debug\HaxonUI.exe.config
+c:\users\dezfo\documents\visual studio 2017\Projects\Hacks\Hacks\bin\Debug\HaxonUI.exe
+c:\users\dezfo\documents\visual studio 2017\Projects\Hacks\Hacks\bin\Debug\HaxonUI.pdb
+c:\users\dezfo\documents\visual studio 2017\Projects\Hacks\Hacks\obj\Debug\HaxonUI.About.resources
+c:\users\dezfo\documents\visual studio 2017\Projects\Hacks\Hacks\obj\Debug\HaxonUI.Properties.Resources.resources
+c:\users\dezfo\documents\visual studio 2017\Projects\Hacks\Hacks\obj\Debug\HaxonUI.exe
+c:\users\dezfo\documents\visual studio 2017\Projects\Hacks\Hacks\obj\Debug\HaxonUI.pdb
