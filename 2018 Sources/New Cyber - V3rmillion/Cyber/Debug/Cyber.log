@@ -1,5 +1,0 @@
-﻿  Cyber.cpp
-c:\users\samuel\desktop\exploit sources\new cyber\cyber\cyber.cpp(6): fatal error C1083: Cannot open precompiled header file: 'Debug\Cyber.pch': No such file or directory
-  Retcheck.cpp
-c:\users\samuel\desktop\exploit sources\new cyber\cyber\retcheck.cpp(1): fatal error C1083: Cannot open precompiled header file: 'Debug\Cyber.pch': No such file or directory
-  Generating Code...

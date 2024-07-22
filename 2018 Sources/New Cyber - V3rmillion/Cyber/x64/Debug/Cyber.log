@@ -1,5 +1,0 @@
-﻿  Cyber.cpp
-c:\users\samuel\desktop\exploit sources\new cyber\cyber\cyber.cpp(213): fatal error C1010: unexpected end of file while looking for precompiled header. Did you forget to add '#include "stdafx.h"' to your source?
-  Retcheck.cpp
-c:\users\samuel\desktop\exploit sources\new cyber\cyber\retcheck.cpp(410): fatal error C1010: unexpected end of file while looking for precompiled header. Did you forget to add '#include "stdafx.h"' to your source?
-  Generating Code...
