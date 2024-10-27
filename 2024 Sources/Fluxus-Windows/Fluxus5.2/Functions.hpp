@@ -1,0 +1,73 @@
+#pragma once
+#include "RBX.hpp"
+
+namespace Fluxus {
+	namespace Functions {
+		int Loadstring(DWORD);
+		int Getreg(DWORD);
+		int Getrawmetatable(DWORD);
+		int Setrawmetatable(DWORD);
+		int Setreadonly(DWORD);
+		int MakeWriteable(DWORD);
+		int MakeReadonly(DWORD);
+		int Isreadonly(DWORD);
+		int Getnamecallmethod(DWORD);
+		int Setnamecallmethod(DWORD);
+		int CheckCaller(DWORD);
+		int UnlockModule(DWORD);
+		int LockModule(DWORD);
+		int Getgenv(DWORD);
+		int Getrenv(DWORD);
+		int TrustCheck(DWORD);
+		int NewCClosure(DWORD);
+		int HttpRequest(DWORD);
+		int Fireclickdetector(DWORD);
+		int Setclipboard(DWORD);
+		int IsFluxusClosure(DWORD);
+		int ScriptHub(DWORD);
+		int Islclosure(DWORD);
+		int Iscclosure(DWORD);
+		int GetGC(DWORD);
+		int Setidentity(DWORD);
+		int Getidentity(DWORD);
+		int Writefile(DWORD);
+		int Readfile(DWORD);
+		int GetFFlag(DWORD);
+		int SetFFlag(DWORD);
+		/*Mouse / Keyboard Library*/
+		int IsRbxActive(DWORD);
+		int Keypress(DWORD);
+		int Keyrelease(DWORD);
+		int Mouse1click(DWORD);
+		int Mouse1press(DWORD);
+		int Mouse1release(DWORD);
+		int Mouse2click(DWORD);
+		int Mouse2press(DWORD);
+		int Mouse2release(DWORD);
+		int Mousemoverel(DWORD);
+		int Mousemoveabs(DWORD);
+		int LeftClick(DWORD);
+		int RightClick(DWORD);
+		int Mousemoverel(DWORD);
+		int KeyPress(DWORD);
+		/*Debug Library*/
+		int Getinfo(DWORD);
+		int Getconstants(DWORD);
+		int Getconstant(DWORD);
+		int Setconstant(DWORD);
+		int Getupvalues(DWORD);
+		int Getupvalue(DWORD);
+		int Setupvalue(DWORD);
+		int Getprotos(DWORD);
+		int Getproto(DWORD);
+		int Setproto(DWORD);
+		/*Console Library*/
+		int ConsoleName(DWORD);
+		int ConsolePrint(DWORD);
+		int ConsoleWarn(DWORD);
+		int ConsoleError(DWORD);
+		int ConsoleInfo(DWORD);
+		int ConsoleInput(DWORD);
+		int ConsoleClear(DWORD);
+	}
+}

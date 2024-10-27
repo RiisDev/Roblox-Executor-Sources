@@ -1,0 +1,82 @@
+AWSTemplateFormatVersion: "2010-09-09"
+Parameters:
+  Environment:
+    Type: String
+Mappings:
+  Configuration:
+    zone:
+      Name: hydrogen.sh
+    production:
+      Name: hydrogen.sh
+      Certificate: arn:aws:acm:us-east-1:396669123982:certificate/99ce69b4-8341-4ab8-ac73-d60b3b9fd6fd
+    staging:
+      Name: staging.hydrogen.sh
+      Certificate: arn:aws:acm:us-east-1:396669123982:certificate/1ecbca99-88b1-4485-9e9d-aa03877c66e1
+Resources:
+  ApiService:
+    Type: AWS::AppRunner::Service
+    Properties:
+      ServiceName: !Sub api-${Environment}
+      SourceConfiguration:
+        AutoDeploymentsEnabled: false
+        AuthenticationConfiguration:
+          AccessRoleArn: arn:aws:iam::396669123982:role/AppRunnerECRAccessRole
+        ImageRepository:
+          ImageIdentifier: !Sub 396669123982.dkr.ecr.us-east-1.amazonaws.com/api:${Environment}-amd64
+          ImageRepositoryType: ECR
+          ImageConfiguration:
+            Port: 5000
+            RuntimeEnvironmentVariables:
+              - Name: NODE_ENV
+                Value: !Ref Environment
+      InstanceConfiguration:
+        InstanceRoleArn: arn:aws:iam::396669123982:role/ApiRole
+  ApiApiGateway:
+    Type: AWS::ApiGatewayV2::Api
+    DependsOn:
+      - ApiService
+    Properties:
+      Name: !Sub Api-${Environment}
+      ProtocolType: HTTP
+      Target: !Sub https://${ApiService.ServiceUrl}
+  ApiIntegration:
+    Type: AWS::ApiGatewayV2::Integration
+    DependsOn:
+      - ApiApiGateway
+    Properties:
+      ApiId: !Ref ApiApiGateway
+      IntegrationType: HTTP_PROXY
+      IntegrationMethod: ANY
+      IntegrationUri: !Sub https://${ApiService.ServiceUrl}
+      PayloadFormatVersion: 1.0
+      RequestParameters:
+        "overwrite:header.X-Real-IP": "$context.identity.sourceIp"
+  ApiDomainName:
+    Type: AWS::ApiGatewayV2::DomainName
+    Properties:
+      DomainName: !Sub
+        - api.${Domain}
+        - Domain: !FindInMap [Configuration, !Ref Environment, Name]
+      DomainNameConfigurations:
+        - EndpointType: REGIONAL
+          CertificateArn:
+            !FindInMap [Configuration, !Ref Environment, Certificate]
+  ApiMapping:
+    Type: AWS::ApiGatewayV2::ApiMapping
+    DependsOn:
+      - ApiDomainName
+    Properties:
+      Stage: $default
+      ApiId: !Ref ApiApiGateway
+      DomainName: !Ref ApiDomainName
+  ApiRecordSet:
+    Type: AWS::Route53::RecordSet
+    Properties:
+      HostedZoneName: !Sub
+        - ${Domain}.
+        - Domain: !FindInMap [Configuration, zone, Name]
+      Name: !Ref ApiDomainName
+      Type: A
+      AliasTarget:
+        HostedZoneId: !GetAtt ApiDomainName.RegionalHostedZoneId
+        DNSName: !GetAtt ApiDomainName.RegionalDomainName

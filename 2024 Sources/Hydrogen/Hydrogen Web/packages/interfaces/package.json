@@ -1,0 +1,12 @@
+{
+  "name": "@hydrogen-web/interfaces",
+  "version": "0.0.0",
+  "main": "src/index.ts",
+  "scripts": {
+    "build": "tsc"
+  },
+  "devDependencies": {
+    "@types/node": "18.7.3",
+    "typescript": "4.7.4"
+  }
+}

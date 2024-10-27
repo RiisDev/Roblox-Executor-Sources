@@ -1,0 +1,19 @@
+# Reference: https://build-cpp.github.io/cmkr/cmake-toml
+[project]
+name = "hydrogen-decompiler"
+subdirs = ["vendor"]
+
+[target.test]
+type = "executable" # static, shared
+sources = ["src/hydrogen-decompiler/*.cpp", "include/hydrogen-decompiler/*.hpp"]
+include-directories = ["include"]
+compile-features = ["cxx_std_20"]
+link-libraries = [
+    "fmt",
+    "spdlog",
+
+    "Luau.Common",
+    "Luau.Ast",
+    "Luau.Compiler",
+    "Luau.VM",
+]

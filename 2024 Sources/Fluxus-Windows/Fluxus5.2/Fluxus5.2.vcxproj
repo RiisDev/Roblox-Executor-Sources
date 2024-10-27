@@ -1,0 +1,329 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="CallCheck.cpp" />
+    <ClCompile Include="Compiler.cpp" />
+    <ClCompile Include="EntryPoint.cpp" />
+    <ClCompile Include="FFlag.cpp" />
+    <ClCompile Include="Functions.cpp" />
+    <ClCompile Include="Globals.cpp" />
+    <ClCompile Include="KeySystem.cpp" />
+    <ClCompile Include="Libs\cpr\auth.cpp" />
+    <ClCompile Include="Libs\cpr\cookies.cpp" />
+    <ClCompile Include="Libs\cpr\cprtypes.cpp" />
+    <ClCompile Include="Libs\cpr\digest.cpp" />
+    <ClCompile Include="Libs\cpr\error.cpp" />
+    <ClCompile Include="Libs\cpr\multipart.cpp" />
+    <ClCompile Include="Libs\cpr\parameters.cpp" />
+    <ClCompile Include="Libs\cpr\payload.cpp" />
+    <ClCompile Include="Libs\cpr\proxies.cpp" />
+    <ClCompile Include="Libs\cpr\session.cpp" />
+    <ClCompile Include="Libs\cpr\ssl_options.cpp" />
+    <ClCompile Include="Libs\cpr\timeout.cpp" />
+    <ClCompile Include="Libs\cpr\util.cpp" />
+    <ClCompile Include="Libs\Drawing\Drawing.cpp" />
+    <ClCompile Include="Libs\ImGui\imgui.cpp" />
+    <ClCompile Include="Libs\ImGui\imgui_demo.cpp" />
+    <ClCompile Include="Libs\ImGui\imgui_draw.cpp" />
+    <ClCompile Include="Libs\ImGui\imgui_impl_dx11.cpp" />
+    <ClCompile Include="Libs\ImGui\imgui_impl_dx9.cpp" />
+    <ClCompile Include="Libs\ImGui\imgui_impl_win32.cpp" />
+    <ClCompile Include="Libs\ImGui\imgui_widgets.cpp" />
+    <ClCompile Include="Libs\Lua\lapi.c" />
+    <ClCompile Include="Libs\Lua\lauxlib.c" />
+    <ClCompile Include="Libs\Lua\lbaselib.c" />
+    <ClCompile Include="Libs\Lua\lcode.c" />
+    <ClCompile Include="Libs\Lua\ldblib.c" />
+    <ClCompile Include="Libs\Lua\ldebug.c" />
+    <ClCompile Include="Libs\Lua\ldo.c" />
+    <ClCompile Include="Libs\Lua\ldump.c" />
+    <ClCompile Include="Libs\Lua\lfunc.c" />
+    <ClCompile Include="Libs\Lua\lgc.c" />
+    <ClCompile Include="Libs\Lua\linit.c" />
+    <ClCompile Include="Libs\Lua\liolib.c" />
+    <ClCompile Include="Libs\Lua\llex.c" />
+    <ClCompile Include="Libs\Lua\lmathlib.c" />
+    <ClCompile Include="Libs\Lua\lmem.c" />
+    <ClCompile Include="Libs\Lua\loadlib.c" />
+    <ClCompile Include="Libs\Lua\lobject.c" />
+    <ClCompile Include="Libs\Lua\lopcodes.c" />
+    <ClCompile Include="Libs\Lua\loslib.c" />
+    <ClCompile Include="Libs\Lua\lparser.c" />
+    <ClCompile Include="Libs\Lua\lstate.c" />
+    <ClCompile Include="Libs\Lua\lstring.c" />
+    <ClCompile Include="Libs\Lua\lstrlib.c" />
+    <ClCompile Include="Libs\Lua\ltable.c" />
+    <ClCompile Include="Libs\Lua\ltablib.c" />
+    <ClCompile Include="Libs\Lua\ltm.c" />
+    <ClCompile Include="Libs\Lua\lua.c" />
+    <ClCompile Include="Libs\Lua\luac.c" />
+    <ClCompile Include="Libs\Lua\lundump.c" />
+    <ClCompile Include="Libs\Lua\lvm.c" />
+    <ClCompile Include="Libs\Lua\lzio.c" />
+    <ClCompile Include="Libs\Lua\print.c" />
+    <ClCompile Include="Main.cpp" />
+    <ClCompile Include="RBX.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="CallCheck.hpp" />
+    <ClInclude Include="Compiler.hpp" />
+    <ClInclude Include="FFlag.hpp" />
+    <ClInclude Include="Functions.hpp" />
+    <ClInclude Include="Globals.hpp" />
+    <ClInclude Include="KeySystem.hpp" />
+    <ClInclude Include="Libs\cpr\api.h" />
+    <ClInclude Include="Libs\cpr\auth.h" />
+    <ClInclude Include="Libs\cpr\body.h" />
+    <ClInclude Include="Libs\cpr\cookies.h" />
+    <ClInclude Include="Libs\cpr\cpr.h" />
+    <ClInclude Include="Libs\cpr\cprtypes.h" />
+    <ClInclude Include="Libs\cpr\curlholder.h" />
+    <ClInclude Include="Libs\cpr\defines.h" />
+    <ClInclude Include="Libs\cpr\digest.h" />
+    <ClInclude Include="Libs\cpr\error.h" />
+    <ClInclude Include="Libs\cpr\low_speed.h" />
+    <ClInclude Include="Libs\cpr\max_redirects.h" />
+    <ClInclude Include="Libs\cpr\multipart.h" />
+    <ClInclude Include="Libs\cpr\parameters.h" />
+    <ClInclude Include="Libs\cpr\payload.h" />
+    <ClInclude Include="Libs\cpr\proxies.h" />
+    <ClInclude Include="Libs\cpr\response.h" />
+    <ClInclude Include="Libs\cpr\session.h" />
+    <ClInclude Include="Libs\cpr\ssl_options.h" />
+    <ClInclude Include="Libs\cpr\timeout.h" />
+    <ClInclude Include="Libs\cpr\util.h" />
+    <ClInclude Include="Libs\cURL\curl.h" />
+    <ClInclude Include="Libs\cURL\curlver.h" />
+    <ClInclude Include="Libs\cURL\easy.h" />
+    <ClInclude Include="Libs\cURL\mprintf.h" />
+    <ClInclude Include="Libs\cURL\multi.h" />
+    <ClInclude Include="Libs\cURL\stdcheaders.h" />
+    <ClInclude Include="Libs\cURL\system.h" />
+    <ClInclude Include="Libs\cURL\typecheck-gcc.h" />
+    <ClInclude Include="Libs\cURL\urlapi.h" />
+    <ClInclude Include="Libs\Drawing\Drawing.hpp" />
+    <ClInclude Include="Libs\HttpLib.h" />
+    <ClInclude Include="Libs\ImGui\imconfig.h" />
+    <ClInclude Include="Libs\ImGui\imgui.h" />
+    <ClInclude Include="Libs\ImGui\imgui_impl_dx11.h" />
+    <ClInclude Include="Libs\ImGui\imgui_impl_dx9.h" />
+    <ClInclude Include="Libs\ImGui\imgui_impl_win32.h" />
+    <ClInclude Include="Libs\ImGui\imgui_internal.h" />
+    <ClInclude Include="Libs\ImGui\imstb_rectpack.h" />
+    <ClInclude Include="Libs\ImGui\imstb_textedit.h" />
+    <ClInclude Include="Libs\ImGui\imstb_truetype.h" />
+    <ClInclude Include="Libs\Lua\lapi.h" />
+    <ClInclude Include="Libs\Lua\lauxlib.h" />
+    <ClInclude Include="Libs\Lua\lcode.h" />
+    <ClInclude Include="Libs\Lua\ldebug.h" />
+    <ClInclude Include="Libs\Lua\ldo.h" />
+    <ClInclude Include="Libs\Lua\lfunc.h" />
+    <ClInclude Include="Libs\Lua\lgc.h" />
+    <ClInclude Include="Libs\Lua\llex.h" />
+    <ClInclude Include="Libs\Lua\llimits.h" />
+    <ClInclude Include="Libs\Lua\lmem.h" />
+    <ClInclude Include="Libs\Lua\lobject.h" />
+    <ClInclude Include="Libs\Lua\lopcodes.h" />
+    <ClInclude Include="Libs\Lua\lparser.h" />
+    <ClInclude Include="Libs\Lua\lstate.h" />
+    <ClInclude Include="Libs\Lua\lstring.h" />
+    <ClInclude Include="Libs\Lua\ltable.h" />
+    <ClInclude Include="Libs\Lua\ltm.h" />
+    <ClInclude Include="Libs\Lua\lua.h" />
+    <ClInclude Include="Libs\Lua\luaconf.h" />
+    <ClInclude Include="Libs\Lua\lualib.h" />
+    <ClInclude Include="Libs\Lua\lundump.h" />
+    <ClInclude Include="Libs\Lua\lvm.h" />
+    <ClInclude Include="Libs\Lua\lzio.h" />
+    <ClInclude Include="Libs\MinHook\MinHook.hpp" />
+    <ClInclude Include="Libs\plog\Appenders\AndroidAppender.h" />
+    <ClInclude Include="Libs\plog\Appenders\ColorConsoleAppender.h" />
+    <ClInclude Include="Libs\plog\Appenders\ConsoleAppender.h" />
+    <ClInclude Include="Libs\plog\Appenders\DebugOutputAppender.h" />
+    <ClInclude Include="Libs\plog\Appenders\EventLogAppender.h" />
+    <ClInclude Include="Libs\plog\Appenders\IAppender.h" />
+    <ClInclude Include="Libs\plog\Appenders\RollingFileAppender.h" />
+    <ClInclude Include="Libs\plog\Converters\NativeEOLConverter.h" />
+    <ClInclude Include="Libs\plog\Converters\UTF8Converter.h" />
+    <ClInclude Include="Libs\plog\Formatters\CsvFormatter.h" />
+    <ClInclude Include="Libs\plog\Formatters\FuncMessageFormatter.h" />
+    <ClInclude Include="Libs\plog\Formatters\MessageOnlyFormatter.h" />
+    <ClInclude Include="Libs\plog\Formatters\TxtFormatter.h" />
+    <ClInclude Include="Libs\plog\Init.h" />
+    <ClInclude Include="Libs\plog\Initializers\RollingFileInitializer.h" />
+    <ClInclude Include="Libs\plog\Log.h" />
+    <ClInclude Include="Libs\plog\Logger.h" />
+    <ClInclude Include="Libs\plog\Record.h" />
+    <ClInclude Include="Libs\plog\Severity.h" />
+    <ClInclude Include="Libs\plog\Util.h" />
+    <ClInclude Include="Libs\plog\WinApi.h" />
+    <ClInclude Include="Libs\VMProtect\VMProtectSDK32.h" />
+    <ClInclude Include="Main.hpp" />
+    <ClInclude Include="RBX.hpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <Library Include="Libs\cURL\libcurl_a.lib" />
+    <Library Include="Libs\MinHook\libMinHook.x86.lib" />
+    <Library Include="Libs\VMProtect\VMProtectSDK32.lib" />
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>16.0</VCProjectVersion>
+    <Keyword>Win32Proj</Keyword>
+    <ProjectGuid>{eff12f3d-6342-4d31-ac05-d53783a93032}</ProjectGuid>
+    <RootNamespace>Fluxus52</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <WholeProgramOptimization>false</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+    <IncludePath>C:\Users\13472\source\repos\Fluxus5.2\Fluxus5.2\Libs\cURL;$(IncludePath)</IncludePath>
+    <LibraryPath>C:\Users\13472\source\repos\Fluxus5.2\Fluxus5.2\Libs\cURL;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+    <LibraryPath>C:\Users\13472\source\repos\Fluxus5.2\Fluxus5.2\Libs\cURL;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;_CRT_SECURE_NO_WARNINGS;_DEBUG;FLUXUS52_EXPORTS;_WINDOWS;_USRDLL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableUAC>false</EnableUAC>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;CURL_STATICLIB;NDEBUG;_CRT_SECURE_NO_WARNINGS;FLUXUS52_EXPORTS;_WINDOWS;_USRDLL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+      <DebugInformationFormat>OldStyle</DebugInformationFormat>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <EnableUAC>false</EnableUAC>
+      <AdditionalDependencies>libcurl_a.lib;Ws2_32.lib;Crypt32.lib;Wldap32.lib;Normaliz.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>_DEBUG;FLUXUS52_EXPORTS;_WINDOWS;_USRDLL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableUAC>false</EnableUAC>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>NDEBUG;FLUXUS52_EXPORTS;_WINDOWS;_USRDLL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableUAC>false</EnableUAC>
+    </Link>
+  </ItemDefinitionGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

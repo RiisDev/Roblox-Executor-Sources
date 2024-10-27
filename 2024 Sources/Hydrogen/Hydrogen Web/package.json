@@ -1,0 +1,42 @@
+{
+  "name": "hydrogen-web",
+  "version": "1.0.0",
+  "scripts": {
+    "build": "rimraf node_modules/.pnpm/hexoid@1.0.0/node_modules/hexoid/dist/index.mjs && tsup",
+    "dev": "cd configs && dev.bat",
+    "dev:unix": "bash ./configs/dev.sh",
+    "dev:proxy": "caddy run --watch --config configs/Caddyfile",
+    "dev:services-api": "nodemon services/api/src/index.ts",
+    "dev:services-bot": "nodemon services/bot/src/index.ts",
+    "dev:web-android": "pnpm --filter @hydrogen-web/web-android dev",
+    "dev:web-dashboard": "pnpm --filter @hydrogen-web/web-dashboard dev",
+    "dev:web-gateway": "pnpm --filter @hydrogen-web/web-gateway dev",
+    "dev:web-landing": "pnpm --filter @hydrogen-web/web-landing dev"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.20",
+    "rimraf": "^3.0.2",
+    "ts-node": "^10.9.1",
+    "tsup": "^6.3.0"
+  },
+  "nodemonConfig": {
+    "ext": "ts",
+    "watch": [
+      "packages",
+      "services"
+    ]
+  },
+  "tsup": {
+    "clean": true,
+    "bundle": true,
+    "minify": false,
+    "outDir": "dist",
+    "platform": "node",
+    "sourcemap": "inline",
+    "entry": {
+      "api": "services/api/src/index.ts",
+      "bot": "services/bot/src/index.ts",
+      "lambda": "services/lambda/src/index.ts"
+    }
+  }
+}

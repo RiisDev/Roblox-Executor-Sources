@@ -1,0 +1,26 @@
+{
+  "name": "@hydrogen-web/services-api",
+  "version": "0.0.0",
+  "main": "src/index.ts",
+  "scripts": {
+    "build": "tsc"
+  },
+  "dependencies": {
+    "@aws-sdk/client-s3": "^3.199.0",
+    "@fastify/cookie": "^8.3.0",
+    "@fastify/cors": "^8.1.0",
+    "@fastify/multipart": "^7.3.0",
+    "@hydrogen-web/interfaces": "workspace:^",
+    "@hydrogen-web/libraries": "workspace:^",
+    "@hydrogen-web/models": "workspace:^",
+    "@hydrogen-web/utils": "workspace:^",
+    "axios": "^1.1.3",
+    "fastify": "^4.9.2",
+    "fastify-plugin": "^4.3.0",
+    "jose": "^4.10.4"
+  },
+  "devDependencies": {
+    "@types/node": "18.7.3",
+    "typescript": "4.7.4"
+  }
+}

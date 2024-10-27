@@ -1,0 +1,14 @@
+{
+  "pins" : [
+    {
+      "identity" : "codeviewer",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/dwarvesf/CodeViewer",
+      "state" : {
+        "branch" : "main",
+        "revision" : "44bd04af81046ce65a4e38dc97a9dd3d387f069e"
+      }
+    }
+  ],
+  "version" : 2
+}
