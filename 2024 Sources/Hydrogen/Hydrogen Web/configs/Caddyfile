@@ -1,0 +1,26 @@
+{
+	local_certs
+	admin off
+}
+
+dev.hydrogen.sh {
+	reverse_proxy localhost:3000
+}
+
+gateway.dev.hydrogen.sh {
+	reverse_proxy localhost:3001
+}
+
+dashboard.dev.hydrogen.sh {
+	reverse_proxy localhost:3002
+}
+
+android.dev.hydrogen.sh {
+	reverse_proxy localhost:3003
+}
+
+api.dev.hydrogen.sh {
+	reverse_proxy localhost:5000 {
+		header_up X-Real-IP {remote_host}
+	}
+}

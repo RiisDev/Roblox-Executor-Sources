@@ -1,0 +1,39 @@
+AWSTemplateFormatVersion: "2010-09-09"
+Parameters:
+  Environment:
+    Type: String
+Resources:
+  BotCluster:
+    Type: AWS::ECS::Cluster
+    Properties:
+      ClusterName: !Sub bot-${Environment}
+  BotTaskDefinition:
+    Type: AWS::ECS::TaskDefinition
+    Properties:
+      ContainerDefinitions:
+        - Name: !Sub bot-${Environment}
+          Image: !Sub 396669123982.dkr.ecr.us-east-1.amazonaws.com/bot:${Environment}-amd64
+          Environment:
+            - Name: NODE_ENV
+              Value: !Ref Environment
+      Family: !Sub bot-${Environment}
+      Cpu: 1024
+      Memory: 2048
+      NetworkMode: awsvpc
+      ExecutionRoleArn: arn:aws:iam::396669123982:role/BotRole
+      TaskRoleArn: arn:aws:iam::396669123982:role/BotRole
+      RequiresCompatibilities:
+        - FARGATE
+  BotService:
+    Type: AWS::ECS::Service
+    Properties:
+      Cluster: !Ref BotCluster
+      ServiceName: !Sub bot-${Environment}
+      TaskDefinition: !Ref BotTaskDefinition
+      DesiredCount: 1
+      LaunchType: FARGATE
+      NetworkConfiguration:
+        AwsvpcConfiguration:
+          AssignPublicIp: ENABLED
+          Subnets:
+            - subnet-069a65e1bb00e31ea

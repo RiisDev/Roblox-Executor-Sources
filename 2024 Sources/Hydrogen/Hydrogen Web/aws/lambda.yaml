@@ -1,0 +1,95 @@
+AWSTemplateFormatVersion: "2010-09-09"
+Parameters:
+  Environment:
+    Type: String
+Resources:
+  SyncKeysFunction:
+    Type: AWS::Lambda::Function
+    Properties:
+      Role: arn:aws:iam::396669123982:role/LambdaRole
+      FunctionName: !Sub SyncKeys-${Environment}
+      Timeout: 60
+      MemorySize: 2048
+      PackageType: Image
+      Architectures:
+        - arm64
+      Code:
+        ImageUri: !Sub 396669123982.dkr.ecr.us-east-1.amazonaws.com/lambda:${Environment}-arm64
+      ImageConfig:
+        Command:
+          - index.syncKeys
+      Environment:
+        Variables:
+          NODE_ENV: !Ref Environment
+  SyncKeysRule:
+    Type: AWS::Events::Rule
+    Properties:
+      ScheduleExpression: "rate(1 minute)"
+      State: ENABLED
+      Targets:
+        - Arn: !GetAtt SyncKeysFunction.Arn
+          Id: !Sub SyncKeys-${Environment}
+  SyncKeysPermission:
+    Type: AWS::Lambda::Permission
+    Properties:
+      Action: lambda:InvokeFunction
+      Principal: events.amazonaws.com
+      SourceArn: !GetAtt SyncKeysRule.Arn
+      FunctionName: !Ref SyncKeysFunction
+  SyncStatesFunction:
+    Type: AWS::Lambda::Function
+    Properties:
+      Role: arn:aws:iam::396669123982:role/LambdaRole
+      FunctionName: !Sub SyncStates-${Environment}
+      Timeout: 60
+      MemorySize: 2048
+      PackageType: Image
+      Architectures:
+        - arm64
+      Code:
+        ImageUri: !Sub 396669123982.dkr.ecr.us-east-1.amazonaws.com/lambda:${Environment}-arm64
+      ImageConfig:
+        Command:
+          - index.syncStates
+      Environment:
+        Variables:
+          NODE_ENV: !Ref Environment
+  SyncStatesRule:
+    Type: AWS::Events::Rule
+    Properties:
+      ScheduleExpression: "rate(1 minute)"
+      State: ENABLED
+      Targets:
+        - Arn: !GetAtt SyncStatesFunction.Arn
+          Id: !Sub SyncStates-${Environment}
+  SyncStatesPermission:
+    Type: AWS::Lambda::Permission
+    Properties:
+      Action: lambda:InvokeFunction
+      Principal: events.amazonaws.com
+      SourceArn: !GetAtt SyncStatesRule.Arn
+      FunctionName: !Ref SyncStatesFunction
+  PushReleaseFunction:
+    Type: AWS::Lambda::Function
+    Properties:
+      Role: arn:aws:iam::396669123982:role/LambdaRole
+      FunctionName: !Sub PushRelease-${Environment}
+      Timeout: 60
+      MemorySize: 1024
+      PackageType: Image
+      Architectures:
+        - arm64
+      Code:
+        ImageUri: !Sub 396669123982.dkr.ecr.us-east-1.amazonaws.com/lambda:${Environment}-arm64
+      ImageConfig:
+        Command:
+          - index.pushRelease
+      Environment:
+        Variables:
+          NODE_ENV: !Ref Environment
+  PushReleasePermission:
+    Type: AWS::Lambda::Permission
+    Properties:
+      Action: lambda:InvokeFunction
+      Principal: events.amazonaws.com
+      FunctionName: !Ref PushReleaseFunction

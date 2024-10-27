@@ -1,0 +1,15 @@
+{
+  "name": "@hydrogen-web/models",
+  "version": "0.0.0",
+  "main": "src/index.ts",
+  "scripts": {
+    "build": "tsc"
+  },
+  "dependencies": {
+    "mongoose": "^6.6.5"
+  },
+  "devDependencies": {
+    "@types/node": "18.7.3",
+    "typescript": "4.7.4"
+  }
+}
