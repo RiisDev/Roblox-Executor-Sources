@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.3.32929.385
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "hydrogen-dll", "hydrogen-dll\hydrogen-dll.vcxproj", "{C93814EB-DD72-4DE4-AB3D-7062D23B183D}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x64 = Debug|x64
+		Debug|x86 = Debug|x86
+		Release|x64 = Release|x64
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{C93814EB-DD72-4DE4-AB3D-7062D23B183D}.Debug|x64.ActiveCfg = Debug|x64
+		{C93814EB-DD72-4DE4-AB3D-7062D23B183D}.Debug|x64.Build.0 = Debug|x64
+		{C93814EB-DD72-4DE4-AB3D-7062D23B183D}.Debug|x86.ActiveCfg = Debug|Win32
+		{C93814EB-DD72-4DE4-AB3D-7062D23B183D}.Debug|x86.Build.0 = Debug|Win32
+		{C93814EB-DD72-4DE4-AB3D-7062D23B183D}.Release|x64.ActiveCfg = Release|x64
+		{C93814EB-DD72-4DE4-AB3D-7062D23B183D}.Release|x64.Build.0 = Release|x64
+		{C93814EB-DD72-4DE4-AB3D-7062D23B183D}.Release|x86.ActiveCfg = Release|Win32
+		{C93814EB-DD72-4DE4-AB3D-7062D23B183D}.Release|x86.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {E6B54921-3092-46F0-88AB-0D5853FD91C8}
+	EndGlobalSection
+EndGlobal
