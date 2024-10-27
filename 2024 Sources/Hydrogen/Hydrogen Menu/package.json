@@ -1,0 +1,13 @@
+{
+  "name": "hydrogen-menu",
+  "version": "0.0.0",
+  "scripts": {
+    "build": "tsc",
+    "watch": "tsc -w",
+    "start": "npm run build && electron ./dist/main.js"
+  },
+  "devDependencies": {
+    "electron": "^20.1.1",
+    "typescript": "^4.8.2"
+  }
+}
