@@ -1,0 +1,471 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|ARM">
+      <Configuration>Debug</Configuration>
+      <Platform>ARM</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|ARM">
+      <Configuration>Release</Configuration>
+      <Platform>ARM</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|ARM64">
+      <Configuration>Debug</Configuration>
+      <Platform>ARM64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|ARM64">
+      <Configuration>Release</Configuration>
+      <Platform>ARM64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x86">
+      <Configuration>Debug</Configuration>
+      <Platform>x86</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x86">
+      <Configuration>Release</Configuration>
+      <Platform>x86</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{354cc9ef-75ba-43e6-a86b-9c84ebd518fa}</ProjectGuid>
+    <Keyword>Android</Keyword>
+    <RootNamespace>HydrogenAndroid</RootNamespace>
+    <MinimumVisualStudioVersion>14.0</MinimumVisualStudioVersion>
+    <ApplicationType>Android</ApplicationType>
+    <ApplicationTypeRevision>3.0</ApplicationTypeRevision>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|ARM64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>Clang_5_0</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|ARM64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>Clang_5_0</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|ARM'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>Clang_5_0</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|ARM'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>Clang_5_0</PlatformToolset>
+    <AndroidAPILevel>android-21</AndroidAPILevel>
+    <ThumbMode>Thumb</ThumbMode>
+    <UseOfStl>c++_static</UseOfStl>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>Clang_5_0</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>Clang_5_0</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x86'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>Clang_5_0</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x86'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>Clang_5_0</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings" />
+  <ImportGroup Label="Shared" />
+  <ImportGroup Label="PropertySheets" />
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x86'">
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x86'">
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|ARM64'">
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|ARM64'">
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|ARM'">
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|ARM'">
+    <UseMultiToolTask>true</UseMultiToolTask>
+    <IncludePath>$(MSBuildProjectDirectory)/;$(MSBuildProjectDirectory)/dependencies;$(MSBuildProjectDirectory)\dependencies\Luau\;$(LOCALAPPDATA)\Android\Sdk\ndk\22.0.7026061\sources\cxx-stl\llvm-libc++\include\filesystem;$(IncludePath)</IncludePath>
+    <LibraryPath>$(MSBuildProjectDirectory)\dependencies\curl\;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
+    </ClCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
+    </ClCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x86'">
+    <ClCompile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
+    </ClCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x86'">
+    <ClCompile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
+    </ClCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|ARM64'">
+    <ClCompile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
+    </ClCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|ARM64'">
+    <ClCompile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
+    </ClCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|ARM'">
+    <ClCompile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
+    </ClCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|ARM'">
+    <ClCompile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
+      <CppLanguageStandard>c++1z</CppLanguageStandard>
+      <ExceptionHandling>Enabled</ExceptionHandling>
+      <Optimization>Disabled</Optimization>
+      <CLanguageStandard>c11</CLanguageStandard>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <ObjectFileName>$(IntDir)%(RelativeDir)%(filename).o</ObjectFileName>
+      <DebugInformationFormat>None</DebugInformationFormat>
+      <AdditionalOptions>-fvisibility=hidden %(AdditionalOptions)</AdditionalOptions>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies>
+      </AdditionalDependencies>
+      <AdditionalOptions>-lm -lz %(AdditionalOptions)</AdditionalOptions>
+      <LibraryDependencies>$(LOCALAPPDATA)\Android\Sdk\ndk\22.0.7026061\sources\cxx-stl\llvm-libc++\libs\armeabi-v7a\libunwind.a;$(MSBuildProjectDirectory)\dependencies\curl\libcrypto.a;$(MSBuildProjectDirectory)\dependencies\curl\libcurl.a;$(MSBuildProjectDirectory)\dependencies\curl\libssl.a;EGL;GLESv3;%(LibraryDependencies)</LibraryDependencies>
+      <DebuggerSymbolInformation>OmitAllSymbolInformation</DebuggerSymbolInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClInclude Include="dependencies\common_includes.hpp" />
+    <ClInclude Include="dependencies\cpufeatures\cpu-features.h" />
+    <ClInclude Include="dependencies\curl\curl.h" />
+    <ClInclude Include="dependencies\curl\curlver.h" />
+    <ClInclude Include="dependencies\curl\easy.h" />
+    <ClInclude Include="dependencies\curl\http.hpp" />
+    <ClInclude Include="dependencies\curl\mprintf.h" />
+    <ClInclude Include="dependencies\curl\multi.h" />
+    <ClInclude Include="dependencies\curl\stdcheaders.h" />
+    <ClInclude Include="dependencies\curl\system.h" />
+    <ClInclude Include="dependencies\curl\typecheck-gcc.h" />
+    <ClInclude Include="dependencies\curl\urlapi.h" />
+    <ClInclude Include="dependencies\curl\util.h" />
+    <ClInclude Include="dependencies\dobby\dobby.h" />
+    <ClInclude Include="dependencies\fonts.hpp" />
+    <ClInclude Include="dependencies\ghc\filesystem.hpp" />
+    <ClInclude Include="dependencies\ghc\fs_fwd.hpp" />
+    <ClInclude Include="dependencies\ghc\fs_impl.hpp" />
+    <ClInclude Include="dependencies\ghc\fs_std.hpp" />
+    <ClInclude Include="dependencies\ghc\fs_std_fwd.hpp" />
+    <ClInclude Include="dependencies\ghc\fs_std_impl.hpp" />
+    <ClInclude Include="dependencies\imgui\imconfig.h" />
+    <ClInclude Include="dependencies\imgui\imgui.h" />
+    <ClInclude Include="dependencies\imgui\imgui_impl_android.h" />
+    <ClInclude Include="dependencies\imgui\imgui_impl_opengl3.h" />
+    <ClInclude Include="dependencies\imgui\imgui_impl_opengl3_loader.h" />
+    <ClInclude Include="dependencies\imgui\imgui_internal.h" />
+    <ClInclude Include="dependencies\imgui\imstb_rectpack.h" />
+    <ClInclude Include="dependencies\imgui\imstb_textedit.h" />
+    <ClInclude Include="dependencies\imgui\imstb_truetype.h" />
+    <ClInclude Include="dependencies\imgui\stb_image.h" />
+    <ClInclude Include="dependencies\imgui\TextEditor.h" />
+    <ClInclude Include="dependencies\Luau\BuiltinFolding.h" />
+    <ClInclude Include="dependencies\Luau\Builtins.h" />
+    <ClInclude Include="dependencies\Luau\ConstantFolding.h" />
+    <ClInclude Include="dependencies\Luau\CostModel.h" />
+    <ClInclude Include="dependencies\Luau\lapi.h" />
+    <ClInclude Include="dependencies\Luau\lbuiltins.h" />
+    <ClInclude Include="dependencies\Luau\lbytecode.h" />
+    <ClInclude Include="dependencies\Luau\lcommon.h" />
+    <ClInclude Include="dependencies\Luau\ldebug.h" />
+    <ClInclude Include="dependencies\Luau\ldo.h" />
+    <ClInclude Include="dependencies\Luau\lfunc.h" />
+    <ClInclude Include="dependencies\Luau\lgc.h" />
+    <ClInclude Include="dependencies\Luau\lmem.h" />
+    <ClInclude Include="dependencies\Luau\lnumutils.h" />
+    <ClInclude Include="dependencies\Luau\lobject.h" />
+    <ClInclude Include="dependencies\Luau\lstate.h" />
+    <ClInclude Include="dependencies\Luau\lstring.h" />
+    <ClInclude Include="dependencies\Luau\ltable.h" />
+    <ClInclude Include="dependencies\Luau\ltm.h" />
+    <ClInclude Include="dependencies\Luau\lua.h" />
+    <ClInclude Include="dependencies\Luau\luacode.h" />
+    <ClInclude Include="dependencies\Luau\luaconf.h" />
+    <ClInclude Include="dependencies\Luau\lualib.h" />
+    <ClInclude Include="dependencies\Luau\Luau\Ast.h" />
+    <ClInclude Include="dependencies\Luau\Luau\Bytecode.h" />
+    <ClInclude Include="dependencies\Luau\Luau\BytecodeBuilder.h" />
+    <ClInclude Include="dependencies\Luau\Luau\Common.h" />
+    <ClInclude Include="dependencies\Luau\Luau\Compiler.h" />
+    <ClInclude Include="dependencies\Luau\Luau\Confusables.h" />
+    <ClInclude Include="dependencies\Luau\Luau\DenseHash.h" />
+    <ClInclude Include="dependencies\Luau\Luau\ExperimentalFlags.h" />
+    <ClInclude Include="dependencies\Luau\Luau\Lexer.h" />
+    <ClInclude Include="dependencies\Luau\Luau\Location.h" />
+    <ClInclude Include="dependencies\Luau\Luau\ParseOptions.h" />
+    <ClInclude Include="dependencies\Luau\Luau\Parser.h" />
+    <ClInclude Include="dependencies\Luau\Luau\ParseResult.h" />
+    <ClInclude Include="dependencies\Luau\Luau\StringUtils.h" />
+    <ClInclude Include="dependencies\Luau\Luau\TimeTrace.h" />
+    <ClInclude Include="dependencies\Luau\ludata.h" />
+    <ClInclude Include="dependencies\Luau\lvm.h" />
+    <ClInclude Include="dependencies\Luau\TableShape.h" />
+    <ClInclude Include="dependencies\Luau\ValueTracking.h" />
+    <ClInclude Include="dependencies\lz4\lz4.h" />
+    <ClInclude Include="dependencies\lz4\lz4hc.h" />
+    <ClInclude Include="dependencies\lz4\lz4hc_encoder.h" />
+    <ClInclude Include="dependencies\lz4\lz4_decoder.h" />
+    <ClInclude Include="dependencies\lz4\lz4_encoder.h" />
+    <ClInclude Include="dependencies\sha384\sha384.h" />
+    <ClInclude Include="dependencies\zstd\common\bitstream.h" />
+    <ClInclude Include="dependencies\zstd\common\compiler.h" />
+    <ClInclude Include="dependencies\zstd\common\cpu.h" />
+    <ClInclude Include="dependencies\zstd\common\debug.h" />
+    <ClInclude Include="dependencies\zstd\common\error_private.h" />
+    <ClInclude Include="dependencies\zstd\common\fse.h" />
+    <ClInclude Include="dependencies\zstd\common\huf.h" />
+    <ClInclude Include="dependencies\zstd\common\mem.h" />
+    <ClInclude Include="dependencies\zstd\common\pool.h" />
+    <ClInclude Include="dependencies\zstd\common\portability_macros.h" />
+    <ClInclude Include="dependencies\zstd\common\threading.h" />
+    <ClInclude Include="dependencies\zstd\common\xxhash.h" />
+    <ClInclude Include="dependencies\zstd\common\zstd_deps.h" />
+    <ClInclude Include="dependencies\zstd\common\zstd_internal.h" />
+    <ClInclude Include="dependencies\zstd\common\zstd_trace.h" />
+    <ClInclude Include="dependencies\zstd\compress\clevels.h" />
+    <ClInclude Include="dependencies\zstd\compress\hist.h" />
+    <ClInclude Include="dependencies\zstd\compress\zstdmt_compress.h" />
+    <ClInclude Include="dependencies\zstd\compress\zstd_compress_internal.h" />
+    <ClInclude Include="dependencies\zstd\compress\zstd_compress_literals.h" />
+    <ClInclude Include="dependencies\zstd\compress\zstd_compress_sequences.h" />
+    <ClInclude Include="dependencies\zstd\compress\zstd_compress_superblock.h" />
+    <ClInclude Include="dependencies\zstd\compress\zstd_cwksp.h" />
+    <ClInclude Include="dependencies\zstd\compress\zstd_double_fast.h" />
+    <ClInclude Include="dependencies\zstd\compress\zstd_fast.h" />
+    <ClInclude Include="dependencies\zstd\compress\zstd_lazy.h" />
+    <ClInclude Include="dependencies\zstd\compress\zstd_ldm.h" />
+    <ClInclude Include="dependencies\zstd\compress\zstd_ldm_geartab.h" />
+    <ClInclude Include="dependencies\zstd\compress\zstd_opt.h" />
+    <ClInclude Include="dependencies\zstd\decompress\zstd_ddict.h" />
+    <ClInclude Include="dependencies\zstd\decompress\zstd_decompress_block.h" />
+    <ClInclude Include="dependencies\zstd\decompress\zstd_decompress_internal.h" />
+    <ClInclude Include="dependencies\zstd\deprecated\zbuff.h" />
+    <ClInclude Include="dependencies\zstd\dictBuilder\cover.h" />
+    <ClInclude Include="dependencies\zstd\dictBuilder\divsufsort.h" />
+    <ClInclude Include="dependencies\zstd\legacy\zstd_legacy.h" />
+    <ClInclude Include="dependencies\zstd\legacy\zstd_v01.h" />
+    <ClInclude Include="dependencies\zstd\legacy\zstd_v02.h" />
+    <ClInclude Include="dependencies\zstd\legacy\zstd_v03.h" />
+    <ClInclude Include="dependencies\zstd\legacy\zstd_v04.h" />
+    <ClInclude Include="dependencies\zstd\legacy\zstd_v05.h" />
+    <ClInclude Include="dependencies\zstd\legacy\zstd_v06.h" />
+    <ClInclude Include="dependencies\zstd\legacy\zstd_v07.h" />
+    <ClInclude Include="dependencies\zstd\zdict.h" />
+    <ClInclude Include="dependencies\zstd\zstd.h" />
+    <ClInclude Include="dependencies\zstd\zstd_errors.h" />
+    <ClInclude Include="managers\crash\crash.hpp" />
+    <ClInclude Include="managers\drawing\drawing.hpp" />
+    <ClInclude Include="managers\function\function.hpp" />
+    <ClInclude Include="managers\hook\hook.hpp" />
+    <ClInclude Include="managers\jni\jni.hpp" />
+    <ClInclude Include="managers\jni\jnihttp.hpp" />
+    <ClInclude Include="managers\managers.hpp" />
+    <ClInclude Include="managers\memory\memory.hpp" />
+    <ClInclude Include="managers\menu\animator.hpp" />
+    <ClInclude Include="managers\menu\assets\fonts.hpp" />
+    <ClInclude Include="managers\menu\assets\images.hpp" />
+    <ClInclude Include="managers\menu\font.hpp" />
+    <ClInclude Include="managers\menu\image.hpp" />
+    <ClInclude Include="managers\menu\menu.hpp" />
+    <ClInclude Include="managers\menu\routines.hpp" />
+    <ClInclude Include="managers\menu\tabs.hpp" />
+    <ClInclude Include="managers\renderer\renderer.hpp" />
+    <ClInclude Include="managers\roblox\checks\networked_dm\networked_dm.hpp" />
+    <ClInclude Include="managers\roblox\checks\trust_check\trust_check.hpp" />
+    <ClInclude Include="managers\roblox\environment\cache\cache.hpp" />
+    <ClInclude Include="managers\roblox\environment\console\console.hpp" />
+    <ClInclude Include="managers\roblox\environment\core\core.hpp" />
+    <ClInclude Include="managers\roblox\environment\debug_lib\debug_lib.hpp" />
+    <ClInclude Include="managers\roblox\environment\drawing\drawing.hpp" />
+    <ClInclude Include="managers\roblox\environment\environment.hpp" />
+    <ClInclude Include="managers\roblox\environment\security\security.hpp" />
+    <ClInclude Include="managers\roblox\offsets.hpp" />
+    <ClInclude Include="managers\roblox\roblox.hpp" />
+    <ClInclude Include="managers\utility\utility.hpp" />
+    <ClInclude Include="pch.h" />
+    <ClInclude Include="structures\instance\instance.hpp" />
+    <ClInclude Include="structures\structures.hpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="dependencies\cpufeatures\cpu-features.c" />
+    <ClCompile Include="dependencies\curl\http.cpp" />
+    <ClCompile Include="dependencies\imgui\imgui.cpp" />
+    <ClCompile Include="dependencies\imgui\imgui_demo.cpp" />
+    <ClCompile Include="dependencies\imgui\imgui_draw.cpp" />
+    <ClCompile Include="dependencies\imgui\imgui_impl_android.cpp" />
+    <ClCompile Include="dependencies\imgui\imgui_impl_opengl3.cpp" />
+    <ClCompile Include="dependencies\imgui\imgui_tables.cpp" />
+    <ClCompile Include="dependencies\imgui\imgui_widgets.cpp" />
+    <ClCompile Include="dependencies\imgui\TextEditor.cpp" />
+    <ClCompile Include="dependencies\Luau\Ast.cpp" />
+    <ClCompile Include="dependencies\Luau\BuiltinFolding.cpp" />
+    <ClCompile Include="dependencies\Luau\Builtins.cpp" />
+    <ClCompile Include="dependencies\Luau\BytecodeBuilder.cpp" />
+    <ClCompile Include="dependencies\Luau\Compiler.cpp" />
+    <ClCompile Include="dependencies\Luau\Confusables.cpp" />
+    <ClCompile Include="dependencies\Luau\ConstantFolding.cpp" />
+    <ClCompile Include="dependencies\Luau\CostModel.cpp" />
+    <ClCompile Include="dependencies\Luau\lapi.cpp" />
+    <ClCompile Include="dependencies\Luau\laux.cpp" />
+    <ClCompile Include="dependencies\Luau\lbaselib.cpp" />
+    <ClCompile Include="dependencies\Luau\lbitlib.cpp" />
+    <ClCompile Include="dependencies\Luau\lbuiltins.cpp" />
+    <ClCompile Include="dependencies\Luau\lcode.cpp" />
+    <ClCompile Include="dependencies\Luau\lcorolib.cpp" />
+    <ClCompile Include="dependencies\Luau\ldblib.cpp" />
+    <ClCompile Include="dependencies\Luau\ldebug.cpp" />
+    <ClCompile Include="dependencies\Luau\ldo.cpp" />
+    <ClCompile Include="dependencies\Luau\Lexer.cpp" />
+    <ClCompile Include="dependencies\Luau\lfunc.cpp" />
+    <ClCompile Include="dependencies\Luau\lgc.cpp" />
+    <ClCompile Include="dependencies\Luau\lgcdebug.cpp" />
+    <ClCompile Include="dependencies\Luau\linit.cpp" />
+    <ClCompile Include="dependencies\Luau\lmathlib.cpp" />
+    <ClCompile Include="dependencies\Luau\lmem.cpp" />
+    <ClCompile Include="dependencies\Luau\lnumprint.cpp" />
+    <ClCompile Include="dependencies\Luau\lobject.cpp" />
+    <ClCompile Include="dependencies\Luau\Location.cpp" />
+    <ClCompile Include="dependencies\Luau\loslib.cpp" />
+    <ClCompile Include="dependencies\Luau\lperf.cpp" />
+    <ClCompile Include="dependencies\Luau\lstate.cpp" />
+    <ClCompile Include="dependencies\Luau\lstring.cpp" />
+    <ClCompile Include="dependencies\Luau\lstrlib.cpp" />
+    <ClCompile Include="dependencies\Luau\ltable.cpp" />
+    <ClCompile Include="dependencies\Luau\ltablib.cpp" />
+    <ClCompile Include="dependencies\Luau\ltm.cpp" />
+    <ClCompile Include="dependencies\Luau\ludata.cpp" />
+    <ClCompile Include="dependencies\Luau\lutf8lib.cpp" />
+    <ClCompile Include="dependencies\Luau\lvmexecute.cpp" />
+    <ClCompile Include="dependencies\Luau\lvmload.cpp" />
+    <ClCompile Include="dependencies\Luau\lvmutils.cpp" />
+    <ClCompile Include="dependencies\Luau\Parser.cpp" />
+    <ClCompile Include="dependencies\Luau\StringUtils.cpp" />
+    <ClCompile Include="dependencies\Luau\TableShape.cpp" />
+    <ClCompile Include="dependencies\Luau\TimeTrace.cpp" />
+    <ClCompile Include="dependencies\Luau\ValueTracking.cpp" />
+    <ClCompile Include="dependencies\lz4\lz4.cpp" />
+    <ClCompile Include="dependencies\lz4\lz4hc.cpp" />
+    <ClCompile Include="dependencies\sha384\sha384.cpp" />
+    <ClCompile Include="dependencies\zstd\common\debug.c" />
+    <ClCompile Include="dependencies\zstd\common\entropy_common.c" />
+    <ClCompile Include="dependencies\zstd\common\error_private.c" />
+    <ClCompile Include="dependencies\zstd\common\fse_decompress.c" />
+    <ClCompile Include="dependencies\zstd\common\pool.c" />
+    <ClCompile Include="dependencies\zstd\common\threading.c" />
+    <ClCompile Include="dependencies\zstd\common\xxhash.c" />
+    <ClCompile Include="dependencies\zstd\common\zstd_common.c" />
+    <ClCompile Include="dependencies\zstd\compress\fse_compress.c" />
+    <ClCompile Include="dependencies\zstd\compress\hist.c" />
+    <ClCompile Include="dependencies\zstd\compress\huf_compress.c" />
+    <ClCompile Include="dependencies\zstd\compress\zstdmt_compress.c" />
+    <ClCompile Include="dependencies\zstd\compress\zstd_compress.c" />
+    <ClCompile Include="dependencies\zstd\compress\zstd_compress_literals.c" />
+    <ClCompile Include="dependencies\zstd\compress\zstd_compress_sequences.c" />
+    <ClCompile Include="dependencies\zstd\compress\zstd_compress_superblock.c" />
+    <ClCompile Include="dependencies\zstd\compress\zstd_double_fast.c" />
+    <ClCompile Include="dependencies\zstd\compress\zstd_fast.c" />
+    <ClCompile Include="dependencies\zstd\compress\zstd_lazy.c" />
+    <ClCompile Include="dependencies\zstd\compress\zstd_ldm.c" />
+    <ClCompile Include="dependencies\zstd\compress\zstd_opt.c" />
+    <ClCompile Include="dependencies\zstd\decompress\huf_decompress.c" />
+    <ClCompile Include="dependencies\zstd\decompress\zstd_ddict.c" />
+    <ClCompile Include="dependencies\zstd\decompress\zstd_decompress.c" />
+    <ClCompile Include="dependencies\zstd\decompress\zstd_decompress_block.c" />
+    <ClCompile Include="dependencies\zstd\deprecated\zbuff_common.c" />
+    <ClCompile Include="dependencies\zstd\deprecated\zbuff_compress.c" />
+    <ClCompile Include="dependencies\zstd\deprecated\zbuff_decompress.c" />
+    <ClCompile Include="dependencies\zstd\dictBuilder\cover.c" />
+    <ClCompile Include="dependencies\zstd\dictBuilder\divsufsort.c" />
+    <ClCompile Include="dependencies\zstd\dictBuilder\fastcover.c" />
+    <ClCompile Include="dependencies\zstd\dictBuilder\zdict.c" />
+    <ClCompile Include="dependencies\zstd\legacy\zstd_v01.c" />
+    <ClCompile Include="dependencies\zstd\legacy\zstd_v02.c" />
+    <ClCompile Include="dependencies\zstd\legacy\zstd_v03.c" />
+    <ClCompile Include="dependencies\zstd\legacy\zstd_v04.c" />
+    <ClCompile Include="dependencies\zstd\legacy\zstd_v05.c" />
+    <ClCompile Include="dependencies\zstd\legacy\zstd_v06.c" />
+    <ClCompile Include="dependencies\zstd\legacy\zstd_v07.c" />
+    <ClCompile Include="HydrogenAndroid.cpp" />
+    <ClCompile Include="managers\crash\crash.cpp" />
+    <ClCompile Include="managers\drawing\drawing.cpp" />
+    <ClCompile Include="managers\function\function.cpp" />
+    <ClCompile Include="managers\jni\jni.cpp" />
+    <ClCompile Include="managers\managers.cpp" />
+    <ClCompile Include="managers\memory\memory.cpp" />
+    <ClCompile Include="managers\menu\animator.cpp" />
+    <ClCompile Include="managers\menu\font.cpp" />
+    <ClCompile Include="managers\menu\image.cpp" />
+    <ClCompile Include="managers\menu\menu.cpp" />
+    <ClCompile Include="managers\menu\routines.cpp" />
+    <ClCompile Include="managers\menu\tabs.cpp" />
+    <ClCompile Include="managers\renderer\renderer.cpp" />
+    <ClCompile Include="managers\roblox\environment\cache\cache.cpp" />
+    <ClCompile Include="managers\roblox\environment\console\console.cpp" />
+    <ClCompile Include="managers\roblox\environment\core\core.cpp" />
+    <ClCompile Include="managers\roblox\environment\debug_lib\debug_lib.cpp" />
+    <ClCompile Include="managers\roblox\environment\drawing\drawing.cpp" />
+    <ClCompile Include="managers\roblox\environment\environment.cpp" />
+    <ClCompile Include="managers\roblox\environment\security\security.cpp" />
+    <ClCompile Include="managers\roblox\roblox.cpp" />
+    <ClCompile Include="managers\utility\utility.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <Library Include="dependencies\dobby\libdobby.a" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="scripts\bitlib.lua" />
+    <None Include="scripts\hydroui.lua" />
+    <None Include="scripts\keysys.lua" />
+    <None Include="scripts\ui.lua" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets" />
+</Project>
