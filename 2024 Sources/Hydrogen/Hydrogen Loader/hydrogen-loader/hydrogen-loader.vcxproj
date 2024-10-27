@@ -1,0 +1,358 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>16.0</VCProjectVersion>
+    <Keyword>Win32Proj</Keyword>
+    <ProjectGuid>{44a5b1b7-cb30-4475-a20a-aac17893c6e4}</ProjectGuid>
+    <RootNamespace>hydrogenloader</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>ClangCL</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>ClangCL</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>ClangCL</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>ClangCL</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <IncludePath>$(ProjectDir)\dependencies\pugixml;$(ProjectDir)\dependencies\lazy_importer\include;$(ProjectDir)\dependencies\smbios;$(ProjectDir)\dependencies\zlib\include;$(ProjectDir)\dependencies\cpr\include;$(ProjectDir)\dependencies\curl\include;$(ProjectDir)\dependencies\WinReg;$(ProjectDir)\dependencies\json;$(ProjectDir)\dependencies</IncludePath>
+    <LibraryPath>$(ProjectDir)\dependencies\cpr\lib;$(ProjectDir)\dependencies\curl\lib\;$(LibraryPath)</LibraryPath>
+    <EnableMicrosoftCodeAnalysis>true</EnableMicrosoftCodeAnalysis>
+    <EnableClangTidyCodeAnalysis>false</EnableClangTidyCodeAnalysis>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <IncludePath>$(ProjectDir)\dependencies\pugixml;$(ProjectDir)\dependencies\lazy_importer\include;$(ProjectDir)\dependencies\smbios;$(ProjectDir)\dependencies\zlib\include;$(ProjectDir)\dependencies\cpr\include;$(ProjectDir)\dependencies\curl\include;$(ProjectDir)\dependencies\WinReg;$(ProjectDir)\dependencies\json;$(ProjectDir)\dependencies</IncludePath>
+    <LibraryPath>$(ProjectDir)\dependencies\cpr\lib;$(ProjectDir)\dependencies\curl\lib\;$(LibraryPath)</LibraryPath>
+    <EnableMicrosoftCodeAnalysis>true</EnableMicrosoftCodeAnalysis>
+    <EnableClangTidyCodeAnalysis>false</EnableClangTidyCodeAnalysis>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <IncludePath>$(ProjectDir)\dependencies\pugixml;$(ProjectDir)\dependencies\lazy_importer\include;$(ProjectDir)\dependencies\smbios;$(ProjectDir)\dependencies\zlib\include;$(ProjectDir)\dependencies\cpr\include;$(ProjectDir)\dependencies\curl\include;$(ProjectDir)\dependencies\WinReg;$(ProjectDir)\dependencies\json;$(ProjectDir)\dependencies</IncludePath>
+    <LibraryPath>$(ProjectDir)\dependencies\cpr\lib;$(ProjectDir)\dependencies\curl\lib\;$(LibraryPath)</LibraryPath>
+    <EnableMicrosoftCodeAnalysis>true</EnableMicrosoftCodeAnalysis>
+    <EnableClangTidyCodeAnalysis>false</EnableClangTidyCodeAnalysis>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <IncludePath>$(ProjectDir)\dependencies\pugixml;$(ProjectDir)\dependencies\lazy_importer\include;$(ProjectDir)\dependencies\smbios;$(ProjectDir)\dependencies\zlib\include;$(ProjectDir)\dependencies\cpr\include;$(ProjectDir)\dependencies\curl\include;$(ProjectDir)\dependencies\WinReg;$(ProjectDir)\dependencies\json;$(ProjectDir)\dependencies</IncludePath>
+    <LibraryPath>$(ProjectDir)\dependencies\cpr\lib;$(ProjectDir)\dependencies\curl\lib\;$(LibraryPath)</LibraryPath>
+    <EnableMicrosoftCodeAnalysis>true</EnableMicrosoftCodeAnalysis>
+    <EnableClangTidyCodeAnalysis>false</EnableClangTidyCodeAnalysis>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <LanguageStandard>stdcpplatest</LanguageStandard>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>Ws2_32.lib;Crypt32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <LanguageStandard>stdcpplatest</LanguageStandard>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>Ws2_32.lib;Crypt32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <LanguageStandard>stdcpplatest</LanguageStandard>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>Ws2_32.lib;Crypt32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <LanguageStandard>stdcpplatest</LanguageStandard>
+      <BufferSecurityCheck>false</BufferSecurityCheck>
+      <ControlFlowGuard>false</ControlFlowGuard>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>Ws2_32.lib;Crypt32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="core.cpp" />
+    <ClCompile Include="dependencies\pe_bliss\entropy.cpp" />
+    <ClCompile Include="dependencies\pe_bliss\file_version_info.cpp" />
+    <ClCompile Include="dependencies\pe_bliss\message_table.cpp" />
+    <ClCompile Include="dependencies\pe_bliss\pe_base.cpp" />
+    <ClCompile Include="dependencies\pe_bliss\pe_bound_import.cpp" />
+    <ClCompile Include="dependencies\pe_bliss\pe_checksum.cpp" />
+    <ClCompile Include="dependencies\pe_bliss\pe_debug.cpp" />
+    <ClCompile Include="dependencies\pe_bliss\pe_directory.cpp" />
+    <ClCompile Include="dependencies\pe_bliss\pe_dotnet.cpp" />
+    <ClCompile Include="dependencies\pe_bliss\pe_exception.cpp" />
+    <ClCompile Include="dependencies\pe_bliss\pe_exception_directory.cpp" />
+    <ClCompile Include="dependencies\pe_bliss\pe_exports.cpp" />
+    <ClCompile Include="dependencies\pe_bliss\pe_factory.cpp" />
+    <ClCompile Include="dependencies\pe_bliss\pe_imports.cpp" />
+    <ClCompile Include="dependencies\pe_bliss\pe_load_config.cpp" />
+    <ClCompile Include="dependencies\pe_bliss\pe_properties.cpp" />
+    <ClCompile Include="dependencies\pe_bliss\pe_properties_generic.cpp" />
+    <ClCompile Include="dependencies\pe_bliss\pe_rebuilder.cpp" />
+    <ClCompile Include="dependencies\pe_bliss\pe_relocations.cpp" />
+    <ClCompile Include="dependencies\pe_bliss\pe_resources.cpp" />
+    <ClCompile Include="dependencies\pe_bliss\pe_resource_manager.cpp" />
+    <ClCompile Include="dependencies\pe_bliss\pe_resource_viewer.cpp" />
+    <ClCompile Include="dependencies\pe_bliss\pe_rich_data.cpp" />
+    <ClCompile Include="dependencies\pe_bliss\pe_section.cpp" />
+    <ClCompile Include="dependencies\pe_bliss\pe_tls.cpp" />
+    <ClCompile Include="dependencies\pe_bliss\resource_bitmap_reader.cpp" />
+    <ClCompile Include="dependencies\pe_bliss\resource_bitmap_writer.cpp" />
+    <ClCompile Include="dependencies\pe_bliss\resource_cursor_icon_reader.cpp" />
+    <ClCompile Include="dependencies\pe_bliss\resource_cursor_icon_writer.cpp" />
+    <ClCompile Include="dependencies\pe_bliss\resource_data_info.cpp" />
+    <ClCompile Include="dependencies\pe_bliss\resource_message_list_reader.cpp" />
+    <ClCompile Include="dependencies\pe_bliss\resource_string_table_reader.cpp" />
+    <ClCompile Include="dependencies\pe_bliss\resource_version_info_reader.cpp" />
+    <ClCompile Include="dependencies\pe_bliss\resource_version_info_writer.cpp" />
+    <ClCompile Include="dependencies\pe_bliss\utils.cpp" />
+    <ClCompile Include="dependencies\pe_bliss\version_info_editor.cpp" />
+    <ClCompile Include="dependencies\pe_bliss\version_info_viewer.cpp" />
+    <ClCompile Include="dependencies\pugixml\pugixml.cpp" />
+    <ClCompile Include="dependencies\smbios\smbios\smbios.cpp" />
+    <ClCompile Include="fingerprinting\adapters\adapters.cpp" />
+    <ClCompile Include="fingerprinting\clipboard\clipboard.cpp" />
+    <ClCompile Include="fingerprinting\general\general.cpp" />
+    <ClCompile Include="fingerprinting\ida\ida.cpp" />
+    <ClCompile Include="fingerprinting\processes\processes.cpp" />
+    <ClCompile Include="fingerprinting\smbios_f\smbios_f.cpp" />
+    <ClCompile Include="fingerprinting\visual_studio\vs.cpp" />
+    <ClCompile Include="pe\pe.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="dependencies\cpr\include\cpr\accept_encoding.h" />
+    <ClInclude Include="dependencies\cpr\include\cpr\api.h" />
+    <ClInclude Include="dependencies\cpr\include\cpr\async.h" />
+    <ClInclude Include="dependencies\cpr\include\cpr\auth.h" />
+    <ClInclude Include="dependencies\cpr\include\cpr\bearer.h" />
+    <ClInclude Include="dependencies\cpr\include\cpr\body.h" />
+    <ClInclude Include="dependencies\cpr\include\cpr\buffer.h" />
+    <ClInclude Include="dependencies\cpr\include\cpr\callback.h" />
+    <ClInclude Include="dependencies\cpr\include\cpr\cert_info.h" />
+    <ClInclude Include="dependencies\cpr\include\cpr\connect_timeout.h" />
+    <ClInclude Include="dependencies\cpr\include\cpr\cookies.h" />
+    <ClInclude Include="dependencies\cpr\include\cpr\cpr.h" />
+    <ClInclude Include="dependencies\cpr\include\cpr\cprtypes.h" />
+    <ClInclude Include="dependencies\cpr\include\cpr\cprver.h" />
+    <ClInclude Include="dependencies\cpr\include\cpr\curlholder.h" />
+    <ClInclude Include="dependencies\cpr\include\cpr\curlmultiholder.h" />
+    <ClInclude Include="dependencies\cpr\include\cpr\curl_container.h" />
+    <ClInclude Include="dependencies\cpr\include\cpr\error.h" />
+    <ClInclude Include="dependencies\cpr\include\cpr\file.h" />
+    <ClInclude Include="dependencies\cpr\include\cpr\filesystem.h" />
+    <ClInclude Include="dependencies\cpr\include\cpr\http_version.h" />
+    <ClInclude Include="dependencies\cpr\include\cpr\interceptor.h" />
+    <ClInclude Include="dependencies\cpr\include\cpr\interface.h" />
+    <ClInclude Include="dependencies\cpr\include\cpr\limit_rate.h" />
+    <ClInclude Include="dependencies\cpr\include\cpr\local_port.h" />
+    <ClInclude Include="dependencies\cpr\include\cpr\local_port_range.h" />
+    <ClInclude Include="dependencies\cpr\include\cpr\low_speed.h" />
+    <ClInclude Include="dependencies\cpr\include\cpr\multipart.h" />
+    <ClInclude Include="dependencies\cpr\include\cpr\multiperform.h" />
+    <ClInclude Include="dependencies\cpr\include\cpr\parameters.h" />
+    <ClInclude Include="dependencies\cpr\include\cpr\payload.h" />
+    <ClInclude Include="dependencies\cpr\include\cpr\proxies.h" />
+    <ClInclude Include="dependencies\cpr\include\cpr\proxyauth.h" />
+    <ClInclude Include="dependencies\cpr\include\cpr\range.h" />
+    <ClInclude Include="dependencies\cpr\include\cpr\redirect.h" />
+    <ClInclude Include="dependencies\cpr\include\cpr\reserve_size.h" />
+    <ClInclude Include="dependencies\cpr\include\cpr\resolve.h" />
+    <ClInclude Include="dependencies\cpr\include\cpr\response.h" />
+    <ClInclude Include="dependencies\cpr\include\cpr\session.h" />
+    <ClInclude Include="dependencies\cpr\include\cpr\singleton.h" />
+    <ClInclude Include="dependencies\cpr\include\cpr\ssl_ctx.h" />
+    <ClInclude Include="dependencies\cpr\include\cpr\ssl_options.h" />
+    <ClInclude Include="dependencies\cpr\include\cpr\status_codes.h" />
+    <ClInclude Include="dependencies\cpr\include\cpr\threadpool.h" />
+    <ClInclude Include="dependencies\cpr\include\cpr\timeout.h" />
+    <ClInclude Include="dependencies\cpr\include\cpr\unix_socket.h" />
+    <ClInclude Include="dependencies\cpr\include\cpr\user_agent.h" />
+    <ClInclude Include="dependencies\cpr\include\cpr\util.h" />
+    <ClInclude Include="dependencies\cpr\include\cpr\verbose.h" />
+    <ClInclude Include="dependencies\cpr\include\curl\curl.h" />
+    <ClInclude Include="dependencies\cpr\include\curl\curlver.h" />
+    <ClInclude Include="dependencies\cpr\include\curl\easy.h" />
+    <ClInclude Include="dependencies\cpr\include\curl\mprintf.h" />
+    <ClInclude Include="dependencies\cpr\include\curl\multi.h" />
+    <ClInclude Include="dependencies\cpr\include\curl\options.h" />
+    <ClInclude Include="dependencies\cpr\include\curl\stdcheaders.h" />
+    <ClInclude Include="dependencies\cpr\include\curl\system.h" />
+    <ClInclude Include="dependencies\cpr\include\curl\typecheck-gcc.h" />
+    <ClInclude Include="dependencies\cpr\include\curl\urlapi.h" />
+    <ClInclude Include="dependencies\curl\include\curl\curl.h" />
+    <ClInclude Include="dependencies\curl\include\curl\curlver.h" />
+    <ClInclude Include="dependencies\curl\include\curl\easy.h" />
+    <ClInclude Include="dependencies\curl\include\curl\header.h" />
+    <ClInclude Include="dependencies\curl\include\curl\mprintf.h" />
+    <ClInclude Include="dependencies\curl\include\curl\multi.h" />
+    <ClInclude Include="dependencies\curl\include\curl\options.h" />
+    <ClInclude Include="dependencies\curl\include\curl\stdcheaders.h" />
+    <ClInclude Include="dependencies\curl\include\curl\system.h" />
+    <ClInclude Include="dependencies\curl\include\curl\typecheck-gcc.h" />
+    <ClInclude Include="dependencies\curl\include\curl\urlapi.h" />
+    <ClInclude Include="dependencies\json\nlohmann\json.hpp" />
+    <ClInclude Include="dependencies\json\nlohmann\json_fwd.hpp" />
+    <ClInclude Include="dependencies\lazy_importer\include\lazy_importer.hpp" />
+    <ClInclude Include="dependencies\pe_bliss\entropy.h" />
+    <ClInclude Include="dependencies\pe_bliss\file_version_info.h" />
+    <ClInclude Include="dependencies\pe_bliss\message_table.h" />
+    <ClInclude Include="dependencies\pe_bliss\pe_base.h" />
+    <ClInclude Include="dependencies\pe_bliss\pe_bliss.h" />
+    <ClInclude Include="dependencies\pe_bliss\pe_bliss_resources.h" />
+    <ClInclude Include="dependencies\pe_bliss\pe_bound_import.h" />
+    <ClInclude Include="dependencies\pe_bliss\pe_checksum.h" />
+    <ClInclude Include="dependencies\pe_bliss\pe_debug.h" />
+    <ClInclude Include="dependencies\pe_bliss\pe_directory.h" />
+    <ClInclude Include="dependencies\pe_bliss\pe_dotnet.h" />
+    <ClInclude Include="dependencies\pe_bliss\pe_exception.h" />
+    <ClInclude Include="dependencies\pe_bliss\pe_exception_directory.h" />
+    <ClInclude Include="dependencies\pe_bliss\pe_exports.h" />
+    <ClInclude Include="dependencies\pe_bliss\pe_factory.h" />
+    <ClInclude Include="dependencies\pe_bliss\pe_imports.h" />
+    <ClInclude Include="dependencies\pe_bliss\pe_load_config.h" />
+    <ClInclude Include="dependencies\pe_bliss\pe_properties.h" />
+    <ClInclude Include="dependencies\pe_bliss\pe_properties_generic.h" />
+    <ClInclude Include="dependencies\pe_bliss\pe_rebuilder.h" />
+    <ClInclude Include="dependencies\pe_bliss\pe_relocations.h" />
+    <ClInclude Include="dependencies\pe_bliss\pe_resources.h" />
+    <ClInclude Include="dependencies\pe_bliss\pe_resource_manager.h" />
+    <ClInclude Include="dependencies\pe_bliss\pe_resource_viewer.h" />
+    <ClInclude Include="dependencies\pe_bliss\pe_rich_data.h" />
+    <ClInclude Include="dependencies\pe_bliss\pe_section.h" />
+    <ClInclude Include="dependencies\pe_bliss\pe_structures.h" />
+    <ClInclude Include="dependencies\pe_bliss\pe_tls.h" />
+    <ClInclude Include="dependencies\pe_bliss\resource_bitmap_reader.h" />
+    <ClInclude Include="dependencies\pe_bliss\resource_bitmap_writer.h" />
+    <ClInclude Include="dependencies\pe_bliss\resource_cursor_icon_reader.h" />
+    <ClInclude Include="dependencies\pe_bliss\resource_cursor_icon_writer.h" />
+    <ClInclude Include="dependencies\pe_bliss\resource_data_info.h" />
+    <ClInclude Include="dependencies\pe_bliss\resource_internal.h" />
+    <ClInclude Include="dependencies\pe_bliss\resource_message_list_reader.h" />
+    <ClInclude Include="dependencies\pe_bliss\resource_string_table_reader.h" />
+    <ClInclude Include="dependencies\pe_bliss\resource_version_info_reader.h" />
+    <ClInclude Include="dependencies\pe_bliss\resource_version_info_writer.h" />
+    <ClInclude Include="dependencies\pe_bliss\stdint_defs.h" />
+    <ClInclude Include="dependencies\pe_bliss\utils.h" />
+    <ClInclude Include="dependencies\pe_bliss\version_info_editor.h" />
+    <ClInclude Include="dependencies\pe_bliss\version_info_types.h" />
+    <ClInclude Include="dependencies\pe_bliss\version_info_viewer.h" />
+    <ClInclude Include="dependencies\pugixml\pugiconfig.hpp" />
+    <ClInclude Include="dependencies\pugixml\pugixml.hpp" />
+    <ClInclude Include="dependencies\smbios\smbios\smbios.h" />
+    <ClInclude Include="dependencies\smbios\smbios\structs.h" />
+    <ClInclude Include="dependencies\WinReg\WinReg.hpp" />
+    <ClInclude Include="fingerprinting\adapters\adapters.hpp" />
+    <ClInclude Include="fingerprinting\clipboard\clipboard.hpp" />
+    <ClInclude Include="fingerprinting\fingerprinter.hpp" />
+    <ClInclude Include="fingerprinting\general\general.hpp" />
+    <ClInclude Include="fingerprinting\ida\ida.hpp" />
+    <ClInclude Include="fingerprinting\processes\processes.hpp" />
+    <ClInclude Include="fingerprinting\shared.hpp" />
+    <ClInclude Include="fingerprinting\smbios_f\smbios_f.hpp" />
+    <ClInclude Include="fingerprinting\visual_studio\vs.hpp" />
+    <ClInclude Include="pe\pe.hpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <Library Include="dependencies\cpr\lib\cpr.lib" />
+    <Library Include="dependencies\curl\lib\libcurl.lib" />
+    <Library Include="dependencies\zlib\lib\zlib.lib" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
