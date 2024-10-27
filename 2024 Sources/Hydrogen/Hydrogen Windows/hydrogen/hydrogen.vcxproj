@@ -1,0 +1,374 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>16.0</VCProjectVersion>
+    <Keyword>Win32Proj</Keyword>
+    <ProjectGuid>{1278356a-9dc9-423a-a6d6-0c7d9c29f12b}</ProjectGuid>
+    <RootNamespace>hydrogen</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LibraryPath>$(ProjectDir)\dependencies\spdlog\lib;$(LibraryPath)</LibraryPath>
+    <IncludePath>$(ProjectDir)\dependencies\luau;$(ProjectDir);$(ProjectDir)\dependencies;$(ProjectDir)\dependencies\spdlog\include;$(IncludePath)</IncludePath>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <LanguageStandard>stdcpplatest</LanguageStandard>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>_CRT_SECURE_NO_WARNINGS;WIN32;NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <LanguageStandard>stdcpplatest</LanguageStandard>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>spdlog.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="core.cpp" />
+    <ClCompile Include="dependencies\imgui\imgui.cpp" />
+    <ClCompile Include="dependencies\imgui\imgui_demo.cpp" />
+    <ClCompile Include="dependencies\imgui\imgui_draw.cpp" />
+    <ClCompile Include="dependencies\imgui\imgui_impl_dx11.cpp" />
+    <ClCompile Include="dependencies\imgui\imgui_impl_dx9.cpp" />
+    <ClCompile Include="dependencies\imgui\imgui_impl_win32.cpp" />
+    <ClCompile Include="dependencies\imgui\imgui_tables.cpp" />
+    <ClCompile Include="dependencies\imgui\imgui_widgets.cpp" />
+    <ClCompile Include="dependencies\imgui\TextEditor.cpp" />
+    <ClCompile Include="dependencies\luau\Ast.cpp" />
+    <ClCompile Include="dependencies\luau\BuiltinFolding.cpp" />
+    <ClCompile Include="dependencies\luau\Builtins.cpp" />
+    <ClCompile Include="dependencies\luau\BytecodeBuilder.cpp" />
+    <ClCompile Include="dependencies\luau\Compiler.cpp" />
+    <ClCompile Include="dependencies\luau\Confusables.cpp" />
+    <ClCompile Include="dependencies\luau\ConstantFolding.cpp" />
+    <ClCompile Include="dependencies\luau\CostModel.cpp" />
+    <ClCompile Include="dependencies\luau\lapi.cpp" />
+    <ClCompile Include="dependencies\luau\laux.cpp" />
+    <ClCompile Include="dependencies\luau\lbaselib.cpp" />
+    <ClCompile Include="dependencies\luau\lbitlib.cpp" />
+    <ClCompile Include="dependencies\luau\lbuiltins.cpp" />
+    <ClCompile Include="dependencies\luau\lcode.cpp" />
+    <ClCompile Include="dependencies\luau\lcorolib.cpp" />
+    <ClCompile Include="dependencies\luau\ldblib.cpp" />
+    <ClCompile Include="dependencies\luau\ldebug.cpp" />
+    <ClCompile Include="dependencies\luau\ldo.cpp" />
+    <ClCompile Include="dependencies\luau\Lexer.cpp" />
+    <ClCompile Include="dependencies\luau\lfunc.cpp" />
+    <ClCompile Include="dependencies\luau\lgc.cpp" />
+    <ClCompile Include="dependencies\luau\lgcdebug.cpp" />
+    <ClCompile Include="dependencies\luau\linit.cpp" />
+    <ClCompile Include="dependencies\luau\lmathlib.cpp" />
+    <ClCompile Include="dependencies\luau\lmem.cpp" />
+    <ClCompile Include="dependencies\luau\lnumprint.cpp" />
+    <ClCompile Include="dependencies\luau\lobject.cpp" />
+    <ClCompile Include="dependencies\luau\Location.cpp" />
+    <ClCompile Include="dependencies\luau\loslib.cpp" />
+    <ClCompile Include="dependencies\luau\lperf.cpp" />
+    <ClCompile Include="dependencies\luau\lstate.cpp" />
+    <ClCompile Include="dependencies\luau\lstring.cpp" />
+    <ClCompile Include="dependencies\luau\lstrlib.cpp" />
+    <ClCompile Include="dependencies\luau\ltable.cpp" />
+    <ClCompile Include="dependencies\luau\ltablib.cpp" />
+    <ClCompile Include="dependencies\luau\ltm.cpp" />
+    <ClCompile Include="dependencies\luau\ludata.cpp" />
+    <ClCompile Include="dependencies\luau\lutf8lib.cpp" />
+    <ClCompile Include="dependencies\luau\lvmexecute.cpp" />
+    <ClCompile Include="dependencies\luau\lvmload.cpp" />
+    <ClCompile Include="dependencies\luau\lvmutils.cpp" />
+    <ClCompile Include="dependencies\luau\Parser.cpp" />
+    <ClCompile Include="dependencies\luau\StringUtils.cpp" />
+    <ClCompile Include="dependencies\luau\TableShape.cpp" />
+    <ClCompile Include="dependencies\luau\TimeTrace.cpp" />
+    <ClCompile Include="dependencies\luau\ValueTracking.cpp" />
+    <ClCompile Include="roblox\env\env.cpp" />
+    <ClCompile Include="managers\interface\interface.cpp" />
+    <ClCompile Include="managers\menu\menu.cpp" />
+    <ClCompile Include="managers\menu\TextEditor.cpp" />
+    <ClCompile Include="managers\offsets\offsets.cpp" />
+    <ClCompile Include="roblox\roblox.cpp" />
+    <ClCompile Include="roblox\scheduler\scheduler.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="dependencies\common_includes.hpp" />
+    <ClInclude Include="dependencies\imgui\imconfig.h" />
+    <ClInclude Include="dependencies\imgui\imgui.h" />
+    <ClInclude Include="dependencies\imgui\imgui_impl_dx11.h" />
+    <ClInclude Include="dependencies\imgui\imgui_impl_dx9.h" />
+    <ClInclude Include="dependencies\imgui\imgui_impl_win32.h" />
+    <ClInclude Include="dependencies\imgui\imgui_internal.h" />
+    <ClInclude Include="dependencies\imgui\imgui_memory_editor.h" />
+    <ClInclude Include="dependencies\imgui\imstb_rectpack.h" />
+    <ClInclude Include="dependencies\imgui\imstb_textedit.h" />
+    <ClInclude Include="dependencies\imgui\imstb_truetype.h" />
+    <ClInclude Include="dependencies\imgui\stb_image.h" />
+    <ClInclude Include="dependencies\imgui\TextEditor.h" />
+    <ClInclude Include="dependencies\luau\BuiltinFolding.h" />
+    <ClInclude Include="dependencies\luau\Builtins.h" />
+    <ClInclude Include="dependencies\luau\ConstantFolding.h" />
+    <ClInclude Include="dependencies\luau\CostModel.h" />
+    <ClInclude Include="dependencies\luau\lapi.h" />
+    <ClInclude Include="dependencies\luau\lbuiltins.h" />
+    <ClInclude Include="dependencies\luau\lbytecode.h" />
+    <ClInclude Include="dependencies\luau\lcommon.h" />
+    <ClInclude Include="dependencies\luau\lcorolib.h" />
+    <ClInclude Include="dependencies\luau\ldebug.h" />
+    <ClInclude Include="dependencies\luau\ldo.h" />
+    <ClInclude Include="dependencies\luau\lfunc.h" />
+    <ClInclude Include="dependencies\luau\lgc.h" />
+    <ClInclude Include="dependencies\luau\lmem.h" />
+    <ClInclude Include="dependencies\luau\lnumutils.h" />
+    <ClInclude Include="dependencies\luau\lobject.h" />
+    <ClInclude Include="dependencies\luau\lstate.h" />
+    <ClInclude Include="dependencies\luau\lstring.h" />
+    <ClInclude Include="dependencies\luau\ltable.h" />
+    <ClInclude Include="dependencies\luau\ltm.h" />
+    <ClInclude Include="dependencies\luau\lua.h" />
+    <ClInclude Include="dependencies\luau\luacode.h" />
+    <ClInclude Include="dependencies\luau\luaconf.h" />
+    <ClInclude Include="dependencies\luau\lualib.h" />
+    <ClInclude Include="dependencies\luau\Luau\Ast.h" />
+    <ClInclude Include="dependencies\luau\Luau\Bytecode.h" />
+    <ClInclude Include="dependencies\luau\Luau\BytecodeBuilder.h" />
+    <ClInclude Include="dependencies\luau\Luau\Common.h" />
+    <ClInclude Include="dependencies\luau\Luau\Compiler.h" />
+    <ClInclude Include="dependencies\luau\Luau\Confusables.h" />
+    <ClInclude Include="dependencies\luau\Luau\DenseHash.h" />
+    <ClInclude Include="dependencies\luau\Luau\ExperimentalFlags.h" />
+    <ClInclude Include="dependencies\luau\Luau\Lexer.h" />
+    <ClInclude Include="dependencies\luau\Luau\Location.h" />
+    <ClInclude Include="dependencies\luau\Luau\ParseOptions.h" />
+    <ClInclude Include="dependencies\luau\Luau\Parser.h" />
+    <ClInclude Include="dependencies\luau\Luau\ParseResult.h" />
+    <ClInclude Include="dependencies\luau\Luau\StringUtils.h" />
+    <ClInclude Include="dependencies\luau\Luau\TimeTrace.h" />
+    <ClInclude Include="dependencies\luau\ludata.h" />
+    <ClInclude Include="dependencies\luau\lvm.h" />
+    <ClInclude Include="dependencies\luau\TableShape.h" />
+    <ClInclude Include="dependencies\luau\ValueTracking.h" />
+    <ClInclude Include="dependencies\spdlog\include\spdlog\async.h" />
+    <ClInclude Include="dependencies\spdlog\include\spdlog\async_logger-inl.h" />
+    <ClInclude Include="dependencies\spdlog\include\spdlog\async_logger.h" />
+    <ClInclude Include="dependencies\spdlog\include\spdlog\cfg\argv.h" />
+    <ClInclude Include="dependencies\spdlog\include\spdlog\cfg\env.h" />
+    <ClInclude Include="dependencies\spdlog\include\spdlog\cfg\helpers-inl.h" />
+    <ClInclude Include="dependencies\spdlog\include\spdlog\cfg\helpers.h" />
+    <ClInclude Include="dependencies\spdlog\include\spdlog\common-inl.h" />
+    <ClInclude Include="dependencies\spdlog\include\spdlog\common.h" />
+    <ClInclude Include="dependencies\spdlog\include\spdlog\details\backtracer-inl.h" />
+    <ClInclude Include="dependencies\spdlog\include\spdlog\details\backtracer.h" />
+    <ClInclude Include="dependencies\spdlog\include\spdlog\details\circular_q.h" />
+    <ClInclude Include="dependencies\spdlog\include\spdlog\details\console_globals.h" />
+    <ClInclude Include="dependencies\spdlog\include\spdlog\details\file_helper-inl.h" />
+    <ClInclude Include="dependencies\spdlog\include\spdlog\details\file_helper.h" />
+    <ClInclude Include="dependencies\spdlog\include\spdlog\details\fmt_helper.h" />
+    <ClInclude Include="dependencies\spdlog\include\spdlog\details\log_msg-inl.h" />
+    <ClInclude Include="dependencies\spdlog\include\spdlog\details\log_msg.h" />
+    <ClInclude Include="dependencies\spdlog\include\spdlog\details\log_msg_buffer-inl.h" />
+    <ClInclude Include="dependencies\spdlog\include\spdlog\details\log_msg_buffer.h" />
+    <ClInclude Include="dependencies\spdlog\include\spdlog\details\mpmc_blocking_q.h" />
+    <ClInclude Include="dependencies\spdlog\include\spdlog\details\null_mutex.h" />
+    <ClInclude Include="dependencies\spdlog\include\spdlog\details\os-inl.h" />
+    <ClInclude Include="dependencies\spdlog\include\spdlog\details\os.h" />
+    <ClInclude Include="dependencies\spdlog\include\spdlog\details\periodic_worker-inl.h" />
+    <ClInclude Include="dependencies\spdlog\include\spdlog\details\periodic_worker.h" />
+    <ClInclude Include="dependencies\spdlog\include\spdlog\details\registry-inl.h" />
+    <ClInclude Include="dependencies\spdlog\include\spdlog\details\registry.h" />
+    <ClInclude Include="dependencies\spdlog\include\spdlog\details\synchronous_factory.h" />
+    <ClInclude Include="dependencies\spdlog\include\spdlog\details\tcp_client-windows.h" />
+    <ClInclude Include="dependencies\spdlog\include\spdlog\details\tcp_client.h" />
+    <ClInclude Include="dependencies\spdlog\include\spdlog\details\thread_pool-inl.h" />
+    <ClInclude Include="dependencies\spdlog\include\spdlog\details\thread_pool.h" />
+    <ClInclude Include="dependencies\spdlog\include\spdlog\details\udp_client-windows.h" />
+    <ClInclude Include="dependencies\spdlog\include\spdlog\details\udp_client.h" />
+    <ClInclude Include="dependencies\spdlog\include\spdlog\details\windows_include.h" />
+    <ClInclude Include="dependencies\spdlog\include\spdlog\fmt\bin_to_hex.h" />
+    <ClInclude Include="dependencies\spdlog\include\spdlog\fmt\chrono.h" />
+    <ClInclude Include="dependencies\spdlog\include\spdlog\fmt\compile.h" />
+    <ClInclude Include="dependencies\spdlog\include\spdlog\fmt\fmt.h" />
+    <ClInclude Include="dependencies\spdlog\include\spdlog\fmt\ostr.h" />
+    <ClInclude Include="dependencies\spdlog\include\spdlog\fmt\ranges.h" />
+    <ClInclude Include="dependencies\spdlog\include\spdlog\fmt\xchar.h" />
+    <ClInclude Include="dependencies\spdlog\include\spdlog\formatter.h" />
+    <ClInclude Include="dependencies\spdlog\include\spdlog\fwd.h" />
+    <ClInclude Include="dependencies\spdlog\include\spdlog\logger-inl.h" />
+    <ClInclude Include="dependencies\spdlog\include\spdlog\logger.h" />
+    <ClInclude Include="dependencies\spdlog\include\spdlog\pattern_formatter-inl.h" />
+    <ClInclude Include="dependencies\spdlog\include\spdlog\pattern_formatter.h" />
+    <ClInclude Include="dependencies\spdlog\include\spdlog\sinks\android_sink.h" />
+    <ClInclude Include="dependencies\spdlog\include\spdlog\sinks\ansicolor_sink-inl.h" />
+    <ClInclude Include="dependencies\spdlog\include\spdlog\sinks\ansicolor_sink.h" />
+    <ClInclude Include="dependencies\spdlog\include\spdlog\sinks\base_sink-inl.h" />
+    <ClInclude Include="dependencies\spdlog\include\spdlog\sinks\base_sink.h" />
+    <ClInclude Include="dependencies\spdlog\include\spdlog\sinks\basic_file_sink-inl.h" />
+    <ClInclude Include="dependencies\spdlog\include\spdlog\sinks\basic_file_sink.h" />
+    <ClInclude Include="dependencies\spdlog\include\spdlog\sinks\daily_file_sink.h" />
+    <ClInclude Include="dependencies\spdlog\include\spdlog\sinks\dist_sink.h" />
+    <ClInclude Include="dependencies\spdlog\include\spdlog\sinks\dup_filter_sink.h" />
+    <ClInclude Include="dependencies\spdlog\include\spdlog\sinks\hourly_file_sink.h" />
+    <ClInclude Include="dependencies\spdlog\include\spdlog\sinks\mongo_sink.h" />
+    <ClInclude Include="dependencies\spdlog\include\spdlog\sinks\msvc_sink.h" />
+    <ClInclude Include="dependencies\spdlog\include\spdlog\sinks\null_sink.h" />
+    <ClInclude Include="dependencies\spdlog\include\spdlog\sinks\ostream_sink.h" />
+    <ClInclude Include="dependencies\spdlog\include\spdlog\sinks\qt_sinks.h" />
+    <ClInclude Include="dependencies\spdlog\include\spdlog\sinks\ringbuffer_sink.h" />
+    <ClInclude Include="dependencies\spdlog\include\spdlog\sinks\rotating_file_sink-inl.h" />
+    <ClInclude Include="dependencies\spdlog\include\spdlog\sinks\rotating_file_sink.h" />
+    <ClInclude Include="dependencies\spdlog\include\spdlog\sinks\sink-inl.h" />
+    <ClInclude Include="dependencies\spdlog\include\spdlog\sinks\sink.h" />
+    <ClInclude Include="dependencies\spdlog\include\spdlog\sinks\stdout_color_sinks-inl.h" />
+    <ClInclude Include="dependencies\spdlog\include\spdlog\sinks\stdout_color_sinks.h" />
+    <ClInclude Include="dependencies\spdlog\include\spdlog\sinks\stdout_sinks-inl.h" />
+    <ClInclude Include="dependencies\spdlog\include\spdlog\sinks\stdout_sinks.h" />
+    <ClInclude Include="dependencies\spdlog\include\spdlog\sinks\syslog_sink.h" />
+    <ClInclude Include="dependencies\spdlog\include\spdlog\sinks\systemd_sink.h" />
+    <ClInclude Include="dependencies\spdlog\include\spdlog\sinks\tcp_sink.h" />
+    <ClInclude Include="dependencies\spdlog\include\spdlog\sinks\udp_sink.h" />
+    <ClInclude Include="dependencies\spdlog\include\spdlog\sinks\wincolor_sink-inl.h" />
+    <ClInclude Include="dependencies\spdlog\include\spdlog\sinks\wincolor_sink.h" />
+    <ClInclude Include="dependencies\spdlog\include\spdlog\sinks\win_eventlog_sink.h" />
+    <ClInclude Include="dependencies\spdlog\include\spdlog\spdlog-inl.h" />
+    <ClInclude Include="dependencies\spdlog\include\spdlog\spdlog.h" />
+    <ClInclude Include="dependencies\spdlog\include\spdlog\stopwatch.h" />
+    <ClInclude Include="dependencies\spdlog\include\spdlog\tweakme.h" />
+    <ClInclude Include="dependencies\spdlog\include\spdlog\version.h" />
+    <ClInclude Include="dependencies\udlib\udlib.hpp" />
+    <ClInclude Include="roblox\env\env.hpp" />
+    <ClInclude Include="managers\hook\hook.hpp" />
+    <ClInclude Include="managers\interface\interface.hpp" />
+    <ClInclude Include="managers\menu\font\faprolight.hpp" />
+    <ClInclude Include="managers\menu\font\hashes.h" />
+    <ClInclude Include="managers\menu\font\inter.hpp" />
+    <ClInclude Include="managers\menu\font\Poppins.hpp" />
+    <ClInclude Include="managers\menu\font\tablericons.hpp" />
+    <ClInclude Include="managers\menu\menu.hpp" />
+    <ClInclude Include="managers\menu\TextEditor.h" />
+    <ClInclude Include="managers\offsets\offsets.hpp" />
+    <ClInclude Include="roblox\luauconfig.hpp" />
+    <ClInclude Include="roblox\memory\fnhandler.hpp" />
+    <ClInclude Include="roblox\memory\luau.hpp" />
+    <ClInclude Include="roblox\memory\offsets.hpp" />
+    <ClInclude Include="roblox\roblox.hpp" />
+    <ClInclude Include="roblox\scheduler\scheduler.hpp" />
+    <ClInclude Include="utilities\rand.hpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <Library Include="dependencies\spdlog\lib\spdlog.lib" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="roblox\env\init.lua" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
