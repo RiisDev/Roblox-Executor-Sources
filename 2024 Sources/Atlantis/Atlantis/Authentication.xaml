@@ -1,0 +1,441 @@
+﻿<Window
+    x:Class="Atlantis.Authentication"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:local="clr-namespace:Atlantis"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    Title="Authentication"
+    Width="275"
+    Height="350"
+    AllowsTransparency="True"
+    Background="Transparent"
+    ResizeMode="NoResize"
+    Topmost="True"
+    WindowStartupLocation="CenterScreen"
+    WindowStyle="None"
+    mc:Ignorable="d">
+
+    <Window.Resources>
+        <Style x:Key="TopBarButtons" TargetType="{x:Type Button}">
+            <Setter Property="Template">
+                <Setter.Value>
+                    <ControlTemplate TargetType="{x:Type Button}">
+                        <Border
+                      Background="{TemplateBinding Background}"
+                      BorderBrush="{TemplateBinding BorderBrush}"
+                      BorderThickness="{TemplateBinding BorderThickness}"
+                      CornerRadius="10">
+                            <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center" />
+                        </Border>
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+            <Style.Triggers>
+                <Trigger Property="IsMouseOver" Value="true">
+                    <Trigger.EnterActions>
+                        <BeginStoryboard>
+                            <Storyboard>
+                                <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(Control.Opacity)">
+                                    <EasingDoubleKeyFrame KeyTime="0:0:0.2" Value="0.6">
+                                        <EasingDoubleKeyFrame.EasingFunction>
+                                            <SineEase />
+                                        </EasingDoubleKeyFrame.EasingFunction>
+                                    </EasingDoubleKeyFrame>
+                                </DoubleAnimationUsingKeyFrames>
+                            </Storyboard>
+                        </BeginStoryboard>
+                    </Trigger.EnterActions>
+
+                    <Trigger.ExitActions>
+                        <BeginStoryboard>
+                            <Storyboard>
+                                <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(Control.Opacity)">
+                                    <EasingDoubleKeyFrame KeyTime="0:0:0.2" Value="1">
+                                        <EasingDoubleKeyFrame.EasingFunction>
+                                            <SineEase />
+                                        </EasingDoubleKeyFrame.EasingFunction>
+                                    </EasingDoubleKeyFrame>
+                                </DoubleAnimationUsingKeyFrames>
+                            </Storyboard>
+                        </BeginStoryboard>
+                    </Trigger.ExitActions>
+                </Trigger>
+            </Style.Triggers>
+        </Style>
+
+        <Style x:Key="KeyBox" TargetType="{x:Type TextBox}">
+            <Setter Property="Foreground" Value="#CCCCCC"/>
+            <Setter Property="FontSize" Value="11"/>
+            <Setter Property="MaxLength" Value="40"/>
+            <Setter Property="MaxLines" Value="1"/>
+            <Setter Property="FontFamily" Value="Poppins Medium"/>
+
+            <Setter Property="Template">
+                <Setter.Value>
+                    <ControlTemplate TargetType="{x:Type TextBox}">
+                        <Border x:Name="border" 
+                     Background="{TemplateBinding Background}" 
+                     BorderBrush="{TemplateBinding BorderBrush}"
+                     BorderThickness="{TemplateBinding BorderThickness}"
+                     CornerRadius="8"
+                     SnapsToDevicePixels="True">
+
+                            <Grid>
+                                <Label Foreground="{TemplateBinding BorderBrush}"
+                            Margin="4 0 0 0"
+                             Content="Key"
+                             HorizontalAlignment="Left"
+                             VerticalAlignment="Top"
+                             FontSize="10" 
+                             FontFamily="Poppins Medium"/>
+
+                                <ScrollViewer x:Name="PART_ContentHost" 
+                                       Focusable="false"
+                                       HorizontalScrollBarVisibility="Hidden" 
+                                       VerticalScrollBarVisibility="Hidden"
+                                       Margin="7 21 0 0"
+                                       Height="40"/>
+                            </Grid>
+
+                        </Border>
+                        <ControlTemplate.Triggers>
+                            <MultiTrigger>
+                                <MultiTrigger.Conditions>
+                                    <Condition Property="IsMouseOver" Value="True"/>
+                                    <Condition Property="IsKeyboardFocused" Value="False"/>
+                                </MultiTrigger.Conditions>
+                                <MultiTrigger.EnterActions>
+                                    <BeginStoryboard>
+                                        <Storyboard>
+                                            <ColorAnimationUsingKeyFrames Storyboard.TargetProperty="(Border.BorderBrush).(SolidColorBrush.Color)">
+                                                <EasingColorKeyFrame KeyTime="0:0:0.3" Value="#959b9b">
+                                                    <EasingColorKeyFrame.EasingFunction>
+                                                        <QuarticEase/>
+                                                    </EasingColorKeyFrame.EasingFunction>
+                                                </EasingColorKeyFrame>
+                                            </ColorAnimationUsingKeyFrames>
+                                        </Storyboard>
+                                    </BeginStoryboard>
+                                </MultiTrigger.EnterActions>
+                                <MultiTrigger.ExitActions>
+                                    <BeginStoryboard>
+                                        <Storyboard FillBehavior="Stop">
+                                            <ColorAnimationUsingKeyFrames Storyboard.TargetProperty="(Border.BorderBrush).(SolidColorBrush.Color)">
+                                                <EasingColorKeyFrame KeyTime="0:0:0.3" Value="#303030">
+                                                    <EasingColorKeyFrame.EasingFunction>
+                                                        <QuarticEase/>
+                                                    </EasingColorKeyFrame.EasingFunction>
+                                                </EasingColorKeyFrame>
+                                            </ColorAnimationUsingKeyFrames>
+                                        </Storyboard>
+                                    </BeginStoryboard>
+                                </MultiTrigger.ExitActions>
+                            </MultiTrigger>
+                            <Trigger Property="IsKeyboardFocused" Value="True">
+                                <Trigger.EnterActions>
+                                    <BeginStoryboard>
+                                        <Storyboard>
+                                            <ColorAnimationUsingKeyFrames Storyboard.TargetProperty="(Border.BorderBrush).(SolidColorBrush.Color)">
+                                                <EasingColorKeyFrame KeyTime="0:0:0.3" Value="#E53232">
+                                                    <EasingColorKeyFrame.EasingFunction>
+                                                        <QuarticEase/>
+                                                    </EasingColorKeyFrame.EasingFunction>
+                                                </EasingColorKeyFrame>
+                                            </ColorAnimationUsingKeyFrames>
+                                        </Storyboard>
+                                    </BeginStoryboard>
+                                </Trigger.EnterActions>
+                                <Trigger.ExitActions>
+                                    <BeginStoryboard>
+                                        <Storyboard FillBehavior="Stop">
+                                            <ColorAnimationUsingKeyFrames Storyboard.TargetProperty="(Border.BorderBrush).(SolidColorBrush.Color)">
+                                                <EasingColorKeyFrame KeyTime="0:0:0.3" Value="#303030">
+                                                    <EasingColorKeyFrame.EasingFunction>
+                                                        <QuarticEase/>
+                                                    </EasingColorKeyFrame.EasingFunction>
+                                                </EasingColorKeyFrame>
+                                            </ColorAnimationUsingKeyFrames>
+                                        </Storyboard>
+                                    </BeginStoryboard>
+                                </Trigger.ExitActions>
+                            </Trigger>
+                        </ControlTemplate.Triggers>
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+
+        </Style>
+
+        <Style x:Key="buddon2" TargetType="{x:Type Button}">
+            <Setter Property="Template">
+                <Setter.Value>
+                    <ControlTemplate TargetType="{x:Type Button}">
+
+                        <Border
+                            x:Name="border"
+                            Background="{TemplateBinding Background}"
+                            BorderBrush="{TemplateBinding BorderBrush}"
+                            BorderThickness="1"
+                            CornerRadius="7"
+                            SnapsToDevicePixels="true">
+
+                            <ContentPresenter
+                                x:Name="contentPresenter"
+                                Margin="{TemplateBinding Padding}"
+                                HorizontalAlignment="{TemplateBinding HorizontalContentAlignment}"
+                                VerticalAlignment="{TemplateBinding VerticalContentAlignment}"
+                                Focusable="False"
+                                RecognizesAccessKey="True"
+                                SnapsToDevicePixels="{TemplateBinding SnapsToDevicePixels}" />
+
+                        </Border>
+
+                        <ControlTemplate.Triggers>
+                            <Trigger Property="IsMouseOver" Value="True">
+                                <Trigger.EnterActions>
+                                    <BeginStoryboard>
+                                        <Storyboard>
+                                            <ColorAnimationUsingKeyFrames Storyboard.TargetProperty="(Button.Foreground).(SolidColorBrush.Color)">
+                                                <EasingColorKeyFrame KeyTime="0:0:.3" Value="#202020">
+                                                    <EasingColorKeyFrame.EasingFunction>
+                                                        <QuarticEase />
+                                                    </EasingColorKeyFrame.EasingFunction>
+                                                </EasingColorKeyFrame>
+                                            </ColorAnimationUsingKeyFrames>
+                                            <ColorAnimationUsingKeyFrames Storyboard.TargetProperty="(Button.Background).(SolidColorBrush.Color)">
+                                                <EasingColorKeyFrame KeyTime="0:0:.3" Value="#E53232">
+                                                    <EasingColorKeyFrame.EasingFunction>
+                                                        <QuarticEase />
+                                                    </EasingColorKeyFrame.EasingFunction>
+                                                </EasingColorKeyFrame>
+                                            </ColorAnimationUsingKeyFrames>
+                                        </Storyboard>
+                                    </BeginStoryboard>
+                                </Trigger.EnterActions>
+                                <Trigger.ExitActions>
+                                    <BeginStoryboard>
+                                        <Storyboard>
+                                            <ColorAnimationUsingKeyFrames Storyboard.TargetProperty="(Button.Foreground).(SolidColorBrush.Color)">
+                                                <EasingColorKeyFrame KeyTime="0:0:.3" Value="#E53232">
+                                                    <EasingColorKeyFrame.EasingFunction>
+                                                        <QuarticEase />
+                                                    </EasingColorKeyFrame.EasingFunction>
+                                                </EasingColorKeyFrame>
+                                            </ColorAnimationUsingKeyFrames>
+                                            <ColorAnimationUsingKeyFrames Storyboard.TargetProperty="(Button.Background).(SolidColorBrush.Color)">
+                                                <EasingColorKeyFrame KeyTime="0:0:.3" Value="Transparent">
+                                                    <EasingColorKeyFrame.EasingFunction>
+                                                        <QuarticEase />
+                                                    </EasingColorKeyFrame.EasingFunction>
+                                                </EasingColorKeyFrame>
+                                            </ColorAnimationUsingKeyFrames>
+                                        </Storyboard>
+                                    </BeginStoryboard>
+                                </Trigger.ExitActions>
+                            </Trigger>
+                        </ControlTemplate.Triggers>
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+        </Style>
+
+        <Style x:Key="buddon" TargetType="{x:Type Button}">
+            <Setter Property="Template">
+                <Setter.Value>
+                    <ControlTemplate TargetType="{x:Type Button}">
+
+                        <Border
+                            x:Name="border"
+                            Background="{TemplateBinding Background}"
+                            BorderThickness="0"
+                            CornerRadius="7"
+                            SnapsToDevicePixels="true">
+
+                            <ContentPresenter
+                                x:Name="contentPresenter"
+                                Margin="{TemplateBinding Padding}"
+                                HorizontalAlignment="{TemplateBinding HorizontalContentAlignment}"
+                                VerticalAlignment="{TemplateBinding VerticalContentAlignment}"
+                                Focusable="False"
+                                RecognizesAccessKey="True"
+                                SnapsToDevicePixels="{TemplateBinding SnapsToDevicePixels}" />
+
+                        </Border>
+
+                        <ControlTemplate.Triggers>
+                            <Trigger Property="IsMouseOver" Value="True">
+                                <Trigger.ExitActions>
+                                    <BeginStoryboard>
+                                        <Storyboard>
+                                            <ColorAnimationUsingKeyFrames Storyboard.TargetProperty="(Button.Foreground).(SolidColorBrush.Color)">
+                                                <EasingColorKeyFrame KeyTime="0:0:.3" Value="#202020">
+                                                    <EasingColorKeyFrame.EasingFunction>
+                                                        <QuarticEase />
+                                                    </EasingColorKeyFrame.EasingFunction>
+                                                </EasingColorKeyFrame>
+                                            </ColorAnimationUsingKeyFrames>
+                                            <ColorAnimationUsingKeyFrames Storyboard.TargetProperty="(Button.Background).(SolidColorBrush.Color)">
+                                                <EasingColorKeyFrame KeyTime="0:0:.3" Value="#E53232">
+                                                    <EasingColorKeyFrame.EasingFunction>
+                                                        <QuarticEase />
+                                                    </EasingColorKeyFrame.EasingFunction>
+                                                </EasingColorKeyFrame>
+                                            </ColorAnimationUsingKeyFrames>
+                                        </Storyboard>
+                                    </BeginStoryboard>
+                                </Trigger.ExitActions>
+                                <Trigger.EnterActions>
+                                    <BeginStoryboard>
+                                        <Storyboard>
+                                            <ColorAnimationUsingKeyFrames Storyboard.TargetProperty="(Button.Foreground).(SolidColorBrush.Color)">
+                                                <EasingColorKeyFrame KeyTime="0:0:.3" Value="#E53232">
+                                                    <EasingColorKeyFrame.EasingFunction>
+                                                        <QuarticEase />
+                                                    </EasingColorKeyFrame.EasingFunction>
+                                                </EasingColorKeyFrame>
+                                            </ColorAnimationUsingKeyFrames>
+                                            <ColorAnimationUsingKeyFrames Storyboard.TargetProperty="(Button.Background).(SolidColorBrush.Color)">
+                                                <EasingColorKeyFrame KeyTime="0:0:.3" Value="Transparent">
+                                                    <EasingColorKeyFrame.EasingFunction>
+                                                        <QuarticEase />
+                                                    </EasingColorKeyFrame.EasingFunction>
+                                                </EasingColorKeyFrame>
+                                            </ColorAnimationUsingKeyFrames>
+                                        </Storyboard>
+                                    </BeginStoryboard>
+                                </Trigger.EnterActions>
+                            </Trigger>
+                        </ControlTemplate.Triggers>
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+        </Style>
+
+        <Storyboard x:Key="Error">
+            <ColorAnimationUsingKeyFrames
+                FillBehavior="Stop"
+                Storyboard.TargetName="KeyBox"
+                Storyboard.TargetProperty="(TextBox.BorderBrush).(SolidColorBrush.Color)"
+                Duration="0:0:2">
+                <EasingColorKeyFrame KeyTime="0:0:0.3" Value="#aa0000" />
+            </ColorAnimationUsingKeyFrames>
+        </Storyboard>
+    </Window.Resources>
+
+    <Border
+        Background="#202020"
+        BorderBrush="#404040"
+        BorderThickness="1"
+        CornerRadius="10"
+        MouseDown="Border_MouseDown">
+
+        <Grid>
+
+            <Image
+                Margin="-346,-106,-211,-256"
+                Opacity="0.008"
+                RenderTransformOrigin="0.5,0.5"
+                Source="/Images/logo.png">
+
+            </Image>
+            <Image
+Margin="53,2,59,213"
+Opacity="1"
+RenderTransformOrigin="0.5,0.5"
+Source="/Images/logo.png"
+RenderOptions.BitmapScalingMode="HighQuality"/>
+
+            <TextBox
+                x:Name="KeyBox"
+                Width="200"
+                Height="42"
+                Margin="36,135,37,168"
+                Background="Transparent"
+                BorderBrush="#303030"
+                Style="{DynamicResource KeyBox}" />
+
+            <Button
+                x:Name="ContinueButton"
+                Width="200"
+                Height="35"
+                Margin="0,269,0,0"
+                HorizontalAlignment="Center"
+                VerticalAlignment="Top"
+                Background="#E53232"
+                BorderThickness="1"
+                Click="ButtonHandler"
+                Content="Continue"
+                Cursor="Hand"
+                FontFamily="Poppins Medium"
+                Foreground="#161616"
+                Style="{StaticResource buddon}" />
+
+            <Button
+                x:Name="GetKeyButton"
+                Width="200"
+                Height="35"
+                Margin="0,219,0,0"
+                HorizontalAlignment="Center"
+                VerticalAlignment="Top"
+                Background="Transparent"
+                BorderBrush="#E53232"
+                Click="ButtonHandler"
+                Content="Get Key"
+                Cursor="Hand"
+                FontFamily="Poppins Medium"
+                Foreground="#E53232"
+                Style="{StaticResource buddon2}" />
+
+            <Label
+                Margin="75,325,76,0"
+                VerticalAlignment="Top"
+                HorizontalContentAlignment="Center"
+                Content="Atlantis © - 2024"
+                FontFamily="Poppins"
+                FontSize="10"
+                Foreground="#7c7c84"
+                Opacity=".4" />
+            <StackPanel
+                Margin="0,-4,11,312"
+                HorizontalAlignment="Right"
+                Orientation="Horizontal"
+                WindowChrome.IsHitTestVisibleInChrome="True">
+
+                <Button
+                    x:Name="Minimise"
+                    Width="9"
+                    Height="9"
+                    Margin="0,17,10,14"
+                    Background="#E53232"
+                    BorderThickness="0"
+                    Click="ButtonHandler"
+                    Style="{StaticResource TopBarButtons}">
+
+                    <Button.ToolTip>Minimize</Button.ToolTip>
+
+                </Button>
+
+                <Button
+                    x:Name="Exit"
+                    Width="9"
+                    Height="9"
+                    Margin="0,17,0,14"
+                    Background="#E53232"
+                    BorderThickness="0"
+                    Click="ButtonHandler"
+                    Style="{StaticResource TopBarButtons}">
+
+                    <Button.ToolTip>Exit</Button.ToolTip>
+
+                </Button>
+
+
+            </StackPanel>
+
+
+        </Grid>
+
+    </Border>
+
+</Window>
