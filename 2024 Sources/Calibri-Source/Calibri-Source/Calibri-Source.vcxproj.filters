@@ -1,0 +1,374 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;c++;cppm;ixx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Headers">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;h++;hm;inl;inc;ipp;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resources">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Resources\Luau">
+      <UniqueIdentifier>{5497bc2c-4000-4f57-8746-7428d0039ba1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Resources\Compiler">
+      <UniqueIdentifier>{88823b5e-8641-4eff-8208-1946967683c4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Resources\Compiler\include">
+      <UniqueIdentifier>{42e554b9-cca6-4446-940a-d251920fcb40}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Resources\Compiler\source">
+      <UniqueIdentifier>{af80e05d-81b6-4d83-a960-c72e08342413}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Resources\Compressor">
+      <UniqueIdentifier>{e7e634da-3c9d-4146-ba38-1611dfcedc5e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Resources\Compressor\library">
+      <UniqueIdentifier>{c3c059b4-13e3-4915-b3b0-484833c457f5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Resources\Compressor\include">
+      <UniqueIdentifier>{b5fc68bd-b6bd-4530-ac64-3840e1c66cd5}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Roblox.hpp">
+      <Filter>Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="Luau\lapi.h">
+      <Filter>Resources\Luau</Filter>
+    </ClInclude>
+    <ClInclude Include="Luau\lbuffer.h">
+      <Filter>Resources\Luau</Filter>
+    </ClInclude>
+    <ClInclude Include="Luau\lbuiltins.h">
+      <Filter>Resources\Luau</Filter>
+    </ClInclude>
+    <ClInclude Include="Luau\lbytecode.h">
+      <Filter>Resources\Luau</Filter>
+    </ClInclude>
+    <ClInclude Include="Luau\lcommon.h">
+      <Filter>Resources\Luau</Filter>
+    </ClInclude>
+    <ClInclude Include="Luau\ldebug.h">
+      <Filter>Resources\Luau</Filter>
+    </ClInclude>
+    <ClInclude Include="Luau\ldo.h">
+      <Filter>Resources\Luau</Filter>
+    </ClInclude>
+    <ClInclude Include="Luau\lfunc.h">
+      <Filter>Resources\Luau</Filter>
+    </ClInclude>
+    <ClInclude Include="Luau\lgc.h">
+      <Filter>Resources\Luau</Filter>
+    </ClInclude>
+    <ClInclude Include="Luau\lmem.h">
+      <Filter>Resources\Luau</Filter>
+    </ClInclude>
+    <ClInclude Include="Luau\lnumutils.h">
+      <Filter>Resources\Luau</Filter>
+    </ClInclude>
+    <ClInclude Include="Luau\lobject.h">
+      <Filter>Resources\Luau</Filter>
+    </ClInclude>
+    <ClInclude Include="Luau\lstate.h">
+      <Filter>Resources\Luau</Filter>
+    </ClInclude>
+    <ClInclude Include="Luau\lstring.h">
+      <Filter>Resources\Luau</Filter>
+    </ClInclude>
+    <ClInclude Include="Luau\ltable.h">
+      <Filter>Resources\Luau</Filter>
+    </ClInclude>
+    <ClInclude Include="Luau\ltm.h">
+      <Filter>Resources\Luau</Filter>
+    </ClInclude>
+    <ClInclude Include="Luau\lua.h">
+      <Filter>Resources\Luau</Filter>
+    </ClInclude>
+    <ClInclude Include="Luau\luaconf.h">
+      <Filter>Resources\Luau</Filter>
+    </ClInclude>
+    <ClInclude Include="Luau\lualib.h">
+      <Filter>Resources\Luau</Filter>
+    </ClInclude>
+    <ClInclude Include="Luau\ludata.h">
+      <Filter>Resources\Luau</Filter>
+    </ClInclude>
+    <ClInclude Include="Luau\lvm.h">
+      <Filter>Resources\Luau</Filter>
+    </ClInclude>
+    <ClInclude Include="Luau\vm.h">
+      <Filter>Resources\Luau</Filter>
+    </ClInclude>
+    <ClInclude Include="Compiler\include\Ast.h">
+      <Filter>Resources\Compiler\include</Filter>
+    </ClInclude>
+    <ClInclude Include="Compiler\include\Bytecode.h">
+      <Filter>Resources\Compiler\include</Filter>
+    </ClInclude>
+    <ClInclude Include="Compiler\include\BytecodeBuilder.h">
+      <Filter>Resources\Compiler\include</Filter>
+    </ClInclude>
+    <ClInclude Include="Compiler\include\BytecodeUtils.h">
+      <Filter>Resources\Compiler\include</Filter>
+    </ClInclude>
+    <ClInclude Include="Compiler\include\Common.h">
+      <Filter>Resources\Compiler\include</Filter>
+    </ClInclude>
+    <ClInclude Include="Compiler\include\Compiler.h">
+      <Filter>Resources\Compiler\include</Filter>
+    </ClInclude>
+    <ClInclude Include="Compiler\include\Confusables.h">
+      <Filter>Resources\Compiler\include</Filter>
+    </ClInclude>
+    <ClInclude Include="Compiler\include\DenseHash.h">
+      <Filter>Resources\Compiler\include</Filter>
+    </ClInclude>
+    <ClInclude Include="Compiler\include\ExperimentalFlags.h">
+      <Filter>Resources\Compiler\include</Filter>
+    </ClInclude>
+    <ClInclude Include="Compiler\include\Lexer.h">
+      <Filter>Resources\Compiler\include</Filter>
+    </ClInclude>
+    <ClInclude Include="Compiler\include\Location.h">
+      <Filter>Resources\Compiler\include</Filter>
+    </ClInclude>
+    <ClInclude Include="Compiler\include\luacode.h">
+      <Filter>Resources\Compiler\include</Filter>
+    </ClInclude>
+    <ClInclude Include="Compiler\include\ParseOptions.h">
+      <Filter>Resources\Compiler\include</Filter>
+    </ClInclude>
+    <ClInclude Include="Compiler\include\Parser.h">
+      <Filter>Resources\Compiler\include</Filter>
+    </ClInclude>
+    <ClInclude Include="Compiler\include\ParseResult.h">
+      <Filter>Resources\Compiler\include</Filter>
+    </ClInclude>
+    <ClInclude Include="Compiler\include\StringUtils.h">
+      <Filter>Resources\Compiler\include</Filter>
+    </ClInclude>
+    <ClInclude Include="Compiler\include\TimeTrace.h">
+      <Filter>Resources\Compiler\include</Filter>
+    </ClInclude>
+    <ClInclude Include="Compiler\include\VecDeque.h">
+      <Filter>Resources\Compiler\include</Filter>
+    </ClInclude>
+    <ClInclude Include="Compiler\source\BuiltinFolding.h">
+      <Filter>Resources\Compiler\source</Filter>
+    </ClInclude>
+    <ClInclude Include="Compiler\source\Builtins.h">
+      <Filter>Resources\Compiler\source</Filter>
+    </ClInclude>
+    <ClInclude Include="Compiler\source\ConstantFolding.h">
+      <Filter>Resources\Compiler\source</Filter>
+    </ClInclude>
+    <ClInclude Include="Compiler\source\CostModel.h">
+      <Filter>Resources\Compiler\source</Filter>
+    </ClInclude>
+    <ClInclude Include="Compiler\source\TableShape.h">
+      <Filter>Resources\Compiler\source</Filter>
+    </ClInclude>
+    <ClInclude Include="Compiler\source\Types.h">
+      <Filter>Resources\Compiler\source</Filter>
+    </ClInclude>
+    <ClInclude Include="Compiler\source\ValueTracking.h">
+      <Filter>Resources\Compiler\source</Filter>
+    </ClInclude>
+    <ClInclude Include="Compressor\include\xxhash.h">
+      <Filter>Resources\Compressor\include</Filter>
+    </ClInclude>
+    <ClInclude Include="Compressor\include\zstd.h">
+      <Filter>Resources\Compressor\include</Filter>
+    </ClInclude>
+    <ClInclude Include="Utils.hpp">
+      <Filter>Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="crypt.h">
+      <Filter>Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="LuaInit.hpp">
+      <Filter>Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="XorStr.hpp">
+      <Filter>Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="CustomFonts.hpp">
+      <Filter>Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="Fonts.h">
+      <Filter>Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="Execution.hpp">
+      <Filter>Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="Enviroment.hpp">
+      <Filter>Headers</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Main.cpp">
+      <Filter>Source</Filter>
+    </ClCompile>
+    <ClCompile Include="Luau\lapi.cpp">
+      <Filter>Resources\Luau</Filter>
+    </ClCompile>
+    <ClCompile Include="Luau\laux.cpp">
+      <Filter>Resources\Luau</Filter>
+    </ClCompile>
+    <ClCompile Include="Luau\lbaselib.cpp">
+      <Filter>Resources\Luau</Filter>
+    </ClCompile>
+    <ClCompile Include="Luau\lbitlib.cpp">
+      <Filter>Resources\Luau</Filter>
+    </ClCompile>
+    <ClCompile Include="Luau\lbuffer.cpp">
+      <Filter>Resources\Luau</Filter>
+    </ClCompile>
+    <ClCompile Include="Luau\lbuflib.cpp">
+      <Filter>Resources\Luau</Filter>
+    </ClCompile>
+    <ClCompile Include="Luau\lbuiltins.cpp">
+      <Filter>Resources\Luau</Filter>
+    </ClCompile>
+    <ClCompile Include="Luau\lcorolib.cpp">
+      <Filter>Resources\Luau</Filter>
+    </ClCompile>
+    <ClCompile Include="Luau\ldblib.cpp">
+      <Filter>Resources\Luau</Filter>
+    </ClCompile>
+    <ClCompile Include="Luau\ldebug.cpp">
+      <Filter>Resources\Luau</Filter>
+    </ClCompile>
+    <ClCompile Include="Luau\ldo.cpp">
+      <Filter>Resources\Luau</Filter>
+    </ClCompile>
+    <ClCompile Include="Luau\lfunc.cpp">
+      <Filter>Resources\Luau</Filter>
+    </ClCompile>
+    <ClCompile Include="Luau\lgc.cpp">
+      <Filter>Resources\Luau</Filter>
+    </ClCompile>
+    <ClCompile Include="Luau\lgcdebug.cpp">
+      <Filter>Resources\Luau</Filter>
+    </ClCompile>
+    <ClCompile Include="Luau\linit.cpp">
+      <Filter>Resources\Luau</Filter>
+    </ClCompile>
+    <ClCompile Include="Luau\lmathlib.cpp">
+      <Filter>Resources\Luau</Filter>
+    </ClCompile>
+    <ClCompile Include="Luau\lmem.cpp">
+      <Filter>Resources\Luau</Filter>
+    </ClCompile>
+    <ClCompile Include="Luau\lnumprint.cpp">
+      <Filter>Resources\Luau</Filter>
+    </ClCompile>
+    <ClCompile Include="Luau\lobject.cpp">
+      <Filter>Resources\Luau</Filter>
+    </ClCompile>
+    <ClCompile Include="Luau\loslib.cpp">
+      <Filter>Resources\Luau</Filter>
+    </ClCompile>
+    <ClCompile Include="Luau\lperf.cpp">
+      <Filter>Resources\Luau</Filter>
+    </ClCompile>
+    <ClCompile Include="Luau\lstate.cpp">
+      <Filter>Resources\Luau</Filter>
+    </ClCompile>
+    <ClCompile Include="Luau\lstring.cpp">
+      <Filter>Resources\Luau</Filter>
+    </ClCompile>
+    <ClCompile Include="Luau\lstrlib.cpp">
+      <Filter>Resources\Luau</Filter>
+    </ClCompile>
+    <ClCompile Include="Luau\ltable.cpp">
+      <Filter>Resources\Luau</Filter>
+    </ClCompile>
+    <ClCompile Include="Luau\ltablib.cpp">
+      <Filter>Resources\Luau</Filter>
+    </ClCompile>
+    <ClCompile Include="Luau\ltm.cpp">
+      <Filter>Resources\Luau</Filter>
+    </ClCompile>
+    <ClCompile Include="Luau\ludata.cpp">
+      <Filter>Resources\Luau</Filter>
+    </ClCompile>
+    <ClCompile Include="Luau\lutf8lib.cpp">
+      <Filter>Resources\Luau</Filter>
+    </ClCompile>
+    <ClCompile Include="Luau\lvmexecute.cpp">
+      <Filter>Resources\Luau</Filter>
+    </ClCompile>
+    <ClCompile Include="Luau\lvmload.cpp">
+      <Filter>Resources\Luau</Filter>
+    </ClCompile>
+    <ClCompile Include="Luau\lvmutils.cpp">
+      <Filter>Resources\Luau</Filter>
+    </ClCompile>
+    <ClCompile Include="Compiler\source\Ast.cpp">
+      <Filter>Resources\Compiler\source</Filter>
+    </ClCompile>
+    <ClCompile Include="Compiler\source\BuiltinFolding.cpp">
+      <Filter>Resources\Compiler\source</Filter>
+    </ClCompile>
+    <ClCompile Include="Compiler\source\Builtins.cpp">
+      <Filter>Resources\Compiler\source</Filter>
+    </ClCompile>
+    <ClCompile Include="Compiler\source\BytecodeBuilder.cpp">
+      <Filter>Resources\Compiler\source</Filter>
+    </ClCompile>
+    <ClCompile Include="Compiler\source\Compiler.cpp">
+      <Filter>Resources\Compiler\source</Filter>
+    </ClCompile>
+    <ClCompile Include="Compiler\source\Confusables.cpp">
+      <Filter>Resources\Compiler\source</Filter>
+    </ClCompile>
+    <ClCompile Include="Compiler\source\ConstantFolding.cpp">
+      <Filter>Resources\Compiler\source</Filter>
+    </ClCompile>
+    <ClCompile Include="Compiler\source\CostModel.cpp">
+      <Filter>Resources\Compiler\source</Filter>
+    </ClCompile>
+    <ClCompile Include="Compiler\source\lcode.cpp">
+      <Filter>Resources\Compiler\source</Filter>
+    </ClCompile>
+    <ClCompile Include="Compiler\source\Lexer.cpp">
+      <Filter>Resources\Compiler\source</Filter>
+    </ClCompile>
+    <ClCompile Include="Compiler\source\Location.cpp">
+      <Filter>Resources\Compiler\source</Filter>
+    </ClCompile>
+    <ClCompile Include="Compiler\source\Parser.cpp">
+      <Filter>Resources\Compiler\source</Filter>
+    </ClCompile>
+    <ClCompile Include="Compiler\source\StringUtils.cpp">
+      <Filter>Resources\Compiler\source</Filter>
+    </ClCompile>
+    <ClCompile Include="Compiler\source\TableShape.cpp">
+      <Filter>Resources\Compiler\source</Filter>
+    </ClCompile>
+    <ClCompile Include="Compiler\source\TimeTrace.cpp">
+      <Filter>Resources\Compiler\source</Filter>
+    </ClCompile>
+    <ClCompile Include="Compiler\source\Types.cpp">
+      <Filter>Resources\Compiler\source</Filter>
+    </ClCompile>
+    <ClCompile Include="Compiler\source\ValueTracking.cpp">
+      <Filter>Resources\Compiler\source</Filter>
+    </ClCompile>
+    <ClCompile Include="crypt.cpp">
+      <Filter>Source</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <Library Include="Compressor\library\libzstd_static.lib">
+      <Filter>Resources\Compressor\library</Filter>
+    </Library>
+  </ItemGroup>
+</Project>
