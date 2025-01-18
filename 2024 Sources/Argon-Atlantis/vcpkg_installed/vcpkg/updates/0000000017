@@ -1,7 +1,0 @@
-Package: cpr
-Feature: ssl
-Depends: curl
-Architecture: x64-windows
-Multi-Arch: same
-Description: Enable SSL support
-Status: install ok half-installed

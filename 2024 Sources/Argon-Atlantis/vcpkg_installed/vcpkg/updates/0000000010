@@ -1,6 +1,0 @@
-Package: curl
-Feature: sspi
-Architecture: x64-windows
-Multi-Arch: same
-Description: SSPI support
-Status: install ok half-installed

@@ -1,8 +1,0 @@
-Package: xxhash
-Version: 0.8.2
-Depends: vcpkg-cmake:x64-windows, vcpkg-cmake-config:x64-windows
-Architecture: x64-windows-static
-Multi-Arch: same
-Abi: 0cea299ed6058247fed104e1f7c942976846617380504819399003cf940fa348
-Description: Extremely fast hash algorithm
-Status: install ok installed

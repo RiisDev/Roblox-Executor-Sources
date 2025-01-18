@@ -1,9 +1,0 @@
-{
-  "dependencies": [
-    "openssl",
-    "xxhash",
-    "zstd",
-    "cpr",
-    "curl"
-  ]
-}
